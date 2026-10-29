@@ -89,7 +89,7 @@ export default async function NoticiasPage() {
 
       <section aria-labelledby="categorias" className="border-t border-line">
         <Container className="py-12 sm:py-16">
-          <SectionHeader id="categorias" title="Categorias" link={{ href: "/noticias/feed.xml", label: "Assinar via RSS" }} />
+          <SectionHeader id="categorias" title="Categorias" />
           <ul className="mt-6 grid grid-cols-1 border-t border-line sm:grid-cols-2 lg:grid-cols-4">
             {NEWS_CATEGORY_INFO.map((info) => {
               const count = news.filter((item) => item.category.includes(info.name)).length;

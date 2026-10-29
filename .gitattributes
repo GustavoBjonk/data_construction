@@ -1,0 +1,7 @@
+# Quebras de linha LF em todos os sistemas (os testes comparam o formato canônico byte a byte).
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.avif binary
+*.ico binary

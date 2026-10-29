@@ -27,7 +27,6 @@ const FOOTER_GROUPS: { title: string; links: { href: string; label: string }[] }
       { href: "/sobre", label: "Sobre" },
       { href: "/doacoes", label: "Apoie a educação" },
       { href: "/busca", label: "Buscar no site" },
-      { href: "/noticias/feed.xml", label: "RSS de notícias" },
     ],
   },
 ];
