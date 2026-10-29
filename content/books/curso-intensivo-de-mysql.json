@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "archived",
+  "sortOrder": 34,
+  "data": {
+    "id": "curso-intensivo-de-mysql",
+    "title": "Curso Intensivo de MySQL",
+    "authors": [
+      "Rick Silva"
+    ],
+    "publisher": "Novatec",
+    "year": 2023,
+    "isbn13": "9788575228722",
+    "topic": "SQL",
+    "level": "Iniciante",
+    "language": "Português",
+    "description": "Introdução prática ao desenvolvimento baseado em banco de dados com MySQL: criação de tabelas, consultas, junções, funções, views, procedures e triggers.",
+    "why": "Para quem quer aprender SQL construindo projetos completos em um banco de dados real e muito usado no mercado."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "ms-learn-prepare-data-powerbi",
+    "title": "Preparar dados para análise com o Power BI",
+    "platform": "Microsoft Learn",
+    "area": "Business Intelligence",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Intermediário",
+    "description": "Trilha oficial da Microsoft sobre Power Query: extrair, transformar e carregar dados no Power BI.",
+    "skills": [
+      "Power Query",
+      "ETL",
+      "Power BI"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/paths/prepare-data-power-bi/"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 280,
+  "data": {
+    "id": "moveit-vazamento-massivo-2023",
+    "slug": "moveit-vazamento-massivo-2023",
+    "title": "Ataque em massa explorando falha no MOVEit expõe dados de milhões de pessoas",
+    "summary": "O grupo de ransomware Clop explorou uma vulnerabilidade de injeção SQL no software de transferência de arquivos MOVEit, da Progress Software, comprometendo dados pessoais de mais de 15 milhões de pessoas em dezenas de organizações, incluindo órgãos governamentais dos EUA.",
+    "relevance": "Reforça para profissionais de dados a importância de governança e segurança em pipelines de transferência de arquivos, um ponto cego comum em arquiteturas de dados corporativas.",
+    "publishedAt": "2023-06-29",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Data Privacy",
+      "Infraestrutura"
+    ],
+    "tags": [
+      "MOVEit",
+      "Clop",
+      "Vazamento de Dados",
+      "Cibersegurança"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2023/06/29/millions-affected-moveit-mass-hacks/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ]
+    }
+  }
+}

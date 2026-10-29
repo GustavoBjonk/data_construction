@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 770,
+  "data": {
+    "id": "qantas-vazamento-salesforce-2025",
+    "slug": "qantas-vazamento-salesforce-2025",
+    "title": "Qantas confirma vazamento de dados de 5,7 milhões de clientes após ataque via plataforma Salesforce",
+    "summary": "A companhia aérea australiana Qantas confirmou que invasores obtiveram acesso a dados de 5,7 milhões de clientes através de uma plataforma de terceiros ligada ao Salesforce, usando técnicas de engenharia social contra uma central de atendimento terceirizada.",
+    "relevance": "Reforça o risco de integrações com plataformas de CRM/SaaS de terceiros como vetor de vazamento, tema central para quem trabalha com governança e segurança de dados.",
+    "publishedAt": "2025-07-09",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Data Privacy",
+      "Data Governance"
+    ],
+    "tags": [
+      "Vazamento de Dados",
+      "Salesforce",
+      "Cibersegurança",
+      "Engenharia Social"
+    ],
+    "source": "Cybersecurity Dive",
+    "sourceUrl": "https://www.cybersecuritydive.com/news/qantas-cyberattack-57-million-customers/752571/"
+  }
+}

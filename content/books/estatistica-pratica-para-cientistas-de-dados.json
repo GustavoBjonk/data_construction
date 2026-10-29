@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 70,
+  "data": {
+    "id": "estatistica-pratica-para-cientistas-de-dados",
+    "title": "Estatística Prática para Cientistas de Dados",
+    "authors": [
+      "Peter Bruce",
+      "Andrew Bruce",
+      "Peter Gedeck"
+    ],
+    "publisher": "Alta Books",
+    "year": 2025,
+    "edition": "2ª edição",
+    "isbn13": "9788550826516",
+    "topic": "Dados",
+    "level": "Intermediário",
+    "language": "Português",
+    "description": "Os conceitos estatísticos mais usados em ciência de dados, com exemplos em Python e R.",
+    "why": "Foca no que realmente aparece no trabalho, sem excesso de formalismo."
+  }
+}

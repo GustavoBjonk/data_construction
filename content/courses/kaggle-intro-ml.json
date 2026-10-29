@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 130,
+  "data": {
+    "id": "kaggle-intro-ml",
+    "title": "Intro to Machine Learning",
+    "platform": "Kaggle Learn",
+    "area": "Machine Learning",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Curso curto e prático da Kaggle para construir e validar seus primeiros modelos de Machine Learning.",
+    "skills": [
+      "Machine Learning",
+      "Scikit-learn",
+      "Modelos preditivos"
+    ],
+    "url": "https://www.kaggle.com/learn/intro-to-machine-learning"
+  }
+}

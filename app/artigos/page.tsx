@@ -1,31 +1,44 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { ArticleExplorer } from "@/components/articles/ArticleExplorer";
-import { articles, ARTICLE_CATEGORIES } from "@/data/articles";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { ARTICLE_CATEGORIES } from "@/data/articles";
+import { getArticlesByDate } from "@/lib/content";
+
+const DESCRIPTION =
+  "Artigos técnicos do DataConstruction sobre SQL, Python e Power BI, com exemplos comentados e referências.";
 
 export const metadata: Metadata = {
   title: "Artigos",
-  description:
-    "Todos os artigos técnicos do Dataconstruction sobre Análise de Dados: SQL, Python e Power BI.",
+  description: DESCRIPTION,
+  alternates: { canonical: "/artigos" },
+  openGraph: { title: "Artigos", description: DESCRIPTION, url: "/artigos" },
 };
 
-const SORTED_ARTICLES = [...articles].sort((a, b) => b.date.localeCompare(a.date));
+export const revalidate = 300;
 
-export default function ArtigosPage() {
+export default async function ArtigosPage() {
+  const articles = await getArticlesByDate();
+  // Só categorias com artigo publicado viram filtro (rascunhos não deixam chips vazios).
+  const categories = ARTICLE_CATEGORIES.filter((category) => articles.some((article) => article.category === category));
+
   return (
-    <section className="py-16 sm:py-20">
-      <Container>
-        <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">Artigos</h1>
-          <p className="mt-3 text-base leading-relaxed text-slate-500">
-            Conteúdos técnicos sobre dados, engenharia e tecnologia, direto ao ponto.
-          </p>
-        </div>
-
-        <div className="mt-10">
-          <ArticleExplorer articles={SORTED_ARTICLES} categories={ARTICLE_CATEGORIES} />
-        </div>
+    <>
+      <PageHeader
+        eyebrow="Artigos técnicos"
+        title={
+          <>
+            Explicado
+            <br />
+            na prática<span className="text-accent">.</span>
+          </>
+        }
+        lead="Conteúdos técnicos sobre dados, engenharia e tecnologia — direto ao ponto, com exemplos e fontes."
+        breadcrumbs={[{ label: "Artigos", href: "/artigos" }]}
+      />
+      <Container className="py-12 sm:py-16">
+        <ArticleExplorer articles={articles} categories={categories} />
       </Container>
-    </section>
+    </>
   );
 }

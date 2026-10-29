@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 450,
+  "data": {
+    "id": "duckdb-1-0-estavel",
+    "slug": "duckdb-1-0-estavel",
+    "title": "DuckDB atinge a versão estável 1.0",
+    "summary": "O projeto DuckDB anunciou a versão 1.0.0, com foco em estabilidade do formato de arquivo, do dialeto SQL e da API C, encerrando o período em que atualizações exigiam migração de arquivos entre versões. O lançamento foi apelidado de \"Snow Duck\".",
+    "relevance": "Consolida o DuckDB como banco analítico embarcado confiável para produção, muito usado em engenharia de dados local e pipelines leves de analytics.",
+    "publishedAt": "2024-06-03",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Bancos de Dados",
+      "Data Engineering"
+    ],
+    "tags": [
+      "DuckDB",
+      "OLAP",
+      "Open Source",
+      "Analytics Engineering"
+    ],
+    "source": "DuckDB (blog oficial)",
+    "sourceUrl": "https://duckdb.org/2024/06/03/announcing-duckdb-100"
+  }
+}

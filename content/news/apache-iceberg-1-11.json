@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 880,
+  "data": {
+    "id": "apache-iceberg-1-11",
+    "slug": "apache-iceberg-1-11",
+    "title": "Apache Iceberg 1.11.0 é lançado com nova API de formato de arquivo e suporte geoespacial",
+    "summary": "A comunidade Apache Iceberg lançou a versão 1.11.0, resultado de mais de mil commits de 200+ contribuidores, trazendo a finalização da File Format API, criptografia de listas de manifesto, tipos geoespaciais nativos e suporte ao Apache Spark 4.1 e Flink 2.1.",
+    "relevance": "O Iceberg é hoje o padrão de fato para tabelas em data lakehouses; essa release amplia recursos críticos de segurança e desempenho usados por engenheiros de dados diariamente.",
+    "publishedAt": "2026-05-19",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Engineering",
+      "Open Source"
+    ],
+    "tags": [
+      "Apache Iceberg",
+      "Lakehouse",
+      "Open Source",
+      "Apache Spark"
+    ],
+    "source": "Apache Iceberg (blog oficial)",
+    "sourceUrl": "https://iceberg.apache.org/blog/apache-iceberg-1.11.0-release/",
+    "related": {
+      "trackSlugs": [
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { Project } from "@/data/projects";
+import { EmptyState } from "@/components/ui/EmptyState";
 import { ProjectCard } from "./ProjectCard";
 
 interface ProjectGridProps {
@@ -6,16 +7,13 @@ interface ProjectGridProps {
   emptyMessage?: string;
 }
 
-export function ProjectGrid({
-  projects,
-  emptyMessage = "Nenhum projeto encontrado.",
-}: ProjectGridProps) {
+export function ProjectGrid({ projects, emptyMessage = "Nenhum projeto encontrado." }: ProjectGridProps) {
   if (projects.length === 0) {
-    return <p className="py-16 text-center text-sm text-slate-500">{emptyMessage}</p>;
+    return <EmptyState title={emptyMessage} description="Tente outro termo ou remova os filtros." />;
   }
 
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}

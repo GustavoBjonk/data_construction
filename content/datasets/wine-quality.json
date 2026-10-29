@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "wine-quality",
+    "name": "Wine Quality",
+    "description": "Propriedades físico-químicas de vinhos portugueses Vinho Verde (tinto e branco), usadas para prever uma nota de qualidade sensorial.",
+    "category": "Machine Learning",
+    "difficulty": "Intermediário",
+    "size": "cerca de 6.500 registros (tinto + branco)",
+    "format": "CSV",
+    "topics": [
+      "Regressão",
+      "Classificação",
+      "Análise exploratória",
+      "Correlação"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "R"
+    ],
+    "idealFor": [
+      "Praticar regressão e classificação",
+      "Explorar correlação entre variáveis"
+    ],
+    "source": "UCI Machine Learning Repository",
+    "sourceUrl": "https://archive.ics.uci.edu/dataset/186/wine+quality"
+  }
+}

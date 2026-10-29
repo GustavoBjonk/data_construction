@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 750,
+  "data": {
+    "id": "deepseek-impacto-nvidia-2025",
+    "slug": "deepseek-impacto-nvidia-2025",
+    "title": "Ações da Nvidia caem 17% e perdem US$ 600 bilhões em valor de mercado após surpresa da DeepSeek",
+    "summary": "O lançamento do modelo R1 da startup chinesa DeepSeek, que alega desempenho competitivo com muito menos poder computacional, provocou uma queda recorde de 17% nas ações da Nvidia em um único dia, apagando cerca de US$ 600 bilhões em valor de mercado.",
+    "relevance": "Foi um dos eventos que mais reconfigurou a narrativa de investimento em infraestrutura de IA em 2025, com efeitos diretos sobre estratégias de hardware para treinamento de modelos.",
+    "publishedAt": "2025-01-27",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Inteligência Artificial",
+      "Mercado"
+    ],
+    "tags": [
+      "DeepSeek",
+      "Nvidia",
+      "China",
+      "LLM"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2025/01/27/nvidia-drops-600bn-off-its-market-cap-amid-the-rise-of-deepseek/",
+    "featured": true
+  }
+}

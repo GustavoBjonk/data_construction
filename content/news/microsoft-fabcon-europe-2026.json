@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1220,
+  "data": {
+    "id": "microsoft-fabcon-europe-2026",
+    "slug": "microsoft-fabcon-europe-2026",
+    "title": "FabCon Europa 2026: Microsoft anuncia apps no Power BI e libera Fabric IQ no Copilot",
+    "summary": "A Microsoft apresentou em 28 de setembro, na FabCon e SQLCon Europa, em Barcelona, um pacote de novidades para Fabric, Power BI e bancos SQL. No Power BI Desktop, será possível gerar aplicativos de dados a partir de um modelo semântico usando linguagem natural, com prévia prevista para as semanas seguintes. O Fabric IQ, que usa modelos semânticos do Power BI para embasar respostas do Copilot, chegou à disponibilidade geral no Copilot Chat e no Cowork. O espelhamento do Google BigQuery para o OneLake também ficou disponível para uso geral, e um agente de engenharia de dados entrou em prévia. Do lado SQL, os índices vetoriais DiskANN chegaram à disponibilidade geral no Azure SQL e no SQL do Fabric, e o Database Hub, painel central de bancos, entrou em prévia pública.",
+    "relevance": "Para analistas de BI, o modelo semântico bem construído passa a alimentar relatórios, apps e respostas de IA ao mesmo tempo. Modelagem de dados e definição de métricas ganham ainda mais peso na carreira.",
+    "publishedAt": "2026-09-28",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Business Intelligence",
+      "Data Platforms",
+      "Cloud"
+    ],
+    "tags": [
+      "Microsoft Fabric",
+      "Power BI",
+      "Copilot",
+      "Azure SQL",
+      "OneLake"
+    ],
+    "source": "Microsoft Azure (blog oficial)",
+    "sourceUrl": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-copilot-and-agents",
+    "related": {
+      "trackSlugs": [
+        "business-intelligence"
+      ],
+      "articleIds": [
+        "modelagem-estrela-power-bi"
+      ]
+    }
+  }
+}

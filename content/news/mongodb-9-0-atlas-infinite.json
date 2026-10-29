@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1210,
+  "data": {
+    "id": "mongodb-9-0-atlas-infinite",
+    "slug": "mongodb-9-0-atlas-infinite",
+    "title": "MongoDB 9.0 chega com ganhos de desempenho, e Atlas Infinite entra em prévia pública",
+    "summary": "A MongoDB anunciou em 29 de setembro a disponibilidade geral do MongoDB 9.0 para Atlas, Enterprise Advanced e Community Edition. Em comparação com a versão 8.0, a empresa cita consultas de leitura de um documento até 35% mais rápidas, atualizações até 30% mais rápidas e até o dobro de throughput em instâncias grandes, números de testes internos. A Queryable Encryption passa a aceitar buscas por prefixo, sufixo e trecho de texto em dados criptografados, e o novo Intelligent Workload Management protege clusters sobrecarregados. A empresa também lançou em prévia pública o Atlas Infinite, opção que separa computação e armazenamento para escalarem de forma independente, com cobrança pelo consumo real e, por ora, apenas na AWS. A oferta atual do Atlas passa a se chamar Atlas Core.",
+    "relevance": "Separar computação de armazenamento, padrão consolidado em data warehouses, agora chega a bancos de documentos. Para aplicações com picos imprevisíveis, isso muda o planejamento de capacidade e de custos.",
+    "publishedAt": "2026-09-29",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Bancos de Dados",
+      "Cloud"
+    ],
+    "tags": [
+      "MongoDB",
+      "NoSQL",
+      "Atlas",
+      "Criptografia",
+      "Banco de Documentos"
+    ],
+    "source": "MongoDB (comunicado oficial)",
+    "sourceUrl": "https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-mongodb-9-0-the-best-version-ever-built-and-atlas-infinite-for-ai-scale-demand"
+  }
+}

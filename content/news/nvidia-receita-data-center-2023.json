@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 350,
+  "data": {
+    "id": "nvidia-receita-data-center-2023",
+    "slug": "nvidia-receita-data-center-2023",
+    "title": "Receita de data center da Nvidia salta 279% impulsionada pela demanda por GPUs de IA",
+    "summary": "A Nvidia reportou receita recorde de US$ 14,51 bilhões em data center no terceiro trimestre fiscal de 2024, alta de 279% em relação ao ano anterior, impulsionada pela demanda por GPUs como a H100 para treinar modelos de IA generativa.",
+    "relevance": "Evidencia como a explosão de projetos de IA generativa em 2023 se traduziu diretamente em demanda por infraestrutura de GPU, um gargalo relevante para quem planeja capacidade de treinamento de modelos.",
+    "publishedAt": "2023-11-21",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Infraestrutura",
+      "Mercado"
+    ],
+    "tags": [
+      "Nvidia",
+      "H100",
+      "GPU",
+      "Data Center"
+    ],
+    "source": "Nvidia (comunicado oficial)",
+    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2024"
+  }
+}

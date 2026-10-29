@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "titanic",
+    "name": "Titanic",
+    "description": "Dataset clássico com dados dos passageiros do Titanic, usado para prever sobrevivência a partir de idade, classe, tarifa e outras variáveis.",
+    "category": "Machine Learning",
+    "difficulty": "Iniciante",
+    "size": "891 registros (conjunto de treino)",
+    "format": "CSV",
+    "topics": [
+      "Classificação",
+      "Análise exploratória",
+      "Feature engineering",
+      "Estatística"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "SQL"
+    ],
+    "idealFor": [
+      "Primeiro projeto de Machine Learning",
+      "Praticar classificação e EDA"
+    ],
+    "source": "Kaggle",
+    "sourceUrl": "https://www.kaggle.com/competitions/titanic"
+  }
+}

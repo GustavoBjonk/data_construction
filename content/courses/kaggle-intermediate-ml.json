@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 140,
+  "data": {
+    "id": "kaggle-intermediate-ml",
+    "title": "Intermediate Machine Learning",
+    "platform": "Kaggle Learn",
+    "area": "Machine Learning",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Intermediário",
+    "description": "Curso da Kaggle sobre dados faltantes, variáveis categóricas, pipelines, validação cruzada e métricas de avaliação.",
+    "skills": [
+      "Validação de modelos",
+      "Pipelines",
+      "Métricas"
+    ],
+    "url": "https://www.kaggle.com/learn/intermediate-machine-learning"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 20,
+  "data": {
+    "id": "khan-academy",
+    "name": "Khan Academy",
+    "description": "Organização sem fins lucrativos que oferece educação gratuita e de qualidade em diversas áreas, incluindo matemática, ciências e programação.",
+    "category": "Educação",
+    "officialSiteUrl": "https://www.khanacademy.org/",
+    "donationUrl": "https://www.khanacademy.org/donate"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1030,
+  "data": {
+    "id": "anthropic-agent-skills-aaif",
+    "slug": "anthropic-agent-skills-aaif",
+    "title": "Anthropic anuncia doação do padrão Agent Skills à Agentic AI Foundation, da Linux Foundation",
+    "summary": "A Anthropic anunciou em 22 de outubro a doação do Agent Skills, padrão aberto que define como dar a agentes de IA conhecimentos e fluxos de trabalho especializados, à Agentic AI Foundation, que funciona sob a Linux Foundation. Uma skill é uma pasta com um arquivo SKILL.md e, quando necessário, scripts e material de referência. Segundo a empresa, mais de 70 plataformas adotaram o padrão desde dezembro de 2025, entre elas ChatGPT, Cursor, GitHub Copilot e VS Code. A transferência envolve nome, logotipo, organização no GitHub e o domínio agentskills.io. A manutenção passará a ser feita por engenheiros de várias empresas, incluindo Anthropic, Google e OpenAI. O roteiro proposto prevê versões numeradas, processo formal de propostas e orientações de segurança. A fundação já abriga o Model Context Protocol (MCP).",
+    "relevance": "Padrões abertos e com governança neutra reduzem o risco de dependência de um único fornecedor. Quem documenta processos de dados para agentes, como consultas, validações e relatórios, pode escrever uma vez e reaproveitar em várias ferramentas.",
+    "publishedAt": "2026-10-22",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial",
+      "Open Source"
+    ],
+    "tags": [
+      "Anthropic",
+      "Agent Skills",
+      "Agentes de IA",
+      "Linux Foundation",
+      "Padrões Abertos"
+    ],
+    "source": "Anthropic (comunicado oficial)",
+    "sourceUrl": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+  }
+}

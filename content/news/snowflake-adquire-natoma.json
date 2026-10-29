@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 830,
+  "data": {
+    "id": "snowflake-adquire-natoma",
+    "slug": "snowflake-adquire-natoma",
+    "title": "Snowflake anuncia intenção de adquirir a Natoma para gestão de acesso de agentes de IA",
+    "summary": "A Snowflake anunciou a intenção de adquirir a Natoma, plataforma de gateway MCP (Model Context Protocol) que centraliza e controla as permissões de agentes de IA em aplicações corporativas, aplicando políticas de segurança no nível de cada chamada de ferramenta.",
+    "relevance": "Reflete a preocupação crescente do mercado com governança de acesso para agentes de IA, um tema emergente essencial para quem projeta arquiteturas de dados seguras para IA agêntica.",
+    "publishedAt": "2026-05-27",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Governance",
+      "Mercado"
+    ],
+    "tags": [
+      "Snowflake",
+      "MCP",
+      "Agentes de IA",
+      "Governança"
+    ],
+    "source": "Snowflake (comunicado oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/blog/snowflake-acquire-natoma-governed-agentic-access/"
+  }
+}

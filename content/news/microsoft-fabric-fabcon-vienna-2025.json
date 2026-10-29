@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 740,
+  "data": {
+    "id": "microsoft-fabric-fabcon-vienna-2025",
+    "slug": "microsoft-fabric-fabcon-vienna-2025",
+    "title": "Microsoft Fabric anuncia recursos de Graph e Maps para dar contexto a agentes de IA na FabCon Vienna",
+    "summary": "Na conferência FabCon Vienna, a Microsoft anunciou os recursos Graph (para relações entre entidades de negócio) e Maps (para dados geoespaciais), além de um Fabric MCP para desenvolvimento assistido por agentes e uma nova OneLake Table API para tabelas Iceberg e Delta.",
+    "relevance": "Mostra como plataformas de lakehouse corporativo estão se reestruturando para servir como base de dados confiável para agentes de IA, tendência central em 2025.",
+    "publishedAt": "2025-09-16",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Data Engineering",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Microsoft Fabric",
+      "OneLake",
+      "AI Agents",
+      "Lakehouse"
+    ],
+    "source": "Microsoft Fabric Blog (oficial)",
+    "sourceUrl": "https://www.microsoft.com/en-us/microsoft-fabric/blog/2025/09/16/fabcon-vienna-build-data-rich-agents-on-an-enterprise-ready-foundation/"
+  }
+}

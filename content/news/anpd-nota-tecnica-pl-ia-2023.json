@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 340,
+  "data": {
+    "id": "anpd-nota-tecnica-pl-ia-2023",
+    "slug": "anpd-nota-tecnica-pl-ia-2023",
+    "title": "ANPD publica nota técnica sobre o projeto de lei que regula a IA no Brasil",
+    "summary": "A Autoridade Nacional de Proteção de Dados (ANPD) divulgou a Nota Técnica nº 16/2023/CGTP/ANPD, sua segunda análise do PL 2338/2023 (marco legal da IA no Brasil), propondo um novo modelo institucional de fiscalização e apontando sete pontos de interseção e conflito com a LGPD.",
+    "relevance": "Mostra o avanço da regulação de IA no Brasil em paralelo à LGPD, tema direto para quem lida com governança e privacidade de dados em produtos que usam IA no país.",
+    "publishedAt": "2023-10-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Regulamentação",
+      "Data Governance"
+    ],
+    "tags": [
+      "ANPD",
+      "PL 2338/2023",
+      "LGPD",
+      "Regulação de IA"
+    ],
+    "source": "FGV Direito - Regulação em Números",
+    "sourceUrl": "https://regulacaoemnumeros-direitorio.fgv.br/post/anpd-publica-segunda-analise-do-projeto-de-lei-sobre-inteligencia-artificial"
+  }
+}

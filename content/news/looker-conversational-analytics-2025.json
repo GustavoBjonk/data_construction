@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 790,
+  "data": {
+    "id": "looker-conversational-analytics-2025",
+    "slug": "looker-conversational-analytics-2025",
+    "title": "Google amplia Conversational Analytics no Looker, permitindo consultas em linguagem natural com Gemini",
+    "summary": "O Google detalhou o Conversational Analytics no Looker, recurso que permite perguntas em linguagem natural sobre dados modelados em LookML ou tabelas do BigQuery, com respostas rastreáveis via explicação \"How was this calculated?\". No Google Cloud Next 25, a disponibilidade foi expandida para todos os usuários do Looker.",
+    "relevance": "Representa a virada do BI tradicional para experiências conversacionais assistidas por IA, tendência que está redefinindo como analistas e usuários de negócio consultam dados.",
+    "publishedAt": "2025-04-29",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Business Intelligence",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Looker",
+      "Gemini",
+      "BI Conversacional",
+      "Google Cloud"
+    ],
+    "source": "Google Cloud Blog (oficial)",
+    "sourceUrl": "https://cloud.google.com/blog/products/business-intelligence/a-closer-look-at-looker-conversational-analytics/",
+    "related": {
+      "trackSlugs": [
+        "business-intelligence",
+        "data-visualization"
+      ]
+    }
+  }
+}

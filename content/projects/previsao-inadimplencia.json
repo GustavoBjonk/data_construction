@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 70,
+  "data": {
+    "id": "previsao-inadimplencia",
+    "title": "Previsão de inadimplência",
+    "description": "Treine um modelo de classificação para estimar a probabilidade de inadimplência de clientes.",
+    "area": "Ciência de Dados",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "skills": [
+      "Tratamento de dados",
+      "Feature engineering",
+      "Classificação",
+      "Métricas"
+    ],
+    "estimatedTime": "10–18 horas",
+    "objective": "Tratar os dados, aplicar feature engineering, treinar um modelo de classificação e avaliar seu desempenho com métricas adequadas ao problema."
+  }
+}

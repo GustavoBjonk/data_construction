@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 160,
+  "data": {
+    "id": "anpd-regras-simplificadas-2022",
+    "slug": "anpd-regras-simplificadas-2022",
+    "title": "ANPD aprova regras simplificadas de LGPD para agentes de pequeno porte",
+    "summary": "A Autoridade Nacional de Proteção de Dados publicou a Resolução CD/ANPD nº 2/2022, criando regras simplificadas de conformidade à LGPD para microempresas, startups e pessoas físicas que atuam como agentes de tratamento de dados. O texto dispensa, por exemplo, a obrigatoriedade de encarregado de dados e amplia prazos de resposta a incidentes.",
+    "relevance": "Reduz o custo de conformidade com a LGPD para pequenas empresas e startups de dados, um tema recorrente para quem constrói produtos que tratam dados pessoais no Brasil.",
+    "publishedAt": "2022-01-27",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Regulamentação",
+      "Data Governance"
+    ],
+    "tags": [
+      "LGPD",
+      "ANPD",
+      "Startups",
+      "Regulamentação"
+    ],
+    "source": "ANPD (site oficial)",
+    "sourceUrl": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022"
+  }
+}

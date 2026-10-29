@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1050,
+  "data": {
+    "id": "databricks-ai-runtime-ga",
+    "slug": "databricks-ai-runtime-ga",
+    "title": "Databricks libera AI Runtime, infraestrutura de GPUs gerenciada para treinar modelos",
+    "summary": "A Databricks anunciou em 21 de outubro a disponibilidade geral do AI Runtime (AIR), infraestrutura de GPUs totalmente gerenciada dentro da plataforma para treinar modelos com dados corporativos. A proposta é dispensar a manutenção de uma pilha separada de GPUs: a empresa cuida de aquisição, configuração e rede, e faz verificações de saúde de GPUs e da rede antes e durante o treinamento. O serviço oferece acesso serverless e sob demanda, treino em múltiplos nós e inicialização em segundos. Os logs vão para uma nova experiência de observabilidade no MLflow, e a orquestração se integra ao Lakeflow. O AIR roda dentro do perímetro de governança do Unity Catalog, com isolamento por máquina virtual, e os custos aparecem nas tabelas de sistema de faturamento. Entre os clientes citados está a brasileira PicPay.",
+    "relevance": "Treinar e ajustar modelos costuma esbarrar em infraestrutura, não em código. Ter GPUs governadas no mesmo lugar dos dados reduz cópias, facilita auditoria de custos e aproxima ciência de dados de engenharia de dados.",
+    "publishedAt": "2026-10-21",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Machine Learning",
+      "Data Platforms",
+      "Infraestrutura"
+    ],
+    "tags": [
+      "Databricks",
+      "GPU",
+      "MLflow",
+      "Unity Catalog",
+      "MLOps"
+    ],
+    "source": "Databricks (blog oficial)",
+    "sourceUrl": "https://www.databricks.com/blog/ai-runtime-generally-available",
+    "related": {
+      "trackSlugs": [
+        "machine-learning"
+      ]
+    }
+  }
+}

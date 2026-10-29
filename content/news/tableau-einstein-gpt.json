@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 230,
+  "data": {
+    "id": "tableau-einstein-gpt",
+    "slug": "tableau-einstein-gpt",
+    "title": "Tableau anuncia recursos de IA generativa com Einstein GPT",
+    "summary": "A Salesforce anunciou novas funcionalidades para o Tableau apoiadas em IA generativa, incluindo geração automática de narrativas a partir dos dados (Data Stories), integração com Slack e personalização de dashboards por perfil de usuário.",
+    "relevance": "Ilustra a tendência de 2023 de inserir linguagem natural e narrativas automáticas em ferramentas de BI tradicionais, tema central para quem trabalha com Analytics Engineering e dashboards.",
+    "publishedAt": "2023-03-15",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Business Intelligence",
+      "Data Analytics"
+    ],
+    "tags": [
+      "Tableau",
+      "Einstein GPT",
+      "Data Stories",
+      "BI"
+    ],
+    "source": "Salesforce (comunicado oficial)",
+    "sourceUrl": "https://www.salesforce.com/news/stories/tableau-visualization-news-23-1/",
+    "related": {
+      "trackSlugs": [
+        "business-intelligence"
+      ]
+    }
+  }
+}

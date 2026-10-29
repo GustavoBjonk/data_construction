@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 100,
+  "data": {
+    "id": "freecodecamp-relational-database",
+    "title": "Relational Databases",
+    "platform": "freeCodeCamp",
+    "area": "SQL",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Certificação gratuita da freeCodeCamp com Bash, Git e PostgreSQL, construindo bancos de dados relacionais reais.",
+    "skills": [
+      "PostgreSQL",
+      "Bash",
+      "Git",
+      "Modelagem"
+    ],
+    "url": "https://www.freecodecamp.org/learn/relational-databases-v9"
+  }
+}

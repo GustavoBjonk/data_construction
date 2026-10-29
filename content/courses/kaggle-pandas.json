@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 110,
+  "data": {
+    "id": "kaggle-pandas",
+    "title": "Pandas",
+    "platform": "Kaggle Learn",
+    "area": "Ciência de Dados",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Curso curto e prático da Kaggle para dominar manipulação de dados com a biblioteca Pandas.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "Manipulação de dados"
+    ],
+    "url": "https://www.kaggle.com/learn/pandas"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 90,
+  "data": {
+    "id": "pipeline-csv-banco",
+    "title": "Pipeline CSV → Banco de Dados",
+    "description": "Construa um pipeline simples que lê um CSV, trata os dados e carrega tudo em um banco PostgreSQL.",
+    "area": "Engenharia de Dados",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Python",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "Extração de dados",
+      "Tratamento de dados",
+      "Carga em banco de dados"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Praticar a construção de um fluxo de dados básico: extrair de um CSV, tratar os dados em Python e carregar em um banco relacional."
+  }
+}

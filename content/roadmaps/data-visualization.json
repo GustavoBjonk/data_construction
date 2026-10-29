@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 70,
+  "data": {
+    "id": "data-visualization",
+    "slug": "data-visualization",
+    "title": "Data Visualization",
+    "description": "Aprenda a comunicar dados com clareza através de gráficos e dashboards bem construídos.",
+    "level": "Iniciante",
+    "estimatedDuration": "2–4 meses",
+    "steps": [
+      {
+        "id": "data-visualization-fundamentos",
+        "order": 1,
+        "title": "Fundamentos de visualização",
+        "description": "Os princípios por trás de um gráfico que comunica bem, antes de qualquer ferramenta.",
+        "topics": [
+          "Tipos de gráficos",
+          "Percepção visual"
+        ],
+        "technologies": [],
+        "courseIds": [
+          "kaggle-data-viz"
+        ]
+      },
+      {
+        "id": "data-visualization-excel",
+        "order": 2,
+        "title": "Excel",
+        "description": "Crie os primeiros gráficos a partir de planilhas simples.",
+        "topics": [
+          "Gráficos",
+          "Planilhas"
+        ],
+        "technologies": [
+          "Excel"
+        ],
+        "courseIds": [
+          "excel-na-pratica"
+        ]
+      },
+      {
+        "id": "data-visualization-power-bi",
+        "order": 3,
+        "title": "Power BI",
+        "description": "Construa visualizações interativas conectadas diretamente aos dados.",
+        "topics": [
+          "Relatórios",
+          "Interatividade"
+        ],
+        "technologies": [
+          "Power BI"
+        ],
+        "courseIds": [
+          "powerbi-intro-bradesco"
+        ]
+      },
+      {
+        "id": "data-visualization-python",
+        "order": 4,
+        "title": "Python",
+        "description": "A base para criar visualizações customizadas em código.",
+        "topics": [
+          "Sintaxe básica",
+          "Bibliotecas de dados"
+        ],
+        "technologies": [
+          "Python"
+        ],
+        "courseIds": [
+          "freecodecamp-data-analysis-python"
+        ]
+      },
+      {
+        "id": "data-visualization-matplotlib",
+        "order": 5,
+        "title": "Matplotlib",
+        "description": "A biblioteca mais usada para gráficos estáticos em Python.",
+        "topics": [
+          "Gráficos estáticos",
+          "Customização"
+        ],
+        "technologies": [
+          "Matplotlib"
+        ],
+        "courseIds": [
+          "kaggle-data-viz"
+        ]
+      },
+      {
+        "id": "data-visualization-plotly",
+        "order": 6,
+        "title": "Plotly",
+        "description": "Crie gráficos interativos que respondem a cliques e filtros.",
+        "topics": [
+          "Gráficos interativos"
+        ],
+        "technologies": [
+          "Plotly"
+        ],
+        "courseIds": []
+      },
+      {
+        "id": "data-visualization-storytelling",
+        "order": 7,
+        "title": "Storytelling com dados",
+        "description": "Organize gráficos e texto para contar uma história clara com os dados.",
+        "topics": [
+          "Narrativa visual",
+          "Clareza"
+        ],
+        "technologies": [],
+        "courseIds": []
+      },
+      {
+        "id": "data-visualization-dashboards",
+        "order": 8,
+        "title": "Dashboards",
+        "description": "Consolide tudo em painéis que outras pessoas conseguem explorar sozinhas.",
+        "topics": [
+          "Dashboards",
+          "Interatividade"
+        ],
+        "technologies": [
+          "Power BI"
+        ],
+        "courseIds": [
+          "ms-learn-get-started-powerbi"
+        ]
+      }
+    ],
+    "projectArea": null
+  }
+}

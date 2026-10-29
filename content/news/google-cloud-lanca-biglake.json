@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 50,
+  "data": {
+    "id": "google-cloud-lanca-biglake",
+    "slug": "google-cloud-lanca-biglake",
+    "title": "Google Cloud lança o BigLake para unificar data warehouse e data lake",
+    "summary": "No Data Cloud Summit, o Google Cloud anunciou o BigLake, um mecanismo de armazenamento que estende o BigQuery para dados em data lakes multi-nuvem sem exigir duplicação de dados. O recurso, em prévia, também previa suporte a formatos abertos como Apache Iceberg e integração com o Dataplex para governança.",
+    "relevance": "Representa a aposta do Google na arquitetura lakehouse, permitindo que equipes de dados analisem dados de diferentes nuvens com um único ponto de controle de acesso.",
+    "publishedAt": "2022-04-05",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Cloud",
+      "Data Engineering"
+    ],
+    "tags": [
+      "Google Cloud",
+      "BigLake",
+      "BigQuery",
+      "Data Lake"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2022/04/05/google-cloud-launches-biglake-a-new-cross-platform-data-storage-engine/"
+  }
+}

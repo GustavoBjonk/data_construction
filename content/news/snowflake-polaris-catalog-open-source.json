@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 410,
+  "data": {
+    "id": "snowflake-polaris-catalog-open-source",
+    "slug": "snowflake-polaris-catalog-open-source",
+    "title": "Snowflake torna o Polaris Catalog open source sob licença Apache 2.0",
+    "summary": "A Snowflake liberou o código do Polaris Catalog, seu catálogo de metadados para tabelas Apache Iceberg, sob licença Apache 2.0, permitindo que qualquer empresa hospede seu próprio catálogo sem ficar presa a um fornecedor. O projeto foi doado à Apache Software Foundation.",
+    "relevance": "Reduz o lock-in de fornecedores em arquiteturas lakehouse e mostra a disputa entre Snowflake e Databricks pela definição dos padrões abertos do setor.",
+    "publishedAt": "2024-07-30",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Data Engineering",
+      "Open Source"
+    ],
+    "tags": [
+      "Apache Iceberg",
+      "Polaris Catalog",
+      "Snowflake",
+      "Data Catalog"
+    ],
+    "source": "Snowflake (blog oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/blog/polaris-catalog-open-source/"
+  }
+}

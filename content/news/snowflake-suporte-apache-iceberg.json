@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "snowflake-suporte-apache-iceberg",
+    "slug": "snowflake-suporte-apache-iceberg",
+    "title": "Snowflake revela suporte nativo a tabelas Apache Iceberg",
+    "summary": "Ao encerrar o Snowflake Summit 2022, a empresa confirmou que \"Iceberg Tables\" estava em desenvolvimento, permitindo que dados armazenados em formato aberto e fora do Snowflake fossem acessados diretamente pelo Data Cloud. Foi um dos primeiros movimentos claros da Snowflake em direção à interoperabilidade com formatos abertos de lakehouse.",
+    "relevance": "Mostra o início da corrida das grandes plataformas de dados para suportar o Apache Iceberg como padrão de tabela aberto, tema central da engenharia de dados nos anos seguintes.",
+    "publishedAt": "2022-06-22",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Data Engineering",
+      "Open Source"
+    ],
+    "tags": [
+      "Snowflake",
+      "Apache Iceberg",
+      "Lakehouse",
+      "Formato Aberto"
+    ],
+    "source": "Snowflake (comunicado oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-concludes-its-largest-ever-global-user-conference-with-new-innovations-to-drive-application-development-and-increased-collaboration-in-the-data-cloud/"
+  }
+}

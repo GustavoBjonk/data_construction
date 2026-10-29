@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 120,
+  "data": {
+    "id": "ia-generativa-aplicacoes-praticas",
+    "title": "Inteligência artificial generativa: como funciona e onde aplicar com segurança",
+    "description": "O que são modelos de linguagem, como funcionam tokens, contexto e RAG, quais aplicações trazem resultado prático e quais riscos exigem cuidado, como alucinações, vazamento de dados e injeção de prompt.",
+    "category": "Inteligência Artificial",
+    "date": "2026-10-29",
+    "readingTime": 6,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "Inteligência artificial generativa é o conjunto de modelos capazes de produzir conteúdo novo, como texto, código, imagens e áudio, a partir de instruções. Os grandes modelos de linguagem (LLMs) são o exemplo mais conhecido. Este artigo explica o funcionamento em linhas gerais, mostra aplicações que costumam dar resultado e aponta os riscos que precisam ser tratados antes de colocar uma solução em uso.",
+      "## Como um modelo de linguagem funciona",
+      "Um LLM é treinado em grandes volumes de texto para prever o próximo pedaço de texto, chamado token, a partir dos anteriores. Um token pode ser uma palavra, parte de uma palavra ou um sinal de pontuação. A arquitetura predominante é o Transformer, apresentada em 2017, cujo mecanismo de atenção permite relacionar cada token a todos os outros do contexto. Depois do pré-treino, os modelos passam por ajustes com exemplos de instruções e com feedback humano, para seguir pedidos e recusar usos inadequados.",
+      "Dessa forma de funcionamento vem uma consequência importante: o modelo gera o texto mais plausível, não necessariamente o verdadeiro. Ele pode produzir afirmações falsas com total fluência, fenômeno chamado de alucinação.",
+      "## Contexto e instruções",
+      "A janela de contexto é a quantidade de texto que o modelo considera de uma vez, incluindo instruções, documentos fornecidos e a própria resposta. Instruções claras, com o objetivo, o público, o formato esperado e exemplos, melhoram muito os resultados. Pedir que o modelo responda apenas com base nos documentos fornecidos e diga quando a informação não estiver neles reduz invenções.",
+      "## RAG: respostas com base nos seus documentos",
+      "A geração aumentada por recuperação (RAG) combina busca e geração. Os documentos da organização são divididos em trechos e indexados, frequentemente por meio de embeddings, que são vetores numéricos que representam o significado do texto. Diante de uma pergunta, o sistema recupera os trechos mais relevantes e os envia ao modelo junto com a pergunta. Assim, a resposta pode citar fontes internas atualizadas sem que o modelo precise ser treinado de novo.",
+      "```python\n# Esboço do fluxo de RAG (funções ilustrativas)\ndef responder(pergunta: str) -> str:\n    trechos = indice.buscar(pergunta, k=4)          # busca vetorial\n    contexto = \"\\n\\n\".join(t.texto for t in trechos)\n    prompt = (\n        \"Responda usando apenas o contexto abaixo. \"\n        \"Se a resposta não estiver nele, diga que não sabe. \"\n        \"Cite o título de cada trecho usado.\\n\\n\"\n        f\"Contexto:\\n{contexto}\\n\\nPergunta: {pergunta}\"\n    )\n    return modelo.gerar(prompt)\n```",
+      "A qualidade de um sistema RAG depende sobretudo da recuperação: se os trechos certos não forem encontrados, o modelo não tem como responder bem. Por isso vale medir a busca separadamente, com perguntas cujas respostas e fontes já são conhecidas.",
+      "## Aplicações com bom retorno",
+      "Os usos que costumam funcionar bem têm uma pessoa revisando o resultado ou um formato fácil de conferir. Entre eles estão resumir documentos longos, extrair campos de textos não estruturados (como contratos e notas fiscais), classificar chamados de atendimento, gerar rascunhos de e-mails e relatórios, apoiar a escrita e a revisão de código, traduzir e responder perguntas sobre bases internas de conhecimento com citação das fontes. Em análise de dados, modelos ajudam a escrever consultas SQL e scripts, que devem ser lidos e testados antes do uso.",
+      "## Riscos e cuidados",
+      "Alucinações exigem verificação proporcional ao impacto da decisão: um rascunho de e-mail tolera mais erros que uma orientação jurídica ou médica. Dados pessoais e sigilosos enviados a serviços externos precisam de base legal e de contrato adequado; no Brasil, a LGPD se aplica a esse tratamento. A injeção de prompt é um risco específico: instruções maliciosas escondidas em um documento ou página podem fazer o modelo ignorar as regras do sistema. Por isso, conteúdo externo deve ser tratado como dado, não como instrução, e o modelo não deve ter permissões além do necessário. Vieses dos dados de treino podem aparecer nas respostas, e decisões que afetam pessoas exigem revisão humana.",
+      "## Como avaliar uma solução",
+      "Antes de colocar em produção, monte um conjunto de casos de teste realistas, com respostas esperadas, e meça a taxa de acerto, as recusas indevidas e os erros graves. Repita a avaliação a cada mudança de modelo, de prompt ou de base de documentos. Registre as entradas e saídas, respeitando a privacidade, para investigar problemas. Referências como o perfil de IA generativa do NIST e a lista de riscos do OWASP para aplicações com LLMs ajudam a não esquecer pontos importantes.",
+      "## Conclusão",
+      "IA generativa é uma ferramenta poderosa para acelerar tarefas com texto e código, desde que tratada como um assistente que precisa de contexto, limites e revisão. Comece por um problema concreto, com um jeito claro de medir a qualidade, e aumente a autonomia do sistema apenas à medida que os testes mostrarem que ele é confiável."
+    ],
+    "references": [
+      {
+        "citation": "VASWANI, Ashish et al. Attention Is All You Need. In: Advances in Neural Information Processing Systems 30 (NeurIPS 2017). arXiv:1706.03762.",
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        "citation": "LEWIS, Patrick et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. In: Advances in Neural Information Processing Systems 33 (NeurIPS 2020). arXiv:2005.11401.",
+        "url": "https://arxiv.org/abs/2005.11401"
+      },
+      {
+        "citation": "NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY (NIST). Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1). Gaithersburg: NIST, 2024. DOI: 10.6028/NIST.AI.600-1.",
+        "url": "https://doi.org/10.6028/NIST.AI.600-1"
+      },
+      {
+        "citation": "OWASP FOUNDATION. OWASP Top 10 for Large Language Model Applications. Disponível em: https://genai.owasp.org/llm-top-10/. Acesso em: 29 out. 2026.",
+        "url": "https://genai.owasp.org/llm-top-10/"
+      },
+      {
+        "citation": "BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD).",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+      }
+    ],
+    "tags": [
+      "IA Generativa",
+      "LLM",
+      "RAG",
+      "Engenharia de Prompt",
+      "Segurança"
+    ]
+  }
+}

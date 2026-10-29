@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 50,
+  "data": {
+    "id": "projetando-aplicacoes-com-uso-intensivo-de-dados",
+    "title": "Projetando Aplicações com Uso Intensivo de Dados",
+    "authors": [
+      "Martin Kleppmann",
+      "Chris Riccomini"
+    ],
+    "publisher": "Novatec",
+    "year": 2026,
+    "edition": "2ª edição",
+    "isbn13": "9786583913067",
+    "topic": "Dados",
+    "level": "Avançado",
+    "language": "Português",
+    "description": "Armazenamento, replicação, particionamento, transações e processamento de dados em sistemas distribuídos.",
+    "why": "Base conceitual que ajuda a entender por que bancos, filas e data lakes funcionam como funcionam."
+  }
+}

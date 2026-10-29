@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 80,
+  "data": {
+    "id": "ciencia-de-dados-fundamentos-e-aplicacoes",
+    "title": "Ciência de Dados — Fundamentos e Aplicações",
+    "authors": [
+      "André C. P. L. F. de Carvalho",
+      "Angelo Garangau Menezes",
+      "Robson Parmezan Bonidia"
+    ],
+    "publisher": "LTC",
+    "year": 2024,
+    "isbn13": "9788521638759",
+    "topic": "Dados",
+    "level": "Iniciante",
+    "language": "Português",
+    "description": "Um projeto de ciência de dados do começo ao fim: estatística introdutória, exploração, preparação, modelagem e ética, com exemplos em Python.",
+    "why": "Escrito por pesquisadores brasileiros, segue a ordem em que os problemas aparecem num projeto real."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 90,
+  "data": {
+    "id": "nyc-taxi-trips",
+    "name": "NYC Taxi Trips",
+    "description": "Registros oficiais de corridas de táxi de Nova York, com horários, locais de embarque/desembarque e valores — publicados mensalmente desde 2009.",
+    "category": "Data Analytics",
+    "difficulty": "Intermediário",
+    "size": "arquivos mensais com milhões de corridas",
+    "format": "CSV / Parquet",
+    "topics": [
+      "Análise temporal",
+      "Geolocalização",
+      "SQL",
+      "Business Intelligence",
+      "Visualização de dados"
+    ],
+    "technologies": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Power BI"
+    ],
+    "idealFor": [
+      "Praticar SQL em larga escala",
+      "Estudar análise temporal e geoespacial"
+    ],
+    "source": "NYC Taxi & Limousine Commission",
+    "sourceUrl": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page"
+  }
+}

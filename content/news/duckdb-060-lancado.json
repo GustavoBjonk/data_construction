@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 110,
+  "data": {
+    "id": "duckdb-060-lancado",
+    "slug": "duckdb-060-lancado",
+    "title": "DuckDB 0.6.0 traz leitor CSV paralelo e melhorias de armazenamento",
+    "summary": "A versão 0.6.0 do DuckDB, apelidada \"Oxyura\", trouxe um leitor de CSV paralelo experimental, carregamento paralelo de dados em tabelas e melhorias no gerenciamento de memória para criação de índices. O lançamento reforçou o foco do projeto em desempenho analítico local.",
+    "relevance": "DuckDB ganhava tração como banco analítico \"in-process\" leve, muito usado por cientistas e engenheiros de dados para análises locais sem a necessidade de um cluster.",
+    "publishedAt": "2022-11-14",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "DuckDB",
+      "OLAP",
+      "Analytics Engineering",
+      "Banco In-Process"
+    ],
+    "source": "DuckDB (blog oficial)",
+    "sourceUrl": "https://duckdb.org/2022/11/14/announcing-duckdb-060"
+  }
+}

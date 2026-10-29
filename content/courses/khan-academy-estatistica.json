@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 190,
+  "data": {
+    "id": "khan-academy-estatistica",
+    "title": "Estatística e probabilidade",
+    "platform": "Khan Academy",
+    "area": "Ciência de Dados",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Curso gratuito da Khan Academy com os fundamentos de estatística descritiva e probabilidade.",
+    "skills": [
+      "Estatística",
+      "Probabilidade"
+    ],
+    "url": "https://www.khanacademy.org/math/statistics-probability"
+  }
+}

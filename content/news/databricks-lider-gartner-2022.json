@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 190,
+  "data": {
+    "id": "databricks-lider-gartner-2022",
+    "slug": "databricks-lider-gartner-2022",
+    "title": "Databricks é nomeada líder no Magic Quadrant de Bancos de Dados em Nuvem do Gartner",
+    "summary": "O Gartner posicionou a Databricks como líder no Magic Quadrant 2022 para Sistemas de Gerenciamento de Banco de Dados em Nuvem, reconhecendo tanto a capacidade de execução quanto a visão da plataforma de lakehouse. Outros players como AWS, Google e Cloudera também apareceram como líderes no mesmo relatório.",
+    "relevance": "Reforça a legitimidade da arquitetura de lakehouse como alternativa consolidada aos data warehouses tradicionais na visão de analistas de mercado.",
+    "publishedAt": "2022-12-16",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Mercado",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Databricks",
+      "Gartner",
+      "Cloud Database",
+      "Lakehouse"
+    ],
+    "source": "Databricks (blog oficial)",
+    "sourceUrl": "https://www.databricks.com/blog/2022/12/16/databricks-named-leader-2022-gartner-magic-quadrant-cloud-database-management"
+  }
+}

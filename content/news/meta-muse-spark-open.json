@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1080,
+  "data": {
+    "id": "meta-muse-spark-open",
+    "slug": "meta-muse-spark-open",
+    "title": "Meta lança Muse Spark Open, modelo de pesos abertos com 816 bilhões de parâmetros",
+    "summary": "A Meta lançou em 15 de outubro o Muse Spark Open, modelo de pesos abertos com arquitetura de mistura de especialistas: 816 bilhões de parâmetros no total, 42 bilhões ativos por token e janela de contexto de 1 milhão de tokens. O modelo é multimodal de forma nativa e voltado a programação complexa e tarefas de agentes. Os pesos podem ser baixados pelo Hugging Face, Amazon SageMaker AI, Google Cloud Model Garden e Microsoft Foundry Models, e o modelo também está disponível por API em provedores como Groq, Together AI e OpenRouter. A licença é a Muse Model License, com termos comerciais limitados. A Meta mostrou a execução local em dois Mac Studio com chip M5 Ultra usando o framework MLX, configuração que soma cerca de 1 TB de memória unificada.",
+    "relevance": "Modelos de pesos abertos permitem rodar IA em infraestrutura própria, o que importa para dados sensíveis e para controle de custos. Antes de usar em produto, é preciso ler a licença: \"pesos abertos\" não significa licença de código aberto.",
+    "publishedAt": "2026-10-15",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial",
+      "Open Source"
+    ],
+    "tags": [
+      "Meta",
+      "Muse",
+      "LLM",
+      "Pesos Abertos",
+      "Mixture of Experts"
+    ],
+    "source": "Meta (blog de pesquisa oficial)",
+    "sourceUrl": "https://research.meta.ai/blog/muse-spark-open"
+  }
+}

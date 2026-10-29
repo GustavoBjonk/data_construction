@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 850,
+  "data": {
+    "id": "microsoft-fabric-iq",
+    "slug": "microsoft-fabric-iq",
+    "title": "Microsoft apresenta o Fabric IQ, camada semântica para IA empresarial no Fabric",
+    "summary": "A Microsoft detalhou o Fabric IQ, uma camada de inteligência que conecta entidades de negócio, relações e regras em uma ontologia unificada, incluindo o componente Graph (motor de grafo nativo) para permitir que agentes de IA raciocinem sobre dados corporativos conectados.",
+    "relevance": "Mostra o movimento das grandes plataformas de dados para camadas semânticas/ontológicas como base para agentes de IA confiáveis, relevante para quem trabalha com modelagem de dados e BI.",
+    "publishedAt": "2026-05-06",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Platforms",
+      "Business Intelligence"
+    ],
+    "tags": [
+      "Microsoft Fabric",
+      "Ontologia",
+      "Grafo",
+      "IA Empresarial"
+    ],
+    "source": "Microsoft Fabric (blog oficial)",
+    "sourceUrl": "https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/from-data-platform-to-intelligence-platform-introducing-microsoft-fabric-iq/5172484",
+    "related": {
+      "trackSlugs": [
+        "business-intelligence"
+      ]
+    }
+  }
+}

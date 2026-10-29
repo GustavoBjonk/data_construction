@@ -8,42 +8,32 @@ interface DatasetCardProps {
 }
 
 export function DatasetCard({ dataset, withAnchor = true }: DatasetCardProps) {
-  const meta = [dataset.size, dataset.format].filter(Boolean).join(" · ");
+  const meta = [dataset.format, dataset.size].filter(Boolean).join(" · ");
 
   return (
     <article
       id={withAnchor ? `dataset-${dataset.id}` : undefined}
-      className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-6 transition-colors duration-150 hover:border-slate-300"
+      className="card-interactive flex h-full scroll-mt-24 flex-col p-6 target:border-accent/60"
     >
       <div className="flex items-start justify-between gap-3">
-        <Badge variant="accent">{dataset.category}</Badge>
+        <p className="eyebrow text-accent">{dataset.category}</p>
         <Badge variant="outline">{dataset.difficulty}</Badge>
       </div>
 
-      <h3 className="mt-4 text-lg font-semibold leading-snug text-slate-900">
-        {dataset.name}
-      </h3>
+      <h3 className="mt-4 font-display text-xl font-medium leading-snug tracking-tight text-fg">{dataset.name}</h3>
+      {meta && <p className="mt-1 font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-subtle">{meta}</p>}
 
-      <p className="mt-2 text-sm leading-relaxed text-slate-500">{dataset.description}</p>
-
-      {meta && <p className="mt-3 font-mono text-xs text-slate-400">{meta}</p>}
-
-      <ul className="mt-4 flex flex-wrap gap-2">
-        {dataset.technologies.map((tech) => (
-          <li key={tech}>
-            <Badge variant="neutral">{tech}</Badge>
-          </li>
-        ))}
-      </ul>
+      <p className="mt-3 text-sm leading-relaxed text-muted">{dataset.description}</p>
 
       {dataset.idealFor.length > 0 && (
-        <div className="mt-4 flex-1">
-          <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Ideal para
-          </p>
+        <div className="mt-5 flex-1 border-t border-line pt-4">
+          <p className="eyebrow">Ideal para</p>
           <ul className="mt-2 space-y-1">
             {dataset.idealFor.map((item) => (
-              <li key={item} className="text-sm text-slate-500">
+              <li key={item} className="flex gap-2 text-sm text-muted">
+                <span aria-hidden="true" className="text-accent">
+                  —
+                </span>
                 {item}
               </li>
             ))}
@@ -51,9 +41,18 @@ export function DatasetCard({ dataset, withAnchor = true }: DatasetCardProps) {
         </div>
       )}
 
-      <div className="mt-6">
-        <Button href={dataset.sourceUrl} external variant="secondary" className="w-full">
-          Acessar dataset
+      <ul className="mt-5 flex flex-wrap gap-1.5" aria-label="Tecnologias">
+        {dataset.technologies.map((tech) => (
+          <li key={tech}>
+            <Badge variant="neutral">{tech}</Badge>
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-6 flex items-center justify-between gap-4 border-t border-line pt-4">
+        <p className="truncate text-xs text-subtle">Fonte: {dataset.source}</p>
+        <Button href={dataset.sourceUrl} external withArrow variant="secondary" size="sm">
+          Acessar
         </Button>
       </div>
     </article>

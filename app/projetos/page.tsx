@@ -1,37 +1,42 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { ProjectExplorer } from "@/components/projects/ProjectExplorer";
-import { projects, PROJECT_AREAS, PROJECT_DIFFICULTIES } from "@/data/projects";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { PROJECT_AREAS, PROJECT_DIFFICULTIES } from "@/data/projects";
+import { getCatalog } from "@/lib/content";
+
+const DESCRIPTION =
+  "Ideias de projetos práticos organizadas por área e nível de dificuldade para praticar Análise de Dados, Engenharia de Dados, BI, SQL e Machine Learning.";
 
 export const metadata: Metadata = {
-  title: "Projetos",
-  description:
-    "Ideias de projetos práticos organizadas por área e nível de dificuldade para praticar Análise de Dados, Engenharia de Dados, BI, SQL e Machine Learning.",
+  title: "Projetos práticos",
+  description: DESCRIPTION,
+  alternates: { canonical: "/projetos" },
+  openGraph: { title: "Projetos práticos", description: DESCRIPTION, url: "/projetos" },
 };
 
-export default function ProjetosPage() {
-  return (
-    <section className="py-16 sm:py-20">
-      <Container>
-        <div className="max-w-2xl">
-          <p className="text-sm font-medium text-accent">+{projects.length} projetos</p>
-          <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
-            Projetos para colocar seus conhecimentos em prática.
-          </h1>
-          <p className="mt-3 text-base leading-relaxed text-slate-500">
-            O Dataconstruction reúne ideias de projetos organizadas por área e nível de dificuldade
-            para ajudar estudantes e profissionais a praticarem seus conhecimentos em Dados.
-          </p>
-        </div>
+export const revalidate = 300;
 
-        <div className="mt-12">
-          <ProjectExplorer
-            projects={projects}
-            areas={PROJECT_AREAS}
-            difficulties={PROJECT_DIFFICULTIES}
-          />
-        </div>
+export default async function ProjetosPage() {
+  const { projects } = await getCatalog();
+
+  return (
+    <>
+      <PageHeader
+        eyebrow={`${projects.length} ideias de projeto`}
+        title={
+          <>
+            Construa seu
+            <br />
+            portfólio<span className="text-accent">.</span>
+          </>
+        }
+        lead="Ideias de projetos organizadas por área e nível de dificuldade, com objetivo, habilidades e tecnologias para colocar o estudo em prática."
+        breadcrumbs={[{ label: "Projetos", href: "/projetos" }]}
+      />
+      <Container className="py-12 sm:py-16">
+        <ProjectExplorer projects={projects} areas={PROJECT_AREAS} difficulties={PROJECT_DIFFICULTIES} />
       </Container>
-    </section>
+    </>
   );
 }

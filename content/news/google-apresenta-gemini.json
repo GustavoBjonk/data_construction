@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 380,
+  "data": {
+    "id": "google-apresenta-gemini",
+    "slug": "google-apresenta-gemini",
+    "title": "Google apresenta o Gemini, seu modelo de IA multimodal mais avançado",
+    "summary": "O Google apresentou o Gemini, descrito como seu modelo de IA mais capaz e flexível, construído desde o início para ser multimodal (texto, código, áudio, imagem e vídeo) e disponível em três tamanhos: Ultra, Pro e Nano. A versão Pro passou a alimentar o Bard, enquanto a Nano foi otimizada para dispositivos móveis.",
+    "relevance": "Foi a resposta mais direta do Google ao GPT-4 da OpenAI, redefinindo a disputa por modelos de fundação multimodais que sustentam produtos de análise e assistentes de dados.",
+    "publishedAt": "2023-12-06",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Google",
+      "Gemini",
+      "Multimodal",
+      "Bard"
+    ],
+    "source": "Google (blog oficial)",
+    "sourceUrl": "https://blog.google/technology/ai/google-gemini-ai/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 310,
+  "data": {
+    "id": "ml-monitoramento-modelos",
+    "title": "Monitoramento de modelos",
+    "description": "Acompanhe o desempenho de um modelo em produção e identifique sinais de degradação ao longo do tempo.",
+    "area": "Machine Learning",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "skills": [
+      "Monitoramento",
+      "Métricas de desempenho",
+      "Model drift"
+    ],
+    "estimatedTime": "12–20 horas",
+    "objective": "Entender práticas básicas de monitoramento de modelos, acompanhando métricas de desempenho ao longo do tempo."
+  }
+}

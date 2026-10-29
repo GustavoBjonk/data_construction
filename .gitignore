@@ -4,4 +4,23 @@ out
 build
 *.tsbuildinfo
 next-env.d.ts
-.env*.local
+
+# Variáveis de ambiente (nunca versionar segredos)
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# Chaves e certificados
+*.pem
+*.key
+*.p12
+
+# Estado local do Supabase CLI
+supabase/.temp
+supabase/.branches
+
+# Relatório local de revisão editorial (npm run review:report)
+/revisao/

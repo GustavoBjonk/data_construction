@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 730,
+  "data": {
+    "id": "apache-spark-4-0-lancado",
+    "slug": "apache-spark-4-0-lancado",
+    "title": "Apache Spark 4.0 é lançado com modo ANSI por padrão e novo tipo de dado VARIANT",
+    "summary": "A comunidade Apache Spark lançou a versão 4.0, com mais de 5.100 tickets resolvidos por 390 contribuidores, trazendo modo ANSI SQL ativado por padrão, o novo tipo de dado VARIANT para JSON semiestruturado e um operador PIPE (|>) para encadear transformações SQL.",
+    "relevance": "Spark continua sendo o motor de processamento distribuído mais usado em engenharia de dados; a nova versão afeta diretamente pipelines batch e streaming em produção.",
+    "publishedAt": "2025-05-28",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Data Engineering",
+      "Big Data"
+    ],
+    "tags": [
+      "Apache Spark",
+      "Open Source",
+      "ETL",
+      "PySpark"
+    ],
+    "source": "Databricks (blog oficial)",
+    "sourceUrl": "https://www.databricks.com/blog/introducing-apache-spark-40",
+    "related": {
+      "trackSlugs": [
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}

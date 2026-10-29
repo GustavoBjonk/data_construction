@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 530,
+  "data": {
+    "id": "databricks-lanca-dbrx",
+    "slug": "databricks-lanca-dbrx",
+    "title": "Databricks lança o DBRX, modelo de linguagem aberto de mistura de especialistas",
+    "summary": "A Databricks lançou o DBRX, um modelo aberto de 132 bilhões de parâmetros com arquitetura de mistura de especialistas (mixture-of-experts), afirmando superar outros modelos abertos como Llama 2 e Mixtral em benchmarks padrão. O modelo foi desenvolvido pelo time Mosaic Research, herdado da aquisição da MosaicML.",
+    "relevance": "Reforça a estratégia da Databricks de oferecer ferramentas de IA generativa integradas à sua plataforma de dados, competindo diretamente com Snowflake nesse espaço.",
+    "publishedAt": "2024-03-27",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Databricks",
+      "DBRX",
+      "LLM",
+      "Open Source",
+      "Mixture of Experts"
+    ],
+    "source": "Databricks (via PR Newswire)",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/databricks-launches-dbrx-a-new-standard-for-efficient-open-source-models-302100601.html"
+  }
+}

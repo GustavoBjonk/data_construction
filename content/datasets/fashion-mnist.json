@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 60,
+  "data": {
+    "id": "fashion-mnist",
+    "name": "Fashion-MNIST",
+    "description": "Substituto direto do MNIST com imagens 28x28 de peças de vestuário da Zalando, pensado para ser um benchmark um pouco mais desafiador.",
+    "category": "Computer Vision",
+    "difficulty": "Iniciante",
+    "size": "70.000 imagens (60 mil treino + 10 mil teste)",
+    "format": "IDX / imagens 28x28",
+    "topics": [
+      "Classificação",
+      "Deep Learning",
+      "Computer Vision"
+    ],
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "idealFor": [
+      "Substituir o MNIST em experimentos de Deep Learning",
+      "Praticar classificação de imagens"
+    ],
+    "source": "Zalando Research (GitHub)",
+    "sourceUrl": "https://github.com/zalandoresearch/fashion-mnist"
+  }
+}

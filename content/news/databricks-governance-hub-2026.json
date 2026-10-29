@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 840,
+  "data": {
+    "id": "databricks-governance-hub-2026",
+    "slug": "databricks-governance-hub-2026",
+    "title": "Databricks anuncia Governance Hub e novos recursos de segurança no Data + AI Summit 2026",
+    "summary": "No Data + AI Summit 2026, a Databricks anunciou o Governance Hub (painel centralizado para gestão de postura de governança), além de gestão automática de identidade para Entra ID e Okta, políticas de rede \"zero-trust\" e novas certificações de compliance (HITRUST, ISMAP, FedRAMP High).",
+    "relevance": "Confirma a virada estratégica do setor de \"quem constrói o melhor agente\" para \"quem governa dados, custo e segurança\", pauta central para profissionais de governança de dados.",
+    "publishedAt": "2026-06-17",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Governance",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Databricks",
+      "Governança",
+      "Segurança",
+      "Compliance"
+    ],
+    "source": "Databricks (blog oficial)",
+    "sourceUrl": "https://www.databricks.com/blog/whats-new-databricks-platform-security-and-compliance-data-ai-summit-2026"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 150,
+  "data": {
+    "id": "kaggle-feature-engineering",
+    "title": "Feature Engineering",
+    "platform": "Kaggle Learn",
+    "area": "Machine Learning",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Intermediário",
+    "description": "Curso da Kaggle para criar e selecionar variáveis que melhoram a performance de modelos de Machine Learning.",
+    "skills": [
+      "Feature Engineering",
+      "Seleção de variáveis"
+    ],
+    "url": "https://www.kaggle.com/learn/feature-engineering"
+  }
+}

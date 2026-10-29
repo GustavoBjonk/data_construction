@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 180,
+  "data": {
+    "id": "ms-learn-az900-cloud",
+    "title": "Descrever conceitos de nuvem",
+    "platform": "Microsoft Learn",
+    "area": "Engenharia de Dados",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Primeira trilha oficial do caminho AZ-900, com os conceitos fundamentais de computação em nuvem.",
+    "skills": [
+      "Cloud",
+      "Azure",
+      "Conceitos de nuvem"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/"
+  }
+}

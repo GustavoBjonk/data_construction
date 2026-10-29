@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 140,
+  "data": {
+    "id": "bi-corporativo",
+    "title": "BI corporativo",
+    "description": "Simule o BI de uma empresa com múltiplas áreas: comercial, financeiro, marketing e operações.",
+    "area": "Business Intelligence",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Power BI",
+      "SQL"
+    ],
+    "skills": [
+      "Arquitetura de indicadores",
+      "Governança de dados",
+      "Dashboards multiárea"
+    ],
+    "estimatedTime": "20+ horas",
+    "objective": "Projetar uma arquitetura de indicadores e dashboards que atenda simultaneamente às áreas comercial, financeira, de marketing e de operações."
+  }
+}

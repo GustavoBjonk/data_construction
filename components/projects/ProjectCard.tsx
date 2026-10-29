@@ -13,21 +13,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const detailsId = `project-details-${project.id}`;
 
   return (
-    <article className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-6 transition-colors duration-150 hover:border-slate-300">
+    <article className="card-interactive flex h-full flex-col p-6">
       <div className="flex items-start justify-between gap-3">
-        <Badge variant="accent">{project.area}</Badge>
+        <p className="eyebrow text-accent">{project.area}</p>
         <Badge variant="outline">{project.difficulty}</Badge>
       </div>
 
-      <h3 className="mt-4 text-lg font-semibold leading-snug text-slate-900">
-        {project.title}
-      </h3>
+      <h3 className="mt-4 font-display text-xl font-medium leading-snug tracking-tight text-fg">{project.title}</h3>
+      <p className="mt-1 font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-subtle">
+        Tempo estimado: {project.estimatedTime}
+      </p>
 
-      <p className="mt-2 text-sm leading-relaxed text-slate-500">{project.description}</p>
+      <p className="mt-3 text-sm leading-relaxed text-muted">{project.description}</p>
 
-      <p className="mt-3 text-xs text-slate-400">⏱ {project.estimatedTime}</p>
+      <div className="mt-5 flex-1 border-t border-line pt-4">
+        <p className="eyebrow">Habilidades</p>
+        <p className="mt-2 text-sm text-muted">{project.skills.join(" · ")}</p>
+      </div>
 
-      <ul className="mt-4 flex flex-wrap gap-2">
+      <ul className="mt-5 flex flex-wrap gap-1.5" aria-label="Tecnologias">
         {project.technologies.map((tech) => (
           <li key={tech}>
             <Badge variant="neutral">{tech}</Badge>
@@ -35,33 +39,31 @@ export function ProjectCard({ project }: ProjectCardProps) {
         ))}
       </ul>
 
-      <div className="mt-4 flex-1">
-        <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-          Habilidades
-        </p>
-        <p className="mt-2 text-sm text-slate-500">{project.skills.join(" · ")}</p>
-      </div>
-
-      {isExpanded && (
-        <div id={detailsId} className="mt-4 border-t border-slate-200 pt-4">
-          <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Objetivo
-          </p>
-          <p className="mt-2 text-sm leading-relaxed text-slate-500">{project.objective}</p>
+      {/* Mantido no DOM para a transição de altura; `inert` o retira da navegação quando fechado. */}
+      <div
+        id={detailsId}
+        inert={!isExpanded}
+        className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out-expo ${
+          isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="mt-5 border-t border-line pt-4">
+            <p className="eyebrow">Objetivo</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">{project.objective}</p>
+          </div>
         </div>
-      )}
-
-      <div className="mt-6">
-        <button
-          type="button"
-          aria-expanded={isExpanded}
-          aria-controls={detailsId}
-          onClick={() => setIsExpanded((expanded) => !expanded)}
-          className="min-h-[40px] w-full rounded-md border border-slate-200 px-5 text-sm font-medium text-slate-900 transition-colors hover:border-slate-300 hover:bg-slate-100"
-        >
-          {isExpanded ? "Ocultar detalhes" : "Ver projeto"}
-        </button>
       </div>
+
+      <button
+        type="button"
+        aria-expanded={isExpanded}
+        aria-controls={detailsId}
+        onClick={() => setIsExpanded((expanded) => !expanded)}
+        className="mt-6 min-h-[44px] w-full rounded-full border border-line-strong px-5 text-sm font-medium text-fg transition-colors hover:border-fg/40 hover:bg-fg/5"
+      >
+        {isExpanded ? "Ocultar objetivo" : "Ver objetivo do projeto"}
+      </button>
     </article>
   );
 }

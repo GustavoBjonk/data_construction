@@ -1,40 +1,51 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { OrganizationCard } from "@/components/donations/OrganizationCard";
-import { organizations } from "@/data/donations";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { getCatalog } from "@/lib/content";
+
+const DESCRIPTION =
+  "Organizações que atuam com educação, inclusão digital e formação profissional. Apoie diretamente pelo canal oficial de cada uma.";
 
 export const metadata: Metadata = {
-  title: "Apoie a Educação",
-  description:
-    "Conheça organizações verificadas que atuam com educação, inclusão digital e formação profissional e apoie diretamente o trabalho delas.",
+  title: "Apoie a educação",
+  description: DESCRIPTION,
+  alternates: { canonical: "/doacoes" },
+  openGraph: { title: "Apoie a educação", description: DESCRIPTION, url: "/doacoes" },
 };
 
-export default function DoacoesPage() {
+export const revalidate = 300;
+
+export default async function DoacoesPage() {
+  const { organizations } = await getCatalog();
+
   return (
-    <section className="py-16 sm:py-20">
-      <Container>
-        <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">
-            Aprender também é uma forma de transformar.
-          </h1>
-          <p className="mt-3 text-base leading-relaxed text-slate-500">
-            O Dataconstruction apresenta organizações e iniciativas que atuam com educação,
-            inclusão digital, formação profissional e acesso a tecnologia. Se quiser
-            contribuir, você pode apoiar diretamente qualquer uma delas.
-          </p>
-        </div>
+    <>
+      <PageHeader
+        eyebrow="Apoie a educação"
+        title={
+          <>
+            Aprender
+            <br />
+            transforma<span className="text-accent">.</span>
+          </>
+        }
+        lead="Organizações e iniciativas que atuam com educação, inclusão digital, formação profissional e acesso à tecnologia. Se quiser contribuir, apoie diretamente qualquer uma delas."
+        breadcrumbs={[{ label: "Doações", href: "/doacoes" }]}
+      />
 
-        <div className="mt-10 rounded-lg border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-500">
-          O Dataconstruction não processa nem recebe essas doações. Ao clicar em uma organização,
-          você será direcionado ao canal oficial disponibilizado por ela.
-        </div>
+      <Container className="py-12 sm:py-16">
+        <p role="note" className="max-w-3xl border-l-2 border-copper/60 pl-4 text-sm leading-relaxed text-muted">
+          O DataConstruction não processa nem recebe essas doações. Ao clicar em uma organização, você será direcionado
+          ao canal oficial disponibilizado por ela.
+        </p>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {organizations.map((organization) => (
             <OrganizationCard key={organization.id} organization={organization} />
           ))}
         </div>
       </Container>
-    </section>
+    </>
   );
 }

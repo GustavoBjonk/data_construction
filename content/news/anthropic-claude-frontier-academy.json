@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1180,
+  "data": {
+    "id": "anthropic-claude-frontier-academy",
+    "slug": "anthropic-claude-frontier-academy",
+    "title": "Anthropic anuncia US$ 100 milhões para formar 10 mil engenheiros de implantação de IA",
+    "summary": "A Anthropic lançou em 2 de outubro a Claude Frontier Academy, programa com compromisso de 100 milhões de dólares para formar profissionais chamados de Frontier Deployed Engineers, responsáveis por levar sistemas de IA para dentro das empresas. A meta é treinar 10 mil desses engenheiros até o fim de 2027. O formato combina um programa presencial de vários dias, com avaliação prática, e uma residência de 12 semanas em que cada participante conduz um caso de uso real com o Claude na própria organização. As primeiras turmas reúnem profissionais de empresas como Accenture, Deloitte, McKinsey, Morgan Stanley e Novo Nordisk, em São Francisco, Nova York e Londres. A participação é por indicação. Segundo a empresa, a rede de parceiros já soma mais de 175 mil certificações em 46 mil empresas.",
+    "relevance": "O anúncio aponta uma função em alta: profissionais que unem engenharia, dados e conhecimento do negócio para colocar IA em produção. Integrar sistemas, avaliar resultados e cuidar de dados são competências centrais nesse perfil.",
+    "publishedAt": "2026-10-02",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Mercado",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Anthropic",
+      "Carreira",
+      "Capacitação",
+      "IA Corporativa"
+    ],
+    "source": "Anthropic (comunicado oficial)",
+    "sourceUrl": "https://www.anthropic.com/news/claude-frontier-academy"
+  }
+}

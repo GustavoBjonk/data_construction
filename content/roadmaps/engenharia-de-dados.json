@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "engenharia-de-dados",
+    "slug": "engenharia-de-dados",
+    "title": "Engenharia de Dados",
+    "description": "Aprenda a construir a infraestrutura que move dados de forma confiável entre sistemas — o conceito antes da ferramenta.",
+    "level": "Intermediário",
+    "estimatedDuration": "5–8 meses",
+    "steps": [
+      {
+        "id": "engenharia-de-dados-logica-python",
+        "order": 1,
+        "title": "Lógica + Python",
+        "description": "A base para escrever scripts que automatizam o processamento de dados.",
+        "topics": [
+          "Lógica de programação",
+          "Sintaxe Python"
+        ],
+        "technologies": [
+          "Python"
+        ],
+        "courseIds": [
+          "freecodecamp-data-analysis-python"
+        ]
+      },
+      {
+        "id": "engenharia-de-dados-sql",
+        "order": 2,
+        "title": "SQL",
+        "description": "A linguagem universal para consultar e transformar dados em qualquer banco relacional.",
+        "topics": [
+          "Consultas",
+          "Transformações"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-transact-sql"
+        ]
+      },
+      {
+        "id": "engenharia-de-dados-bancos-de-dados",
+        "order": 3,
+        "title": "Bancos de Dados",
+        "description": "Entenda como bancos relacionais armazenam e organizam dados na prática.",
+        "topics": [
+          "Modelagem relacional",
+          "PostgreSQL"
+        ],
+        "technologies": [
+          "PostgreSQL"
+        ],
+        "courseIds": [
+          "freecodecamp-relational-database"
+        ]
+      },
+      {
+        "id": "engenharia-de-dados-etl-elt",
+        "order": 4,
+        "title": "ETL / ELT",
+        "description": "Entenda o conceito de extrair, transformar e carregar dados entre sistemas antes de escolher uma ferramenta específica.",
+        "topics": [
+          "Extract",
+          "Transform",
+          "Load"
+        ],
+        "technologies": [],
+        "courseIds": []
+      },
+      {
+        "id": "engenharia-de-dados-git-linux",
+        "order": 5,
+        "title": "Git + Linux",
+        "description": "Ferramentas essenciais do dia a dia de quem trabalha com dados em produção.",
+        "topics": [
+          "Controle de versão",
+          "Linha de comando"
+        ],
+        "technologies": [
+          "Git",
+          "Linux"
+        ],
+        "courseIds": [
+          "ms-learn-intro-git",
+          "freecodecamp-relational-database"
+        ]
+      },
+      {
+        "id": "engenharia-de-dados-cloud",
+        "order": 6,
+        "title": "Cloud",
+        "description": "Conceitos fundamentais de computação em nuvem, independente do provedor escolhido depois.",
+        "topics": [
+          "Conceitos de nuvem",
+          "Armazenamento",
+          "Processamento"
+        ],
+        "technologies": [
+          "Azure",
+          "AWS",
+          "GCP"
+        ],
+        "courseIds": [
+          "ms-learn-az900-cloud"
+        ]
+      },
+      {
+        "id": "engenharia-de-dados-orquestracao",
+        "order": 7,
+        "title": "Orquestração",
+        "description": "Entenda por que pipelines de dados precisam ser agendados, monitorados e reexecutados automaticamente.",
+        "topics": [
+          "Agendamento de pipelines",
+          "Monitoramento"
+        ],
+        "technologies": [
+          "Airflow"
+        ],
+        "courseIds": []
+      },
+      {
+        "id": "engenharia-de-dados-dw-lake",
+        "order": 8,
+        "title": "Data Warehouse / Data Lake",
+        "description": "Veja como esses conceitos se conectam em uma arquitetura de dados completa.",
+        "topics": [
+          "Data Warehouse",
+          "Data Lake",
+          "Arquitetura de dados"
+        ],
+        "technologies": [],
+        "courseIds": []
+      }
+    ],
+    "projectArea": "Engenharia de Dados"
+  }
+}

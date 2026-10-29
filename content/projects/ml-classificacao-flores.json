@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 220,
+  "data": {
+    "id": "ml-classificacao-flores",
+    "title": "Classificação de flores",
+    "description": "Treine um modelo de classificação para identificar espécies de flores a partir de suas medidas.",
+    "area": "Machine Learning",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Python",
+      "Scikit-learn"
+    ],
+    "skills": [
+      "Classificação",
+      "EDA",
+      "Avaliação de modelo"
+    ],
+    "estimatedTime": "3–6 horas",
+    "objective": "Dar os primeiros passos em classificação supervisionada, do treino do modelo à avaliação dos resultados."
+  }
+}

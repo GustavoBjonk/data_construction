@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1240,
+  "data": {
+    "id": "dbt-v2-duckdb-integrado",
+    "slug": "dbt-v2-duckdb-integrado",
+    "title": "dbt v2, com motor em Rust, passa a incluir o DuckDB como adaptador embutido",
+    "summary": "A ferramenta de transformação de dados dbt mudou de geração em setembro. Em 14 de setembro saiu o dbt 2.0.0, construído sobre o motor Fusion, escrito em Rust. Em 22 de setembro, o blog do DuckDB destacou que o dbt v2 é a primeira versão a trazer um adaptador DuckDB embutido: o driver é baixado e armazenado automaticamente na primeira execução, e o perfil de conexão precisa apenas do tipo e do caminho do arquivo. O novo motor entende SQL de vários dialetos, aponta referências de colunas inválidas e incompatibilidades de tipo antes de executar e gera linhagem por coluna localmente. Projetos na versão 1.12 podem testar a compatibilidade com dbt parse --use-v2-parser, e o pacote dbt-autofix ajuda na migração.",
+    "relevance": "O dbt é ferramenta central de engenharia e análise de dados. Com DuckDB embutido, montar um projeto de estudo ou de testes ficou muito mais simples, sem precisar de data warehouse na nuvem. Equipes devem planejar a migração da v1.",
+    "publishedAt": "2026-09-22",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Engineering",
+      "Open Source"
+    ],
+    "tags": [
+      "dbt",
+      "DuckDB",
+      "Rust",
+      "Transformação de Dados",
+      "Analytics Engineering"
+    ],
+    "source": "DuckDB (blog oficial)",
+    "sourceUrl": "https://duckdb.org/2026/09/22/dbt-fusion.html",
+    "related": {
+      "trackSlugs": [
+        "engenharia-de-dados",
+        "sql"
+      ]
+    }
+  }
+}

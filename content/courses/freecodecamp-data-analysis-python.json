@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 160,
+  "data": {
+    "id": "freecodecamp-data-analysis-python",
+    "title": "Data Analysis with Python",
+    "platform": "freeCodeCamp",
+    "area": "Ciência de Dados",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "duration": "≈170 horas",
+    "level": "Iniciante",
+    "description": "Certificação gratuita da freeCodeCamp cobrindo Python, NumPy, Pandas e Matplotlib para análise de dados.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib"
+    ],
+    "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 50,
+  "data": {
+    "id": "python-para-analise-de-dados-pandas",
+    "title": "Python para análise de dados: do CSV ao primeiro relatório com pandas",
+    "description": "Um roteiro prático com pandas para carregar, limpar, agregar e resumir dados tabulares, com exemplos comentados e os erros mais comuns de quem está começando.",
+    "category": "Python",
+    "date": "2026-10-29",
+    "readingTime": 5,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "Grande parte do trabalho de análise de dados acontece antes de qualquer gráfico ou modelo: entender o que existe na tabela, corrigir tipos, tratar valores ausentes e resumir as informações certas. Em Python, a biblioteca pandas é a ferramenta mais usada para essas etapas. Este artigo percorre um fluxo completo, do arquivo CSV a um pequeno relatório, usando um conjunto fictício de vendas.",
+      "## O DataFrame em uma frase",
+      "Um DataFrame é uma tabela em memória: cada coluna tem um nome e um tipo (número, texto, data), e cada linha tem um índice. Quase tudo no pandas é uma operação que recebe um DataFrame e devolve outro, o que permite encadear passos de forma legível.",
+      "## Carregar e inspecionar",
+      "O primeiro passo é ler o arquivo e olhar a estrutura antes de calcular qualquer coisa. Declarar o separador, a codificação e as colunas de data evita conversões erradas que só apareceriam mais tarde.",
+      "```python\nimport pandas as pd\n\nvendas = pd.read_csv(\n    \"vendas.csv\",\n    sep=\";\",\n    encoding=\"utf-8\",\n    parse_dates=[\"data_pedido\"],\n)\n\nvendas.info()            # tipos e quantidade de valores não nulos\nprint(vendas.head())     # primeiras linhas\nprint(vendas.describe()) # estatísticas das colunas numéricas\n```",
+      "O resultado de info() responde três perguntas importantes: quantas linhas existem, quais colunas têm valores ausentes e se cada coluna foi lida com o tipo esperado. Uma coluna de valores monetários lida como texto (object), por exemplo, costuma indicar vírgula decimal ou símbolo de moeda no arquivo.",
+      "## Limpar com critério",
+      "Limpeza não é apagar tudo o que parece estranho. Cada decisão deve ser explícita e, de preferência, registrada no código. Os casos mais comuns são converter tipos, padronizar textos, remover duplicatas e decidir o que fazer com valores ausentes.",
+      "```python\n# \"1.234,56\" -> 1234.56\nvendas[\"valor\"] = (\n    vendas[\"valor\"]\n    .str.replace(\".\", \"\", regex=False)\n    .str.replace(\",\", \".\", regex=False)\n    .astype(float)\n)\n\nvendas[\"regiao\"] = vendas[\"regiao\"].str.strip().str.title()\nvendas = vendas.drop_duplicates(subset=\"id_pedido\")\n\nprint(vendas.isna().sum())  # ausentes por coluna\nvendas = vendas.dropna(subset=[\"valor\"])\n```",
+      "Remover linhas com valor ausente é razoável quando elas são poucas e não seguem um padrão. Se os ausentes se concentram em uma região ou período, apagá-los distorce a análise; nesse caso, vale investigar a origem antes de decidir.",
+      "## Agregar com groupby",
+      "A pergunta típica de negócio é do tipo \"quanto vendemos por região e por mês?\". O padrão dividir-aplicar-combinar do groupby responde isso: o pandas separa as linhas em grupos, aplica uma função a cada grupo e junta os resultados.",
+      "```python\nvendas[\"mes\"] = vendas[\"data_pedido\"].dt.to_period(\"M\")\n\nresumo = (\n    vendas\n    .groupby([\"regiao\", \"mes\"], as_index=False)\n    .agg(\n        pedidos=(\"id_pedido\", \"count\"),\n        receita=(\"valor\", \"sum\"),\n        ticket_medio=(\"valor\", \"mean\"),\n    )\n    .sort_values([\"regiao\", \"mes\"])\n)\nprint(resumo.head())\n```",
+      "A agregação nomeada (pedidos=(\"id_pedido\", \"count\")) deixa claro o que cada coluna do resultado significa, o que facilita a leitura do relatório por outras pessoas.",
+      "## Combinar tabelas",
+      "Dados reais vêm espalhados em várias tabelas. O método merge faz o equivalente a um JOIN do SQL. O parâmetro validate ajuda a detectar duplicatas inesperadas na tabela de referência, que multiplicariam linhas sem aviso.",
+      "```python\nclientes = pd.read_csv(\"clientes.csv\")\nbase = vendas.merge(\n    clientes[[\"id_cliente\", \"segmento\"]],\n    on=\"id_cliente\",\n    how=\"left\",\n    validate=\"many_to_one\",\n)\n```",
+      "## Erros comuns",
+      "Três armadilhas aparecem com frequência. A primeira é calcular médias sobre colunas lidas como texto, o que gera erro ou resultados sem sentido. A segunda é modificar um recorte de DataFrame e esperar que o original mude; o mais seguro é atribuir o resultado a uma nova variável. A terceira é usar loops linha a linha (for com iterrows) para cálculos que o pandas faz de forma vetorizada, muito mais rápida e mais legível.",
+      "## Aplicações reais",
+      "Esse mesmo fluxo aparece em relatórios financeiros mensais, no acompanhamento de indicadores de atendimento, na preparação de dados para dashboards e na etapa inicial de qualquer projeto de machine learning. Mudam os dados e as perguntas; a sequência inspecionar, limpar, combinar e agregar continua a mesma.",
+      "## Conclusão",
+      "Dominar poucas operações do pandas, como read_csv, info, astype, groupby, agg e merge, já permite responder a muitas perguntas reais. O próximo passo é praticar com um dataset público e escrever cada decisão de limpeza de forma explícita, para que a análise possa ser repetida e conferida."
+    ],
+    "references": [
+      {
+        "citation": "MCKINNEY, Wes. Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter. 3. ed. Sebastopol: O'Reilly Media, 2022. Versão on-line aberta disponível em: https://wesmckinney.com/book/. Acesso em: 29 out. 2026.",
+        "url": "https://wesmckinney.com/book/"
+      },
+      {
+        "citation": "PANDAS DEVELOPMENT TEAM. pandas User Guide. Disponível em: https://pandas.pydata.org/docs/user_guide/index.html. Acesso em: 29 out. 2026.",
+        "url": "https://pandas.pydata.org/docs/user_guide/index.html"
+      },
+      {
+        "citation": "PANDAS DEVELOPMENT TEAM. Group by: split-apply-combine. Disponível em: https://pandas.pydata.org/docs/user_guide/groupby.html. Acesso em: 29 out. 2026.",
+        "url": "https://pandas.pydata.org/docs/user_guide/groupby.html"
+      },
+      {
+        "citation": "PANDAS DEVELOPMENT TEAM. Merge, join, concatenate and compare. Disponível em: https://pandas.pydata.org/docs/user_guide/merging.html. Acesso em: 29 out. 2026.",
+        "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+      }
+    ],
+    "tags": [
+      "Python",
+      "pandas",
+      "Análise de Dados",
+      "Limpeza de Dados",
+      "groupby"
+    ]
+  }
+}

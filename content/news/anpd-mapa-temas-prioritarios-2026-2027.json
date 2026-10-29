@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 780,
+  "data": {
+    "id": "anpd-mapa-temas-prioritarios-2026-2027",
+    "slug": "anpd-mapa-temas-prioritarios-2026-2027",
+    "title": "ANPD publica mapa de temas prioritários 2026-2027 e atualiza agenda regulatória da LGPD",
+    "summary": "A Autoridade Nacional de Proteção de Dados (ANPD) publicou, via Resoluções CD/ANPD 30/2025 e 31/2025, o Mapa de Temas Prioritários de fiscalização para 2026-2027 e atualizou a Agenda Regulatória 2025-2026, incluindo novos temas ligados ao ECA Digital, como mecanismos de verificação de idade.",
+    "relevance": "Define o roteiro oficial de fiscalização e regulamentação da LGPD para os próximos anos, com impacto direto em como empresas brasileiras devem tratar dados pessoais e de menores.",
+    "publishedAt": "2025-12-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Regulamentação",
+      "Data Privacy"
+    ],
+    "tags": [
+      "LGPD",
+      "ANPD",
+      "Brasil",
+      "Privacidade"
+    ],
+    "source": "ANPD / Gov.br (comunicado oficial)",
+    "sourceUrl": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-mapa-de-temas-prioritarios-para-o-bienio-2026-2027-e-atualiza-agenda-regulatoria-2025-2026"
+  }
+}

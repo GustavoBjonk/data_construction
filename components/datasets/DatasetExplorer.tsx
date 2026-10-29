@@ -2,12 +2,22 @@
 
 import { useMemo, useState } from "react";
 import { Dataset, DatasetCategory, DatasetDifficulty } from "@/data/datasets";
-import { DatasetSearch } from "./DatasetSearch";
-import { DatasetFilters, DatasetSort } from "./DatasetFilters";
+import { Button } from "@/components/ui/Button";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { FILTER_ALL, FilterChips } from "@/components/ui/FilterChips";
+import { ResultBar } from "@/components/ui/ResultBar";
+import { SearchInput } from "@/components/ui/SearchInput";
+import { SelectField } from "@/components/ui/SelectField";
+import { normalizeText } from "@/lib/text";
 import { DatasetGrid } from "./DatasetGrid";
-import { DatasetEmptyState } from "./DatasetEmptyState";
 
-const ALL_LABEL = "Todos";
+type DatasetSort = "relevantes" | "nome-asc" | "nome-desc";
+
+const SORT_OPTIONS: { value: DatasetSort; label: string }[] = [
+  { value: "relevantes", label: "Mais relevantes" },
+  { value: "nome-asc", label: "Nome A–Z" },
+  { value: "nome-desc", label: "Nome Z–A" },
+];
 
 interface DatasetExplorerProps {
   datasets: Dataset[];
@@ -17,95 +27,72 @@ interface DatasetExplorerProps {
 
 export function DatasetExplorer({ datasets, categories, difficulties }: DatasetExplorerProps) {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<string>(ALL_LABEL);
-  const [difficulty, setDifficulty] = useState<string>(ALL_LABEL);
+  const [category, setCategory] = useState<string>(FILTER_ALL);
+  const [difficulty, setDifficulty] = useState<string>(FILTER_ALL);
   const [sort, setSort] = useState<DatasetSort>("relevantes");
 
-  const hasActiveFilters =
-    query.trim() !== "" || category !== ALL_LABEL || difficulty !== ALL_LABEL;
+  const hasActiveFilters = query.trim() !== "" || category !== FILTER_ALL || difficulty !== FILTER_ALL;
 
   function clearFilters() {
     setQuery("");
-    setCategory(ALL_LABEL);
-    setDifficulty(ALL_LABEL);
+    setCategory(FILTER_ALL);
+    setDifficulty(FILTER_ALL);
   }
 
   const filtered = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
+    const normalizedQuery = normalizeText(query.trim());
 
     const result = datasets.filter((dataset) => {
-      if (category !== ALL_LABEL && dataset.category !== category) return false;
-      if (difficulty !== ALL_LABEL && dataset.difficulty !== difficulty) return false;
-
+      if (category !== FILTER_ALL && dataset.category !== category) return false;
+      if (difficulty !== FILTER_ALL && dataset.difficulty !== difficulty) return false;
       if (!normalizedQuery) return true;
-
-      const haystack = [
-        dataset.name,
-        dataset.description,
-        dataset.category,
-        ...dataset.technologies,
-        ...dataset.topics,
-      ]
-        .join(" ")
-        .toLowerCase();
-
-      return haystack.includes(normalizedQuery);
+      return normalizeText(
+        [dataset.name, dataset.description, dataset.category, ...dataset.technologies, ...dataset.topics].join(" "),
+      ).includes(normalizedQuery);
     });
 
-    if (sort === "nome-asc") {
-      return [...result].sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
-    }
-
-    if (sort === "nome-desc") {
-      return [...result].sort((a, b) => b.name.localeCompare(a.name, "pt-BR"));
-    }
-
+    if (sort === "nome-asc") return [...result].sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+    if (sort === "nome-desc") return [...result].sort((a, b) => b.name.localeCompare(a.name, "pt-BR"));
     return result;
   }, [datasets, category, difficulty, query, sort]);
 
   return (
     <div>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="sm:max-w-xs sm:flex-1">
-          <DatasetSearch value={query} onChange={setQuery} />
-        </div>
-        <p className="whitespace-nowrap text-sm text-slate-500">
-          {filtered.length} de {datasets.length} datasets
-        </p>
-      </div>
-
-      <div className="mt-5">
-        <DatasetFilters
-          categories={categories}
-          difficulties={difficulties}
-          activeCategory={category}
-          activeDifficulty={difficulty}
-          sort={sort}
-          onCategoryChange={setCategory}
-          onDifficultyChange={setDifficulty}
-          onSortChange={setSort}
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,22rem)_auto] lg:items-end lg:justify-between">
+        <SearchInput id="dataset-search" label="Buscar datasets" value={query} onChange={setQuery} />
+        <SelectField
+          id="dataset-sort"
+          label="Ordenar por"
+          value={sort}
+          options={SORT_OPTIONS}
+          onChange={(value) => setSort(value as DatasetSort)}
         />
       </div>
 
+      <div className="mt-6 flex flex-col gap-5">
+        <FilterChips label="Categoria" options={categories} active={category} onChange={setCategory} />
+        <FilterChips label="Dificuldade" options={difficulties} active={difficulty} onChange={setDifficulty} />
+      </div>
+
       <div className="mt-8">
+        <ResultBar shown={filtered.length} total={datasets.length} noun="datasets" onClear={hasActiveFilters ? clearFilters : undefined} />
+      </div>
+
+      <div className="mt-6">
         {filtered.length === 0 ? (
-          <DatasetEmptyState onClear={clearFilters} />
+          <EmptyState
+            title="Nenhum dataset encontrado."
+            description="Tente pesquisar por outro termo ou remover alguns filtros."
+            action={
+              <Button variant="secondary" size="sm" onClick={clearFilters}>
+                Limpar filtros
+              </Button>
+            }
+          />
         ) : (
           <DatasetGrid datasets={filtered} />
         )}
       </div>
-
-      {hasActiveFilters && filtered.length > 0 && (
-        <div className="mt-6">
-          <button
-            type="button"
-            onClick={clearFilters}
-            className="text-sm font-medium text-accent hover:text-accent-hover"
-          >
-            Limpar filtros
-          </button>
-        </div>
-      )}
     </div>
   );
 }

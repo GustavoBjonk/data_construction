@@ -2,11 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { Project, ProjectArea, ProjectDifficulty } from "@/data/projects";
-import { ProjectSearch } from "./ProjectSearch";
-import { ProjectFilters } from "./ProjectFilters";
+import { FILTER_ALL, FilterChips } from "@/components/ui/FilterChips";
+import { ResultBar } from "@/components/ui/ResultBar";
+import { SearchInput } from "@/components/ui/SearchInput";
+import { normalizeText } from "@/lib/text";
 import { ProjectGrid } from "./ProjectGrid";
-
-const ALL_LABEL = "Todos";
 
 interface ProjectExplorerProps {
   projects: Project[];
@@ -16,81 +16,47 @@ interface ProjectExplorerProps {
 
 export function ProjectExplorer({ projects, areas, difficulties }: ProjectExplorerProps) {
   const [query, setQuery] = useState("");
-  const [area, setArea] = useState<string>(ALL_LABEL);
-  const [difficulty, setDifficulty] = useState<string>(ALL_LABEL);
+  const [area, setArea] = useState<string>(FILTER_ALL);
+  const [difficulty, setDifficulty] = useState<string>(FILTER_ALL);
 
-  const hasActiveFilters =
-    query.trim() !== "" || area !== ALL_LABEL || difficulty !== ALL_LABEL;
+  const hasActiveFilters = query.trim() !== "" || area !== FILTER_ALL || difficulty !== FILTER_ALL;
 
   function clearFilters() {
     setQuery("");
-    setArea(ALL_LABEL);
-    setDifficulty(ALL_LABEL);
+    setArea(FILTER_ALL);
+    setDifficulty(FILTER_ALL);
   }
 
   const filtered = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-
+    const normalizedQuery = normalizeText(query.trim());
     return projects.filter((project) => {
-      if (area !== ALL_LABEL && project.area !== area) return false;
-      if (difficulty !== ALL_LABEL && project.difficulty !== difficulty) return false;
-
+      if (area !== FILTER_ALL && project.area !== area) return false;
+      if (difficulty !== FILTER_ALL && project.difficulty !== difficulty) return false;
       if (!normalizedQuery) return true;
-
-      const haystack = [
-        project.title,
-        project.description,
-        project.area,
-        ...project.technologies,
-        ...project.skills,
-      ]
-        .join(" ")
-        .toLowerCase();
-
-      return haystack.includes(normalizedQuery);
+      return normalizeText(
+        [project.title, project.description, project.area, ...project.technologies, ...project.skills].join(" "),
+      ).includes(normalizedQuery);
     });
   }, [projects, area, difficulty, query]);
 
   return (
     <div>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="sm:max-w-xs sm:flex-1">
-          <ProjectSearch value={query} onChange={setQuery} />
-        </div>
-        <p className="whitespace-nowrap text-sm text-slate-500">
-          {filtered.length} de {projects.length} projetos
-        </p>
+      <div className="max-w-[22rem]">
+        <SearchInput id="project-search" label="Buscar projetos" value={query} onChange={setQuery} />
       </div>
 
-      <div className="mt-5">
-        <ProjectFilters
-          areas={areas}
-          difficulties={difficulties}
-          activeArea={area}
-          activeDifficulty={difficulty}
-          onAreaChange={setArea}
-          onDifficultyChange={setDifficulty}
-        />
+      <div className="mt-6 flex flex-col gap-5">
+        <FilterChips label="Área" options={areas} active={area} onChange={setArea} />
+        <FilterChips label="Dificuldade" options={difficulties} active={difficulty} onChange={setDifficulty} />
       </div>
 
       <div className="mt-8">
-        <ProjectGrid
-          projects={filtered}
-          emptyMessage="Nenhum projeto encontrado para essa busca ou filtro."
-        />
+        <ResultBar shown={filtered.length} total={projects.length} noun="projetos" onClear={hasActiveFilters ? clearFilters : undefined} />
       </div>
 
-      {hasActiveFilters && filtered.length > 0 && (
-        <div className="mt-6">
-          <button
-            type="button"
-            onClick={clearFilters}
-            className="text-sm font-medium text-accent hover:text-accent-hover"
-          >
-            Limpar filtros
-          </button>
-        </div>
-      )}
+      <div className="mt-6">
+        <ProjectGrid projects={filtered} emptyMessage="Nenhum projeto encontrado para essa busca ou filtro." />
+      </div>
     </div>
   );
 }

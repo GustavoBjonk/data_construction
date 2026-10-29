@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1100,
+  "data": {
+    "id": "snowflake-postgres-data-mirroring-ga",
+    "slug": "snowflake-postgres-data-mirroring-ga",
+    "title": "Snowflake Postgres ganha espelhamento contínuo de tabelas para a Snowflake sem ETL",
+    "summary": "A Snowflake tornou disponível para uso geral, em 15 de outubro, o espelhamento de dados do Snowflake Postgres, seu serviço gerenciado de PostgreSQL. O recurso replica continuamente tabelas de uma instância Postgres para um banco Snowflake, com atraso mínimo. Inserções, atualizações, exclusões e mudanças de esquema chegam ao destino automaticamente, sem necessidade de pipelines de ETL, cargas em lote ou conectores de terceiros. No momento, a funcionalidade está disponível na AWS e no Azure. O lançamento dá sequência à estratégia iniciada com a compra da Crunchy Data, em 2025, de reunir na mesma plataforma o banco transacional e o ambiente analítico.",
+    "relevance": "Levar dados do banco da aplicação para o ambiente analítico é uma das tarefas mais comuns da engenharia de dados. Recursos nativos de replicação reduzem código de integração, mas aumentam a dependência de um único fornecedor, uma troca que precisa ser avaliada.",
+    "publishedAt": "2026-10-15",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Engineering",
+      "Bancos de Dados",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Snowflake",
+      "PostgreSQL",
+      "Replicação",
+      "CDC",
+      "ETL"
+    ],
+    "source": "Snowflake (notas de versão oficiais)",
+    "sourceUrl": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-15-postgres-data-mirroring-ga",
+    "related": {
+      "trackSlugs": [
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}

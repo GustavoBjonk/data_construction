@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 890,
+  "data": {
+    "id": "apache-polaris-top-level-project",
+    "slug": "apache-polaris-top-level-project",
+    "title": "Apache Polaris se torna projeto de nível superior da Apache Software Foundation",
+    "summary": "O Apache Polaris, catálogo aberto para tabelas Apache Iceberg originado na Snowflake, graduou-se de projeto incubado para projeto de nível superior (top-level project) da ASF, após 18 meses de incubação com seis releases e cerca de 100 contribuidores.",
+    "relevance": "Reforça a maturidade dos catálogos abertos como padrão de interoperabilidade entre motores (Spark, Snowflake, Databricks etc.) em arquiteturas de lakehouse multi-engine.",
+    "publishedAt": "2026-02-19",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Open Source",
+      "Data Engineering"
+    ],
+    "tags": [
+      "Apache Polaris",
+      "Catálogo de Dados",
+      "Iceberg",
+      "Lakehouse"
+    ],
+    "source": "Apache Polaris (blog oficial)",
+    "sourceUrl": "https://polaris.apache.org/blog/2026/02/19/apache-polaris-graduates-to-top-level-project/"
+  }
+}

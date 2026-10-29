@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 110,
+  "data": {
+    "id": "world-happiness-report",
+    "name": "World Happiness Report",
+    "description": "Ranking anual de bem-estar de mais de cem países, combinando indicadores econômicos e sociais com uma nota de felicidade autorreportada.",
+    "category": "Data Analytics",
+    "difficulty": "Iniciante",
+    "size": "mais de 140 países, dados anuais desde 2012",
+    "format": "CSV / XLSX",
+    "topics": [
+      "Análise exploratória",
+      "Estatística",
+      "Visualização",
+      "Comparação entre países"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Excel"
+    ],
+    "idealFor": [
+      "Estudar EDA",
+      "Comparar indicadores entre países"
+    ],
+    "source": "World Happiness Report",
+    "sourceUrl": "https://www.worldhappiness.report/"
+  }
+}

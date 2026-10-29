@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 110,
+  "data": {
+    "id": "inteligencia-artificial-aprendizado-de-maquina",
+    "title": "Inteligência Artificial — Uma Abordagem de Aprendizado de Máquina",
+    "authors": [
+      "Katti Faceli",
+      "Ana Carolina Lorena",
+      "João Gama",
+      "Tiago A. Almeida",
+      "André C. P. L. F. de Carvalho"
+    ],
+    "publisher": "LTC",
+    "year": 2025,
+    "edition": "3ª edição",
+    "isbn13": "9788521639206",
+    "topic": "IA",
+    "level": "Intermediário",
+    "language": "Português",
+    "description": "Fundamentos de aprendizado de máquina: preparação de dados, modelos preditivos e descritivos, avaliação e combinação de modelos.",
+    "why": "Referência de cursos de graduação no Brasil, com a intuição por trás de cada algoritmo."
+  }
+}

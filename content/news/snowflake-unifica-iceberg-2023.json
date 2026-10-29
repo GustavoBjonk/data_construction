@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 310,
+  "data": {
+    "id": "snowflake-unifica-iceberg-2023",
+    "slug": "snowflake-unifica-iceberg-2023",
+    "title": "Snowflake unifica suporte a tabelas Apache Iceberg em sua Data Cloud",
+    "summary": "A Snowflake anunciou a unificação de suas tabelas externas Iceberg e tabelas Iceberg nativas em um único tipo de tabela, permitindo tanto leitura/escrita gerenciadas pela Snowflake quanto interoperabilidade com motores externos do ecossistema Iceberg.",
+    "relevance": "Reflete a consolidação do Apache Iceberg como padrão de formato de tabela aberto para arquiteturas lakehouse, tema central de engenharia de dados em 2023.",
+    "publishedAt": "2023-08-31",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Data Engineering",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Snowflake",
+      "Apache Iceberg",
+      "Lakehouse",
+      "Data Lake"
+    ],
+    "source": "Snowflake (blog oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/blog/unifying-iceberg-tables/"
+  }
+}

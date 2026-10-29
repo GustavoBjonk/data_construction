@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1070,
+  "data": {
+    "id": "anpd-sandbox-ia-3-relatorio",
+    "slug": "anpd-sandbox-ia-3-relatorio",
+    "title": "ANPD publica 3º relatório do sandbox regulatório de IA e proteção de dados",
+    "summary": "A Autoridade Nacional de Proteção de Dados (ANPD) publicou em 16 de outubro o terceiro relatório parcial de monitoramento do seu sandbox regulatório em inteligência artificial e proteção de dados, conduzido com o Centro de IA e Aprendizado de Máquina da USP. O projeto acompanha três empresas: Metatext, no setor financeiro, Synapse AI, em mobilidade, e Prevvine, em saúde. Nos testes de mobilidade, não foram encontrados dados pessoais desprotegidos no tráfego simulado. A ferramenta de apoio à decisão clínica foi avaliada com 30 casos simulados e recebeu recomendações sobre avisos de limites de uso e indicação de fontes. No caso financeiro, o foco foi documentar os fluxos de dados do sistema antifraude. A ANPD ressalta que os testes não atestam conformidade legal e que os resultados podem embasar futuras orientações.",
+    "relevance": "Enquanto o marco legal de IA segue em tramitação, o sandbox mostra na prática o que o regulador brasileiro observa em sistemas de IA: fluxos de dados, explicação de decisões automatizadas e transparência sobre limites. É um bom guia para quem projeta soluções no Brasil.",
+    "publishedAt": "2026-10-16",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Regulamentação",
+      "Data Privacy",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "ANPD",
+      "LGPD",
+      "Sandbox Regulatório",
+      "Brasil",
+      "IA Responsável"
+    ],
+    "source": "ANPD (gov.br)",
+    "sourceUrl": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-3o-relatorio-parcial-de-monitoramento-do-sandbox-regulatorio-em-ia"
+  }
+}

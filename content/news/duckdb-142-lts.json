@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 650,
+  "data": {
+    "id": "duckdb-142-lts",
+    "slug": "duckdb-142-lts",
+    "title": "DuckDB lança 1.4.2, segunda atualização da sua primeira versão LTS, com correções de segurança",
+    "summary": "A equipe do DuckDB lançou a versão 1.4.2, corrigindo quatro vulnerabilidades relacionadas à criptografia do banco e ampliando a extensão experimental de Iceberg para suportar operações completas de escrita (insert, update, delete).",
+    "relevance": "DuckDB se consolidou como motor analítico embarcado de referência para análise local e integração com lakehouses, tema relevante para quem trabalha com Data Analytics.",
+    "publishedAt": "2025-11-12",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "DuckDB",
+      "Iceberg",
+      "Analytics",
+      "OLAP"
+    ],
+    "source": "DuckDB (blog oficial)",
+    "sourceUrl": "https://duckdb.org/2025/11/12/announcing-duckdb-142"
+  }
+}

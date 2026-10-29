@@ -1,123 +1,103 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { NewsArticle, NewsCategory } from "@/data/news";
-import { NewsSearch } from "./NewsSearch";
-import { NewsFilters } from "./NewsFilters";
+import type { NewsCategory, NewsSummary } from "@/data/news";
+import { Button } from "@/components/ui/Button";
+import { FILTER_ALL, FilterChips } from "@/components/ui/FilterChips";
+import { ResultBar } from "@/components/ui/ResultBar";
+import { SearchInput } from "@/components/ui/SearchInput";
+import { SelectField } from "@/components/ui/SelectField";
+import { normalizeText } from "@/lib/text";
 import { NewsGrid } from "./NewsGrid";
 
-const ALL_LABEL = "Todos";
 const PAGE_SIZE = 9;
 
 interface NewsExplorerProps {
-  news: NewsArticle[];
+  news: NewsSummary[];
   years: number[];
-  categories: string[];
+  categories: readonly string[];
 }
 
 export function NewsExplorer({ news, years, categories }: NewsExplorerProps) {
   const [query, setQuery] = useState("");
-  const [year, setYear] = useState<string>(ALL_LABEL);
-  const [category, setCategory] = useState<string>(ALL_LABEL);
+  const [year, setYear] = useState<string>(FILTER_ALL);
+  const [category, setCategory] = useState<string>(FILTER_ALL);
+  const [source, setSource] = useState<string>(FILTER_ALL);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  const hasActiveFilters =
-    query.trim() !== "" || year !== ALL_LABEL || category !== ALL_LABEL;
+  const sources = useMemo(
+    () => [...new Set(news.map((item) => item.source))].sort((a, b) => a.localeCompare(b, "pt-BR")),
+    [news],
+  );
 
-  function clearFilters() {
-    setQuery("");
-    setYear(ALL_LABEL);
-    setCategory(ALL_LABEL);
-    setVisibleCount(PAGE_SIZE);
-  }
+  const hasActiveFilters = query.trim() !== "" || year !== FILTER_ALL || category !== FILTER_ALL || source !== FILTER_ALL;
 
-  const filtered = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-
-    const result = news.filter((item) => {
-      if (year !== ALL_LABEL && String(item.year) !== year) return false;
-      if (category !== ALL_LABEL && !item.category.includes(category as NewsCategory)) return false;
-
-      if (!normalizedQuery) return true;
-
-      const haystack = [
-        item.title,
-        item.summary,
-        item.source,
-        ...item.category,
-        ...item.tags,
-      ]
-        .join(" ")
-        .toLowerCase();
-
-      return haystack.includes(normalizedQuery);
-    });
-
-    return [...result].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-  }, [news, year, category, query]);
-
-  const visible = filtered.slice(0, visibleCount);
-
-  function handleFilterChange<T>(setter: (value: T) => void) {
+  function resetPaging<T>(setter: (value: T) => void) {
     return (value: T) => {
       setter(value);
       setVisibleCount(PAGE_SIZE);
     };
   }
 
+  function clearFilters() {
+    setQuery("");
+    setYear(FILTER_ALL);
+    setCategory(FILTER_ALL);
+    setSource(FILTER_ALL);
+    setVisibleCount(PAGE_SIZE);
+  }
+
+  const filtered = useMemo(() => {
+    const normalizedQuery = normalizeText(query.trim());
+
+    return news
+      .filter((item) => {
+        if (year !== FILTER_ALL && String(item.year) !== year) return false;
+        if (category !== FILTER_ALL && !item.category.includes(category as NewsCategory)) return false;
+        if (source !== FILTER_ALL && item.source !== source) return false;
+        if (!normalizedQuery) return true;
+        return normalizeText([item.title, item.summary, item.source, ...item.category, ...item.tags].join(" ")).includes(
+          normalizedQuery,
+        );
+      })
+      .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  }, [news, year, category, source, query]);
+
+  const visible = filtered.slice(0, visibleCount);
+
   return (
     <div>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="sm:max-w-xs sm:flex-1">
-          <NewsSearch
-            value={query}
-            onChange={(value) => {
-              setQuery(value);
-              setVisibleCount(PAGE_SIZE);
-            }}
-          />
-        </div>
-        <p className="whitespace-nowrap text-sm text-slate-500">
-          {filtered.length} de {news.length} notícias
-        </p>
-      </div>
-
-      <div className="mt-5">
-        <NewsFilters
-          years={years}
-          categories={categories}
-          activeYear={year}
-          activeCategory={category}
-          onYearChange={handleFilterChange(setYear)}
-          onCategoryChange={handleFilterChange(setCategory)}
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,22rem)_auto] lg:items-end lg:justify-between">
+        <SearchInput id="news-search" label="Buscar notícias" value={query} onChange={resetPaging(setQuery)} />
+        <SelectField
+          id="news-source"
+          label="Fonte"
+          value={source}
+          onChange={resetPaging(setSource)}
+          options={[{ value: FILTER_ALL, label: "Todas as fontes" }, ...sources.map((s) => ({ value: s, label: s }))]}
         />
       </div>
 
+      <div className="mt-6 flex flex-col gap-5">
+        <FilterChips label="Período" options={years.map(String)} active={year} onChange={resetPaging(setYear)} />
+        <FilterChips label="Categoria" options={categories} active={category} onChange={resetPaging(setCategory)} />
+      </div>
+
       <div className="mt-8">
+        <ResultBar shown={filtered.length} total={news.length} noun="notícias" onClear={hasActiveFilters ? clearFilters : undefined} />
+      </div>
+
+      <div className="mt-6">
         <NewsGrid news={visible} emptyMessage="Nenhuma notícia encontrada para essa busca ou filtro." />
       </div>
 
-      <div className="mt-8 flex flex-col items-center gap-4">
-        {visibleCount < filtered.length && (
-          <button
-            type="button"
-            onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
-            className="min-h-[44px] rounded-md border border-slate-200 bg-white px-6 text-sm font-medium text-slate-900 transition-colors hover:border-slate-300 hover:bg-slate-100"
-          >
+      {visibleCount < filtered.length && (
+        <div className="mt-10 flex justify-center">
+          <Button variant="secondary" onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}>
             Carregar mais notícias
-          </button>
-        )}
-
-        {hasActiveFilters && filtered.length > 0 && (
-          <button
-            type="button"
-            onClick={clearFilters}
-            className="text-sm font-medium text-accent hover:text-accent-hover"
-          >
-            Limpar filtros
-          </button>
-        )}
-      </div>
+          </Button>
+        </div>
+      )}
     </div>
   );
 }

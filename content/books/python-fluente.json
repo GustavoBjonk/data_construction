@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "archived",
+  "sortOrder": 20,
+  "data": {
+    "id": "python-fluente",
+    "title": "Python Fluente",
+    "authors": [
+      "Luciano Ramalho"
+    ],
+    "publisher": "Novatec",
+    "year": 2015,
+    "isbn13": "9788575224625",
+    "topic": "Python",
+    "level": "Avançado",
+    "language": "Português",
+    "description": "Como o Python funciona por dentro: modelo de dados, sequências, funções, iteradores e concorrência.",
+    "why": "Para quem já programa e quer escrever código Python idiomático. O autor é brasileiro."
+  }
+}

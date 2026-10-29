@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 120,
+  "data": {
+    "id": "engenharia-de-ia",
+    "title": "Engenharia de IA",
+    "authors": [
+      "Chip Huyen"
+    ],
+    "publisher": "Novatec",
+    "year": 2026,
+    "isbn13": "9788575229965",
+    "topic": "IA",
+    "level": "Intermediário",
+    "language": "Português",
+    "description": "Construção de aplicações com modelos de linguagem: avaliação, prompts, RAG, agentes e ajuste fino.",
+    "why": "Organiza um assunto que muda rápido em princípios que continuam valendo."
+  }
+}

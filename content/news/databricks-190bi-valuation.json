@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 960,
+  "data": {
+    "id": "databricks-190bi-valuation",
+    "slug": "databricks-190bi-valuation",
+    "title": "Databricks capta US$ 5 bilhões e atinge valuation de US$ 190 bilhões",
+    "summary": "A Databricks anunciou uma rodada estratégica de captação liderada pela Coatue, elevando sua avaliação para cerca de US$ 188-190 bilhões, apenas cinco meses após uma rodada anterior de US$ 134 bilhões — evidenciando o apetite do mercado por empresas de dados posicionadas em IA.",
+    "relevance": "Reflete o quanto o mercado de capital de risco continua priorizando empresas de dados/IA, contexto relevante para entender a saúde financeira do setor em que o profissional de dados atua.",
+    "publishedAt": "2026-07-17",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Mercado",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Databricks",
+      "Investimento",
+      "Valuation",
+      "IA"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
+  }
+}

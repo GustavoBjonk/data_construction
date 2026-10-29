@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 50,
+  "data": {
+    "id": "ms-learn-model-data-powerbi",
+    "title": "Modelar dados com o Power BI",
+    "platform": "Microsoft Learn",
+    "area": "Business Intelligence",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Intermediário",
+    "description": "Trilha oficial da Microsoft sobre modelagem de dados, relacionamentos e star schema no Power BI.",
+    "skills": [
+      "Modelagem de dados",
+      "Star Schema",
+      "Power BI"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/paths/model-data-power-bi/"
+  }
+}

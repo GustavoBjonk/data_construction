@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 690,
+  "data": {
+    "id": "meta-lanca-llama-4",
+    "slug": "meta-lanca-llama-4",
+    "title": "Meta lança a família Llama 4 com arquitetura mixture-of-experts e contexto de até 10 milhões de tokens",
+    "summary": "A Meta lançou os modelos Llama 4 Scout e Maverick, disponíveis abertamente via Hugging Face e parceiros. Scout se destaca por caber em uma única GPU H100 com janela de contexto de até 10 milhões de tokens, usando pela primeira vez arquitetura mixture-of-experts na família Llama.",
+    "relevance": "Modelos abertos de grande contexto influenciam diretamente arquiteturas de RAG e processamento de bases de dados extensas por equipes que não dependem de APIs fechadas.",
+    "publishedAt": "2025-04-05",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Inteligência Artificial",
+      "Open Source"
+    ],
+    "tags": [
+      "Meta",
+      "Llama",
+      "Open Source",
+      "Multimodal"
+    ],
+    "source": "Meta AI (blog oficial)",
+    "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+  }
+}

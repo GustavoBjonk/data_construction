@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 130,
+  "data": {
+    "id": "dashboard-comercial-completo",
+    "title": "Dashboard comercial completo",
+    "description": "Construa um dashboard comercial completo cobrindo vendas, clientes, produtos, regiões e metas.",
+    "area": "Business Intelligence",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Power BI",
+      "SQL"
+    ],
+    "skills": [
+      "Modelagem de dados",
+      "Comparação temporal",
+      "Dashboard multiseção"
+    ],
+    "estimatedTime": "10–18 horas",
+    "objective": "Consolidar vendas, clientes, produtos, regiões, metas e comparação temporal em um único painel de análise comercial."
+  }
+}

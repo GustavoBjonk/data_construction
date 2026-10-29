@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 20,
+  "data": {
+    "id": "powerbi-intro-bradesco",
+    "title": "Introdução à Análise de Dados — Microsoft Power BI",
+    "platform": "Fundação Bradesco — Escola Virtual",
+    "area": "Business Intelligence",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Introdução gratuita ao Power BI para transformar dados em relatórios e dashboards.",
+    "skills": [
+      "Power BI",
+      "Dashboards",
+      "Análise de dados"
+    ],
+    "url": "https://www.ev.org.br/cursos/introducao-a-analise-de-dados-microsoft-power-bi"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 50,
+  "data": {
+    "id": "comportamento-clientes-avancado",
+    "title": "Sistema de análise de comportamento de clientes",
+    "description": "Construa uma análise completa de comportamento de clientes com segmentação, cohort analysis e métricas de retenção.",
+    "area": "Análise de Dados",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Power BI"
+    ],
+    "skills": [
+      "Segmentação",
+      "Cohort analysis",
+      "Métricas de retenção",
+      "Dashboard executivo"
+    ],
+    "estimatedTime": "20+ horas",
+    "objective": "Aplicar segmentação de clientes, análise temporal e cohort analysis, calcular métricas de retenção e consolidar os resultados em um dashboard executivo."
+  }
+}

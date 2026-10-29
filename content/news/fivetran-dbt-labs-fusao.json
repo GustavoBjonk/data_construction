@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 870,
+  "data": {
+    "id": "fivetran-dbt-labs-fusao",
+    "slug": "fivetran-dbt-labs-fusao",
+    "title": "Fivetran e dbt Labs concluem fusão para criar infraestrutura de dados para agentes de IA",
+    "summary": "A fusão entre Fivetran e dbt Labs, anunciada em outubro de 2025, foi oficialmente concluída, unindo movimentação e transformação de dados sob uma só empresa que atende mais de 100 mil times de dados. Na ocasião foi lançado o dbt Core 2.0 em alpha, com motor Fusion em Rust.",
+    "relevance": "Consolida dois pilares do ecossistema moderno de dados (ingestão e transformação) sob uma mesma empresa, mudança estrutural importante para quem usa ferramentas de analytics engineering.",
+    "publishedAt": "2026-06-01",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Engineering",
+      "Mercado"
+    ],
+    "tags": [
+      "dbt Labs",
+      "Fivetran",
+      "Fusão",
+      "Transformação de Dados"
+    ],
+    "source": "Fivetran (comunicado oficial)",
+    "sourceUrl": "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents"
+  }
+}

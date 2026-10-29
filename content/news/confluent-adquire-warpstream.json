@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 550,
+  "data": {
+    "id": "confluent-adquire-warpstream",
+    "slug": "confluent-adquire-warpstream",
+    "title": "Confluent adquire a WarpStream para expandir streaming de dados \"traga sua própria nuvem\"",
+    "summary": "A Confluent anunciou a aquisição da WarpStream, startup que reimplementou um serviço compatível com Kafka rodando diretamente sobre object storage, para acelerar sua oferta de streaming de dados no modelo \"traga sua própria nuvem\" (BYOC).",
+    "relevance": "Reflete a tendência de simplificar e baratear infraestrutura de streaming baseada em Kafka, usando armazenamento em nuvem no lugar de discos dedicados.",
+    "publishedAt": "2024-09-09",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Data Engineering",
+      "Big Data"
+    ],
+    "tags": [
+      "Confluent",
+      "Apache Kafka",
+      "WarpStream",
+      "Streaming",
+      "BYOC"
+    ],
+    "source": "Confluent (comunicado oficial)",
+    "sourceUrl": "https://www.confluent.io/press-release/confluent-acquires-warpstream-to-advance-next-gen-byoc-data-streaming/"
+  }
+}

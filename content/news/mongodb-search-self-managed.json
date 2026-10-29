@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 920,
+  "data": {
+    "id": "mongodb-search-self-managed",
+    "slug": "mongodb-search-self-managed",
+    "title": "MongoDB libera Search e Vector Search para implantações auto-gerenciadas",
+    "summary": "A MongoDB anunciou disponibilidade geral de busca textual e busca vetorial para o MongoDB Enterprise Advanced e para o Community Edition (a partir da versão 8.2), permitindo busca híbrida e geração de embeddings automatizada mesmo fora do Atlas, incluindo ambientes on-premises e air-gapped.",
+    "relevance": "Elimina a necessidade de ferramentas externas de busca vetorial para quem constrói aplicações de IA/RAG sobre MongoDB fora da nuvem gerenciada, ampliando opções de arquitetura.",
+    "publishedAt": "2026-07-01",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Bancos de Dados",
+      "Machine Learning"
+    ],
+    "tags": [
+      "MongoDB",
+      "Busca Vetorial",
+      "RAG",
+      "Self-Managed"
+    ],
+    "source": "MongoDB (blog oficial)",
+    "sourceUrl": "https://www.mongodb.com/company/blog/product-release-announcements/mongodb-search-vector-search-now-run-anywhere"
+  }
+}

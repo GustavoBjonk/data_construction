@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 600,
+  "data": {
+    "id": "databricks-serie-l-2025",
+    "slug": "databricks-serie-l-2025",
+    "title": "Databricks levanta mais de US$ 4 bilhões em rodada Série L e atinge valuation de US$ 134 bilhões",
+    "summary": "A Databricks anunciou uma rodada Série L acima de US$ 4 bilhões, liderada por Insight Partners, Fidelity e J.P. Morgan Asset Management, elevando seu valuation para US$ 134 bilhões. A empresa revelou taxa de receita recorrente acima de US$ 4,8 bilhões e mais de US$ 1 bilhão em receita anualizada só com produtos de IA.",
+    "relevance": "Mostra o apetite de investidores por plataformas de dados e IA corporativa, e reforça a posição da Databricks como referência em arquitetura lakehouse.",
+    "publishedAt": "2025-12-16",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Mercado",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Databricks",
+      "Funding",
+      "Lakehouse",
+      "IA"
+    ],
+    "source": "Databricks (blog oficial)",
+    "sourceUrl": "https://www.databricks.com/company/newsroom/press-releases/databricks-surpasses-4-8b-revenue-run-rate-growing-55-year-over-year"
+  }
+}

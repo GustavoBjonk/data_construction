@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 620,
+  "data": {
+    "id": "dbt-labs-fusion-engine",
+    "slug": "dbt-labs-fusion-engine",
+    "title": "dbt Labs lança o motor Fusion, reescrito em Rust, para acelerar o desenvolvimento analítico",
+    "summary": "A dbt Labs apresentou o Fusion, um novo motor construído em Rust com compreensão nativa de SQL, prometendo parsing até 30x mais rápido e orquestração sensível ao estado que executa apenas os modelos alterados. A empresa relata economia média de 10% em custos de computação para clientes early adopters.",
+    "relevance": "Redefine a experiência de desenvolvimento em Analytics Engineering, tema central para quem trabalha com dbt e pipelines analíticos modernos.",
+    "publishedAt": "2025-05-28",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Data Engineering",
+      "Data Platforms"
+    ],
+    "tags": [
+      "dbt",
+      "Analytics Engineering",
+      "Rust",
+      "SQL"
+    ],
+    "source": "PR Newswire / dbt Labs",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/dbt-labs-redefines-dbt-with-new-fusion-engine-built-to-revolutionize-developer-experience-in-the-age-of-ai-302466811.html"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 320,
+  "data": {
+    "id": "postgresql-16-lancado",
+    "slug": "postgresql-16-lancado",
+    "title": "PostgreSQL 16 é lançado com ganhos de performance em paralelismo e replicação",
+    "summary": "O PostgreSQL 16 foi lançado com paralelização de consultas com FULL e RIGHT JOIN, melhorias de até 300% em cargas via COPY e suporte a SIMD em x86 e ARM para acelerar processamento de strings e JSON. A versão também trouxe avanços em replicação lógica e novas opções de controle de acesso.",
+    "relevance": "Reforça a posição do PostgreSQL como banco de dados open source de referência, usado como base por diversos serviços gerenciados de nuvem e ferramentas de dados modernas.",
+    "publishedAt": "2023-09-14",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "PostgreSQL",
+      "SQL",
+      "Performance",
+      "Replicação"
+    ],
+    "source": "PostgreSQL Global Development Group (postgresql.org)",
+    "sourceUrl": "https://www.postgresql.org/about/news/postgresql-16-released-2715/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ],
+      "articleIds": [
+        "ctes-recursivas-sql"
+      ]
+    }
+  }
+}

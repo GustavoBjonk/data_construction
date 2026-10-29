@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 510,
+  "data": {
+    "id": "dbt-labs-coalesce-2024",
+    "slug": "dbt-labs-coalesce-2024",
+    "title": "dbt Labs lança dbt Copilot e suporte a Iceberg na conferência Coalesce 2024",
+    "summary": "Na Coalesce 2024, a dbt Labs anunciou o dbt Copilot (assistente de IA para gerar testes, documentação e modelos semânticos), o dbt Mesh para colaboração entre plataformas de dados distintas, e suporte a tabelas Apache Iceberg em múltiplos engines.",
+    "relevance": "Mostra a IA generativa chegando ao dia a dia da engenharia analítica (analytics engineering), automatizando tarefas repetitivas de modelagem e documentação em SQL.",
+    "publishedAt": "2024-10-08",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Data Engineering"
+    ],
+    "tags": [
+      "dbt Labs",
+      "dbt Copilot",
+      "dbt Mesh",
+      "Apache Iceberg",
+      "Coalesce"
+    ],
+    "source": "dbt Labs (blog oficial)",
+    "sourceUrl": "https://www.getdbt.com/blog/coalesce-2024-product-announcements"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 560,
+  "data": {
+    "id": "databricks-serie-j-2024",
+    "slug": "databricks-serie-j-2024",
+    "title": "Databricks capta US$ 10 bilhões em rodada Série J, atingindo valuation de US$ 62 bilhões",
+    "summary": "A Databricks anunciou uma rodada Série J de até US$ 10 bilhões, liderada pela Thrive Capital, elevando sua avaliação de US$ 43 bilhões (2023) para US$ 62 bilhões, citando crescimento de receita acima de 60% ano a ano impulsionado por IA.",
+    "relevance": "Uma das maiores rodadas de venture capital da história, evidenciando o apetite do mercado por plataformas que combinam dados e IA em um único produto.",
+    "publishedAt": "2024-12-17",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Mercado",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Databricks",
+      "Investimento",
+      "Valuation",
+      "IA"
+    ],
+    "source": "Databricks (newsroom oficial)",
+    "sourceUrl": "https://www.databricks.com/company/newsroom/press-releases/databricks-raising-10b-series-j-investment-62b-valuation"
+  }
+}

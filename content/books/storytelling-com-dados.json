@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 60,
+  "data": {
+    "id": "storytelling-com-dados",
+    "title": "Storytelling com Dados",
+    "authors": [
+      "Cole Nussbaumer Knaflic"
+    ],
+    "publisher": "Alta Books",
+    "year": 2019,
+    "isbn13": "9788550804682",
+    "topic": "Dados",
+    "level": "Iniciante",
+    "language": "Português",
+    "description": "Como escolher gráficos, eliminar ruído visual e conduzir a atenção para a mensagem.",
+    "why": "Melhora qualquer apresentação de dados em pouco tempo de leitura."
+  }
+}

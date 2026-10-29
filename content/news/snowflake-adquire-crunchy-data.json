@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 610,
+  "data": {
+    "id": "snowflake-adquire-crunchy-data",
+    "slug": "snowflake-adquire-crunchy-data",
+    "title": "Snowflake anuncia aquisição da Crunchy Data para levar PostgreSQL enterprise à nuvem de IA",
+    "summary": "Durante o Snowflake Summit 2025, a empresa anunciou a intenção de adquirir a Crunchy Data, fornecedora de tecnologia PostgreSQL open source de nível empresarial. O objetivo é lançar o \"Snowflake Postgres\", combinando o banco transacional mais popular entre desenvolvedores com a governança e segurança da AI Data Cloud.",
+    "relevance": "Sinaliza a aposta das grandes plataformas de dados em bancos operacionais compatíveis com PostgreSQL como base para aplicações de IA e agentes.",
+    "publishedAt": "2025-06-02",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Bancos de Dados",
+      "Mercado"
+    ],
+    "tags": [
+      "Snowflake",
+      "PostgreSQL",
+      "Aquisição",
+      "Cloud"
+    ],
+    "source": "Snowflake (blog oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-acquires-crunchy-data-to-bring-enterprise-ready-postgres-offering-to-the-ai-data-cloud/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ]
+    }
+  }
+}

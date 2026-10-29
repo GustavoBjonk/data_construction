@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 330,
+  "data": {
+    "id": "amazon-bedrock-ga",
+    "slug": "amazon-bedrock-ga",
+    "title": "Amazon Bedrock chega à disponibilidade geral na AWS",
+    "summary": "A AWS tornou o Amazon Bedrock geralmente disponível, oferecendo acesso via API única a modelos de fundação da Amazon, Anthropic, AI21 Labs, Cohere e Stability AI, com o Llama 2 da Meta chegando em seguida. O serviço também passou a permitir a criação de agentes capazes de executar tarefas de múltiplas etapas.",
+    "relevance": "Consolidou a estratégia da AWS de oferecer IA generativa \"as a service\" multi-modelo, tornando-se peça central de infraestrutura para times de dados que constroem aplicações de IA na nuvem.",
+    "publishedAt": "2023-09-28",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Cloud",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "AWS",
+      "Amazon Bedrock",
+      "Foundation Models",
+      "Anthropic"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2023/09/28/amazon-launches-its-bedrock-generative-ai-service-in-general-availability/"
+  }
+}

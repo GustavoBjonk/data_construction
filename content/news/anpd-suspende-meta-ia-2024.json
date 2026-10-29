@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 570,
+  "data": {
+    "id": "anpd-suspende-meta-ia-2024",
+    "slug": "anpd-suspende-meta-ia-2024",
+    "title": "ANPD determina suspensão cautelar do uso de dados pessoais pela Meta para treinar IA",
+    "summary": "A Autoridade Nacional de Proteção de Dados determinou a suspensão imediata, no Brasil, da nova política de privacidade da Meta que permitia usar publicações de usuários para treinar modelos de IA, citando base legal inadequada e falta de transparência.",
+    "relevance": "Primeira ação concreta de um órgão regulador de proteção de dados no mundo bloqueando o treinamento de IA generativa com dados de uma rede social, um precedente para a aplicação da LGPD à IA.",
+    "publishedAt": "2024-07-02",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Data Privacy",
+      "Regulamentação"
+    ],
+    "tags": [
+      "ANPD",
+      "LGPD",
+      "Meta",
+      "IA Generativa",
+      "Proteção de Dados"
+    ],
+    "source": "ANPD (comunicado oficial)",
+    "sourceUrl": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-determina-suspensao-cautelar-do-tratamento-de-dados-pessoais-para-treinamento-da-ia-da-meta"
+  }
+}

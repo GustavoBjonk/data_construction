@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 80,
+  "data": {
+    "id": "ms-learn-advanced-tsql",
+    "title": "Gravar consultas avançadas do Transact-SQL",
+    "platform": "Microsoft Learn",
+    "area": "SQL",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Intermediário",
+    "description": "Trilha oficial da Microsoft sobre JOINs, subconsultas, funções de janela e agrupamentos avançados em SQL.",
+    "skills": [
+      "JOINs",
+      "Window Functions",
+      "Agregações"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/paths/write-advanced-transact-sql-queries/"
+  }
+}

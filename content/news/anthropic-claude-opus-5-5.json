@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1230,
+  "data": {
+    "id": "anthropic-claude-opus-5-5",
+    "slug": "anthropic-claude-opus-5-5",
+    "title": "Anthropic lança Claude Opus 5.5, com preço 20% menor que o do Opus 5",
+    "summary": "A Anthropic lançou em 22 de setembro o Claude Opus 5.5, primeiro modelo da família 5.5. Segundo a empresa, ele tem desempenho no nível do Claude Fable 5.1 na maior parte das tarefas, com custo de execução cerca de 40% menor que o do Opus 5. O preço por milhão de tokens caiu para 4 dólares na entrada e 20 dólares na saída, redução de 20%, e a leitura de cache ficou 60% mais barata. A geração de texto ficou mais de 30% mais rápida, e há um modo rápido opcional, com preço maior. Nos benchmarks divulgados pela empresa, os ganhos sobre o Opus 5 aparecem em programação com agentes, uso de computador e trabalho do conhecimento. O modo de raciocínio não pode mais ser desativado, e o modelo está disponível em todas as plataformas, incluindo AWS, Google Cloud e Azure.",
+    "relevance": "Queda de preço em modelos de ponta torna viáveis projetos que antes não fechavam a conta, como análise de documentos longos ou agentes que fazem muitas chamadas. Comparar custo por tarefa, não só por token, ajuda a escolher o modelo certo.",
+    "publishedAt": "2026-09-22",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Opus",
+      "LLM",
+      "API"
+    ],
+    "source": "Anthropic (comunicado oficial)",
+    "sourceUrl": "https://www.anthropic.com/claude-opus-5-5"
+  }
+}

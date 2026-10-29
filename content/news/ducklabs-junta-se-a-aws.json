@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1270,
+  "data": {
+    "id": "ducklabs-junta-se-a-aws",
+    "slug": "ducklabs-junta-se-a-aws",
+    "title": "DuckLabs, empresa por trás do DuckDB, anuncia que vai se juntar à AWS",
+    "summary": "Os criadores do DuckDB, Mark Raasveldt e Hannes Mühleisen, anunciaram em 26 de agosto que a DuckLabs, empresa ligada ao desenvolvimento do banco analítico, passaria a ser uma subsidiária da Amazon Web Services, com efeito previsto para o início de setembro. Segundo o anúncio, não haverá mudanças no roteiro, no licenciamento nem no modelo de governança dos projetos. DuckDB, DuckLake, Quack e as demais extensões continuam livres e de código aberto sob a licença MIT, e a DuckDB Foundation, organização sem fins lucrativos, segue como guardiã dos projetos. A fundação vai criar um Conselho Técnico Consultivo com influência sobre a direção dos projetos. Os autores também informaram que as restrições anteriores ao suporte para a comunidade seriam retiradas.",
+    "relevance": "O DuckDB é muito usado em ensino, análise local e pipelines. Saber quem financia um projeto open source e como ele é governado ajuda a avaliar riscos de longo prazo antes de adotá-lo como peça central de uma arquitetura.",
+    "publishedAt": "2026-08-26",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Mercado",
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "DuckDB",
+      "AWS",
+      "Aquisição",
+      "Open Source",
+      "Licença MIT"
+    ],
+    "source": "DuckDB (blog oficial)",
+    "sourceUrl": "https://duckdb.org/2026/08/26/ducklabs-to-join-aws.html"
+  }
+}

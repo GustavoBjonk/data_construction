@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 100,
+  "data": {
+    "id": "superstore",
+    "name": "Superstore",
+    "description": "Dataset de vendas de varejo (pedidos, clientes, produtos e regiões) amplamente usado para praticar dashboards e KPIs comerciais.",
+    "category": "Business Intelligence",
+    "difficulty": "Iniciante",
+    "size": "cerca de 10 mil registros de pedidos",
+    "format": "CSV / XLSX",
+    "topics": [
+      "Power BI",
+      "Dashboards",
+      "Vendas",
+      "KPIs",
+      "Análise comercial"
+    ],
+    "technologies": [
+      "Power BI",
+      "Tableau",
+      "Excel",
+      "SQL"
+    ],
+    "idealFor": [
+      "Criar dashboard no Power BI",
+      "Praticar storytelling com dados de vendas"
+    ],
+    "source": "Kaggle",
+    "sourceUrl": "https://www.kaggle.com/datasets/vivek468/superstore-dataset-final"
+  }
+}

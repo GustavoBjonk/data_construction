@@ -2,257 +2,293 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/Container";
+import { AdSlot } from "@/components/monetization/AdSlot";
+import { NewsGrid } from "@/components/news/NewsGrid";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { NewsGrid } from "@/components/news/NewsGrid";
-import { news } from "@/data/news";
+import { ShareLinks } from "@/components/ui/ShareLinks";
+import { isEditoriallyVerified } from "@/data/news";
+import { getCatalog, getNewsBySlug } from "@/lib/content";
+import { newsCategoryHref } from "@/lib/news-categories";
 import { formatDate } from "@/lib/format";
-import { datasets } from "@/data/datasets";
-import { projects } from "@/data/projects";
-import { roadmaps } from "@/data/roadmaps";
-import { articles } from "@/data/articles";
+import { SITE, absoluteUrl } from "@/lib/site";
 
 interface NewsPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export function generateStaticParams() {
-  return news.map((item) => ({ slug: item.slug }));
+const RELATED_NEWS_COUNT = 3;
+
+export const revalidate = 300;
+
+export async function generateStaticParams() {
+  return (await getCatalog()).news.map((item) => ({ slug: item.slug }));
 }
 
 export async function generateMetadata({ params }: NewsPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const item = news.find((entry) => entry.slug === slug);
+  const item = await getNewsBySlug(slug);
+  if (!item) return { title: "Notícia não encontrada" };
 
-  if (!item) {
-    return { title: "Notícia" };
-  }
-
+  const path = `/noticias/${item.slug}`;
+  const verifiedAt = isEditoriallyVerified(item) ? item.verifiedAt : undefined;
   return {
     title: item.title,
     description: item.summary,
-    alternates: { canonical: `/noticias/${item.slug}` },
+    alternates: { canonical: path },
     openGraph: {
       title: item.title,
       description: item.summary,
       type: "article",
+      url: path,
       publishedTime: item.publishedAt,
+      modifiedTime: verifiedAt,
       tags: item.tags,
     },
-    twitter: {
-      card: "summary",
-      title: item.title,
-      description: item.summary,
-    },
+    twitter: { card: "summary_large_image", title: item.title, description: item.summary },
   };
+}
+
+function findAll<T>(ids: string[] | undefined, list: T[], key: (item: T) => string): T[] {
+  return (ids ?? [])
+    .map((id) => list.find((item) => key(item) === id))
+    .filter((item): item is T => item !== undefined);
 }
 
 export default async function NewsPage({ params }: NewsPageProps) {
   const { slug } = await params;
-  const item = news.find((entry) => entry.slug === slug);
+  const item = await getNewsBySlug(slug);
+  if (!item) notFound();
 
-  if (!item) {
-    notFound();
-  }
+  const { news, datasets, projects, roadmaps, articles } = await getCatalog();
+  const path = `/noticias/${item.slug}`;
+  const verifiedAt = isEditoriallyVerified(item) ? item.verifiedAt : undefined;
 
   const relatedNews = news
     .filter(
       (entry) =>
         entry.id !== item.id &&
-        (entry.category.some((cat) => item.category.includes(cat)) ||
-          entry.tags.some((tag) => item.tags.includes(tag)))
+        (entry.category.some((cat) => item.category.includes(cat)) || entry.tags.some((tag) => item.tags.includes(tag))),
     )
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
-    .slice(0, 3);
+    .slice(0, RELATED_NEWS_COUNT);
 
-  const relatedDatasets = (item.related?.datasetIds ?? [])
-    .map((id) => datasets.find((dataset) => dataset.id === id))
-    .filter((dataset): dataset is NonNullable<typeof dataset> => Boolean(dataset));
+  // Navegação cronológica no acervo (mais recente → mais antiga).
+  const chronological = [...news].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  const position = chronological.findIndex((entry) => entry.id === item.id);
+  const newer = position > 0 ? chronological[position - 1] : undefined;
+  const older = position >= 0 ? chronological[position + 1] : undefined;
 
-  const relatedProjects = (item.related?.projectIds ?? [])
-    .map((id) => projects.find((project) => project.id === id))
-    .filter((project): project is NonNullable<typeof project> => Boolean(project));
-
-  const relatedTracks = (item.related?.trackSlugs ?? [])
-    .map((trackSlug) => roadmaps.find((roadmap) => roadmap.slug === trackSlug))
-    .filter((roadmap): roadmap is NonNullable<typeof roadmap> => Boolean(roadmap));
-
-  const relatedArticles = (item.related?.articleIds ?? [])
-    .map((id) => articles.find((article) => article.id === id))
-    .filter((article): article is NonNullable<typeof article> => Boolean(article));
-
-  const hasRelatedContent =
-    relatedDatasets.length > 0 ||
-    relatedProjects.length > 0 ||
-    relatedTracks.length > 0 ||
-    relatedArticles.length > 0;
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    headline: item.title,
-    description: item.summary,
-    datePublished: item.publishedAt,
-    dateModified: item.verifiedAt,
-    author: { "@type": "Organization", name: "Dataconstruction" },
-    publisher: { "@type": "Organization", name: "Dataconstruction" },
-  };
+  const relatedGroups = [
+    {
+      label: "Datasets",
+      links: findAll(item.related?.datasetIds, datasets, (d) => d.id).map((d) => ({
+        href: `/datasets#dataset-${d.id}`,
+        title: d.name,
+      })),
+    },
+    {
+      label: "Projetos",
+      links: findAll(item.related?.projectIds, projects, (p) => p.id).map((p) => ({ href: "/projetos", title: p.title })),
+    },
+    {
+      label: "Trilhas",
+      links: findAll(item.related?.trackSlugs, roadmaps, (r) => r.slug).map((r) => ({
+        href: `/trilhas/${r.slug}`,
+        title: r.title,
+      })),
+    },
+    {
+      label: "Artigos",
+      links: findAll(item.related?.articleIds, articles, (a) => a.id).map((a) => ({
+        href: `/artigos/${a.id}`,
+        title: a.title,
+      })),
+    },
+  ].filter((group) => group.links.length > 0);
 
   return (
-    <section className="py-16 sm:py-20">
-      {/* eslint-disable-next-line react/no-danger */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    <article>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          headline: item.title,
+          description: item.summary,
+          datePublished: item.publishedAt,
+          // Só declara modificação quando há revisão editorial registrada.
+          ...(verifiedAt ? { dateModified: verifiedAt } : {}),
+          inLanguage: "pt-BR",
+          url: absoluteUrl(path),
+          keywords: item.tags.join(", "),
+          isBasedOn: item.sourceUrl,
+          author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+          publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+        }}
       />
-      <Container>
-        <div className="max-w-2xl">
-          <ul className="flex flex-wrap gap-2">
-            {item.category.map((cat) => (
-              <li key={cat}>
-                <Badge variant="accent">{cat}</Badge>
-              </li>
-            ))}
-          </ul>
 
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900">
-            {item.title}
-          </h1>
-
-          <p className="mt-3 text-xs text-slate-400">
-            Publicado em {formatDate(item.publishedAt)} · Fonte: {item.source}
-          </p>
-
-          <p className="mt-6 text-base leading-relaxed text-slate-500">{item.summary}</p>
-        </div>
-
-        <div className="mt-10 max-w-prose">
-          <h2 className="text-lg font-semibold tracking-tight text-slate-900">
-            O que isso significa para a área de Dados?
-          </h2>
-          <p className="mt-3 text-base leading-relaxed text-slate-500">{item.relevance}</p>
-        </div>
-
-        <div className="mt-10 max-w-prose">
-          <ul className="flex flex-wrap gap-2">
-            {item.tags.map((tag) => (
-              <li key={tag}>
-                <Badge variant="neutral">{tag}</Badge>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="mt-10 max-w-prose rounded-lg border border-slate-200 bg-white p-6">
-          <p className="text-sm font-medium text-slate-900">Fonte original</p>
-          <p className="mt-1 text-sm text-slate-500">
-            Leia a publicação original na fonte: {item.source}.
-          </p>
-          <div className="mt-4">
-            <Button href={item.sourceUrl} external variant="secondary">
-              Acessar fonte original
-            </Button>
+      <header className="border-b border-line">
+        <Container className="pb-12 pt-8 sm:pt-10">
+          <Breadcrumbs
+            items={[
+              { label: "Notícias", href: "/noticias" },
+              { label: item.title, href: path },
+            ]}
+          />
+          <div className="mt-10 max-w-4xl">
+            <ul className="flex flex-wrap gap-2" aria-label="Categorias">
+              {item.category.map((cat) => (
+                <li key={cat}>
+                  <Link href={newsCategoryHref(cat)} className="transition-opacity hover:opacity-80">
+                    <Badge>{cat}</Badge>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h1 className="mt-5 font-display text-display-3 font-semibold sm:text-[2.75rem] sm:leading-[1.05]">
+              {item.title}
+            </h1>
+            <dl className="mt-8 flex flex-wrap gap-x-8 gap-y-3 font-mono text-[0.6875rem] uppercase tracking-[0.1em]">
+              <div>
+                <dt className="text-subtle">Data original</dt>
+                <dd className="mt-1 text-fg">
+                  <time dateTime={item.publishedAt}>{formatDate(item.publishedAt)}</time>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-subtle">Fonte</dt>
+                <dd className="mt-1 text-fg">{item.source}</dd>
+              </div>
+              <div>
+                <dt className="text-subtle">Revisão editorial</dt>
+                <dd className="mt-1 text-fg">
+                  {verifiedAt ? (
+                    <>
+                      Verificada em <time dateTime={verifiedAt}>{formatDate(verifiedAt)}</time>
+                    </>
+                  ) : (
+                    <span className="text-copper">Pendente</span>
+                  )}
+                </dd>
+              </div>
+            </dl>
           </div>
-        </div>
+        </Container>
+      </header>
 
-        {hasRelatedContent && (
-          <div className="mt-16 border-t border-slate-200 pt-12">
-            <h2 className="text-lg font-semibold tracking-tight text-slate-900">Relacionado</h2>
-            <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              {relatedDatasets.length > 0 && (
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                    Dataset
-                  </p>
-                  <ul className="mt-2 space-y-1">
-                    {relatedDatasets.map((dataset) => (
-                      <li key={dataset.id}>
-                        <Link
-                          href="/datasets"
-                          className="text-sm text-accent hover:text-accent-hover"
-                        >
-                          {dataset.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+      <Container className="grid gap-12 py-12 sm:py-16 lg:grid-cols-12">
+        <div className="min-w-0 lg:col-span-7">
+          <div className="max-w-prose">
+            <p className="eyebrow">Resumo</p>
+            <p className="mt-4 text-lg leading-relaxed text-fg/90 sm:text-xl">{item.summary}</p>
 
-              {relatedProjects.length > 0 && (
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                    Projeto
-                  </p>
-                  <ul className="mt-2 space-y-1">
-                    {relatedProjects.map((project) => (
-                      <li key={project.id}>
-                        <Link
-                          href="/projetos"
-                          className="text-sm text-accent hover:text-accent-hover"
-                        >
-                          {project.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+            <h2 className="mt-12 font-display text-2xl font-semibold tracking-tight">
+              O que isso significa para a área de Dados?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted sm:text-[1.0625rem]">{item.relevance}</p>
 
-              {relatedTracks.length > 0 && (
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                    Trilha
-                  </p>
-                  <ul className="mt-2 space-y-1">
-                    {relatedTracks.map((track) => (
-                      <li key={track.id}>
-                        <Link
-                          href={`/trilhas/${track.slug}`}
-                          className="text-sm text-accent hover:text-accent-hover"
-                        >
-                          {track.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+            <ul className="mt-10 flex flex-wrap gap-1.5" aria-label="Tags">
+              {item.tags.map((tag) => (
+                <li key={tag}>
+                  <Badge variant="neutral">{tag}</Badge>
+                </li>
+              ))}
+            </ul>
 
-              {relatedArticles.length > 0 && (
-                <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                    Artigo
-                  </p>
-                  <ul className="mt-2 space-y-1">
-                    {relatedArticles.map((article) => (
-                      <li key={article.id}>
-                        <Link
-                          href="/artigos"
-                          className="text-sm text-accent hover:text-accent-hover"
-                        >
-                          {article.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+            <div className="mt-10">
+              <ShareLinks url={absoluteUrl(path)} title={item.title} />
             </div>
           </div>
-        )}
+        </div>
 
-        {relatedNews.length > 0 && (
-          <div className="mt-16 border-t border-slate-200 pt-12">
-            <h2 className="text-lg font-semibold tracking-tight text-slate-900">
+        <aside className="lg:col-span-4 lg:col-start-9">
+          <div className="space-y-6 lg:sticky lg:top-24">
+            <div className="border border-accent/30 bg-surface p-6">
+              <p className="eyebrow text-accent">Fonte original</p>
+              <p className="mt-3 font-medium text-fg">{item.source}</p>
+              <p className="mt-2 break-all font-mono text-xs text-subtle">{new URL(item.sourceUrl).hostname}</p>
+              <p className="mt-4 text-sm leading-relaxed text-muted">
+                {verifiedAt
+                  ? "O resumo acima é editorial. Consulte a publicação original para detalhes e contexto completos."
+                  : "O resumo acima ainda não passou pela revisão editorial. Confira datas, números e afirmações na publicação original."}
+              </p>
+              <Button href={item.sourceUrl} external withArrow className="mt-6 w-full">
+                Ler na fonte original
+              </Button>
+            </div>
+
+            {relatedGroups.length > 0 && (
+              <div className="border border-line p-6">
+                <p className="eyebrow">Aprofunde no DataConstruction</p>
+                <div className="mt-4 space-y-5">
+                  {relatedGroups.map((group) => (
+                    <div key={group.label}>
+                      <p className="font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-subtle">{group.label}</p>
+                      <ul className="mt-2 space-y-1">
+                        {group.links.map((link) => (
+                          <li key={link.href + link.title}>
+                            <Link href={link.href} className="text-sm text-muted transition-colors hover:text-accent">
+                              {link.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </aside>
+      </Container>
+
+      <Container className="pb-12">
+        <AdSlot placement="news-detail" />
+      </Container>
+
+      {(newer || older) && (
+        <nav aria-label="Navegação entre notícias" className="border-t border-line">
+          <Container className="grid gap-px bg-line sm:grid-cols-2">
+            {[
+              { entry: older, label: "Anterior", align: "" },
+              { entry: newer, label: "Próxima", align: "sm:text-right" },
+            ].map(({ entry, label, align }) =>
+              entry ? (
+                <Link
+                  key={label}
+                  href={`/noticias/${entry.slug}`}
+                  className={`group block bg-bg py-8 sm:px-6 sm:first:pl-0 sm:last:pr-0 ${align}`}
+                >
+                  <span className="eyebrow">{label}</span>
+                  <span className="mt-2 block font-display text-lg font-medium leading-snug text-fg transition-colors group-hover:text-accent">
+                    {entry.title}
+                  </span>
+                  <span className="mt-1 block font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-subtle">
+                    {formatDate(entry.publishedAt)}
+                  </span>
+                </Link>
+              ) : (
+                <span key={label} className="hidden bg-bg sm:block" />
+              ),
+            )}
+          </Container>
+        </nav>
+      )}
+
+      {relatedNews.length > 0 && (
+        <section aria-labelledby="noticias-relacionadas" className="border-t border-line">
+          <Container className="py-14">
+            <h2 id="noticias-relacionadas" className="eyebrow text-fg">
               Notícias relacionadas
             </h2>
             <div className="mt-6">
               <NewsGrid news={relatedNews} />
             </div>
-          </div>
-        )}
-      </Container>
-    </section>
+          </Container>
+        </section>
+      )}
+    </article>
   );
 }

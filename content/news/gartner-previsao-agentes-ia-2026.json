@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 710,
+  "data": {
+    "id": "gartner-previsao-agentes-ia-2026",
+    "slug": "gartner-previsao-agentes-ia-2026",
+    "title": "Gartner prevê que 40% dos aplicativos corporativos terão agentes de IA específicos até 2026",
+    "summary": "A Gartner projetou que a proporção de aplicativos corporativos com agentes de IA para tarefas específicas saltará de menos de 5% em 2025 para 40% até o fim de 2026. O relatório também alerta que mais de 40% dos projetos de IA agêntica podem ser cancelados até 2027 por falta de valor claro ou controle de custos.",
+    "relevance": "Fornece um contraponto analítico ao hype de agentes de IA, ajudando profissionais de dados a calibrar expectativas de adoção e investimento.",
+    "publishedAt": "2025-08-26",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Inteligência Artificial",
+      "Mercado"
+    ],
+    "tags": [
+      "AI Agents",
+      "Gartner",
+      "Enterprise",
+      "Previsão"
+    ],
+    "source": "Gartner (comunicado oficial)",
+    "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025"
+  }
+}

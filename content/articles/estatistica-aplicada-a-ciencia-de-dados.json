@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 110,
+  "data": {
+    "id": "estatistica-aplicada-a-ciencia-de-dados",
+    "title": "Estatística aplicada à ciência de dados: os conceitos que você usa toda semana",
+    "description": "Média, mediana, dispersão, amostragem, intervalos de confiança, testes A/B e correlação explicados com exemplos em Python e com os cuidados para não tirar conclusões erradas.",
+    "category": "Estatística",
+    "date": "2026-10-29",
+    "readingTime": 6,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "Estatística é a base para responder com honestidade a perguntas feitas com dados incompletos, que é a situação normal do dia a dia. Não é preciso dominar demonstrações matemáticas para aplicá-la bem, mas é preciso entender o que cada medida diz e o que ela não diz. Este artigo reúne os conceitos mais usados em análises e projetos de ciência de dados.",
+      "## Centro: média e mediana",
+      "A média soma os valores e divide pela quantidade; a mediana é o valor do meio quando os dados estão ordenados. Em distribuições assimétricas, como salários, preços de imóveis e tempo de resposta de sistemas, alguns valores muito altos puxam a média para cima, enquanto a mediana representa melhor o caso típico. Ao relatar um \"valor típico\", vale olhar as duas.",
+      "## Dispersão: quanto os dados variam",
+      "Duas lojas com o mesmo faturamento médio podem ter comportamentos muito diferentes. O desvio padrão mede o afastamento típico em relação à média; o intervalo interquartil, distância entre o primeiro e o terceiro quartis, mede a dispersão da metade central dos dados e é menos sensível a valores extremos. Histogramas e boxplots mostram essas informações de forma visual e devem vir antes de qualquer teste.",
+      "```python\nimport numpy as np\n\ntempos = np.array([120, 135, 128, 140, 132, 900, 125, 130])  # ms\nprint(\"Média  :\", tempos.mean())        # puxada pelo 900\nprint(\"Mediana:\", np.median(tempos))\nq1, q3 = np.percentile(tempos, [25, 75])\nprint(\"IQR    :\", q3 - q1)\n```",
+      "## Amostra e população",
+      "Quase sempre trabalhamos com uma amostra, não com a população inteira. A pergunta central é se a amostra representa bem a população que nos interessa. Uma pesquisa respondida só por clientes satisfeitos, ou dados coletados apenas em um horário do dia, produz conclusões enviesadas, por maior que seja a amostra. Tamanho não corrige viés de seleção.",
+      "## Intervalos de confiança",
+      "Uma estimativa sem margem de erro passa uma falsa precisão. O intervalo de confiança apresenta uma faixa de valores plausíveis para o parâmetro. Um intervalo de 95% é construído por um procedimento que, repetido muitas vezes com novas amostras, capturaria o valor verdadeiro em cerca de 95% das vezes. O bootstrap, que reamostra os próprios dados muitas vezes, permite calcular intervalos sem fórmulas específicas.",
+      "```python\nrng = np.random.default_rng(42)\nmedias = [rng.choice(tempos, size=len(tempos), replace=True).mean() for _ in range(5000)]\nprint(\"IC 95% da média:\", np.percentile(medias, [2.5, 97.5]))\n```",
+      "Com apenas oito observações e um valor extremo, o intervalo fica largo, o que é exatamente a informação honesta: há pouca evidência para cravar um número.",
+      "## Testes de hipótese e testes A/B",
+      "Em um teste A/B, parte dos usuários vê a versão atual (A) e parte vê a nova (B), com sorteio aleatório. A hipótese nula afirma que não há diferença entre as versões. O p-valor é a probabilidade de observar uma diferença tão grande quanto a encontrada, ou maior, se a hipótese nula fosse verdadeira. Um p-valor pequeno indica que os dados são pouco compatíveis com \"nenhuma diferença\"; ele não mede o tamanho do efeito nem a probabilidade de a versão B ser melhor.",
+      "```python\nfrom statsmodels.stats.proportion import proportions_ztest\n\nconversoes = np.array([480, 540])      # A, B\nvisitantes = np.array([10000, 10000])\nz, p = proportions_ztest(conversoes, visitantes)\nprint(f\"Taxas: {conversoes / visitantes}  p-valor: {p:.3f}\")\n```",
+      "Boas práticas em testes A/B incluem definir antes a métrica principal e o tamanho da amostra, não interromper o teste assim que o p-valor fica pequeno e reportar o tamanho do efeito com intervalo de confiança. Testar muitas métricas ao mesmo tempo aumenta a chance de encontrar uma diferença por puro acaso.",
+      "## Correlação não é causalidade",
+      "Duas variáveis podem andar juntas porque uma causa a outra, porque uma terceira variável causa as duas ou por coincidência. Vendas de sorvete e afogamentos sobem juntos no verão, mas o calor é a causa comum. Experimentos aleatorizados, como os testes A/B, são a forma mais direta de estabelecer causalidade; com dados apenas observacionais, conclusões causais exigem métodos e premissas adicionais.",
+      "## Aplicações reais",
+      "Esses conceitos aparecem em experimentos de produto, controle de qualidade industrial, pesquisas de satisfação, análise de risco de crédito e monitoramento de modelos de machine learning, quando é preciso saber se uma queda de desempenho é real ou apenas variação natural.",
+      "## Conclusão",
+      "Olhe a distribuição antes de resumir, relate incerteza junto com as estimativas, desconfie de amostras convenientes e separe associação de causa. Esses quatro hábitos já evitam a maior parte das conclusões erradas em análises de dados."
+    ],
+    "references": [
+      {
+        "citation": "BRUCE, Peter; BRUCE, Andrew; GEDECK, Peter. Estatística Prática para Cientistas de Dados: 50+ conceitos essenciais usando R e Python. 2. ed. Rio de Janeiro: Alta Books, 2025."
+      },
+      {
+        "citation": "DIEZ, David; ÇETINKAYA-RUNDEL, Mine; BARR, Christopher. OpenIntro Statistics. 4. ed. OpenIntro, 2019. Disponível em: https://www.openintro.org/book/os/. Acesso em: 29 out. 2026.",
+        "url": "https://www.openintro.org/book/os/"
+      },
+      {
+        "citation": "WASSERSTEIN, Ronald L.; LAZAR, Nicole A. The ASA Statement on p-Values: Context, Process, and Purpose. The American Statistician, v. 70, n. 2, p. 129-133, 2016. DOI: 10.1080/00031305.2016.1154108.",
+        "url": "https://doi.org/10.1080/00031305.2016.1154108"
+      },
+      {
+        "citation": "STATSMODELS DEVELOPERS. proportions_ztest. Disponível em: https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportions_ztest.html. Acesso em: 29 out. 2026.",
+        "url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportions_ztest.html"
+      }
+    ],
+    "tags": [
+      "Estatística",
+      "Ciência de Dados",
+      "Teste A/B",
+      "Intervalo de Confiança",
+      "Python"
+    ]
+  }
+}

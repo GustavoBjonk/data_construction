@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 60,
+  "data": {
+    "id": "ms-learn-dax-powerbi",
+    "title": "Usar DAX em modelos semânticos do Power BI",
+    "platform": "Microsoft Learn",
+    "area": "Business Intelligence",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Intermediário",
+    "description": "Trilha oficial da Microsoft para aprender a escrever fórmulas DAX e criar cálculos no Power BI.",
+    "skills": [
+      "DAX",
+      "Power BI",
+      "Cálculos"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/paths/dax-power-bi/"
+  }
+}

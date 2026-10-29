@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "openai-lanca-chatgpt",
+    "slug": "openai-lanca-chatgpt",
+    "title": "OpenAI lança o ChatGPT ao público",
+    "summary": "A OpenAI publicou um post de blog anunciando o ChatGPT como uma \"pesquisa de prévia\" (research preview), um modelo conversacional derivado da família GPT-3.5. O lançamento, feito sem grande evento de marketing, ultrapassou 1 milhão de usuários em cinco dias.",
+    "relevance": "Marco que popularizou IA generativa em escala global e mudou a forma como profissionais de dados passaram a usar assistentes de linguagem no dia a dia de trabalho.",
+    "publishedAt": "2022-11-30",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "ChatGPT",
+      "OpenAI",
+      "IA Generativa",
+      "GPT-3.5"
+    ],
+    "source": "OpenAI (blog oficial)",
+    "sourceUrl": "https://openai.com/blog/chatgpt",
+    "featured": true
+  }
+}

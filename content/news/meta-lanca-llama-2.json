@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 300,
+  "data": {
+    "id": "meta-lanca-llama-2",
+    "slug": "meta-lanca-llama-2",
+    "title": "Meta lança o Llama 2 em parceria com a Microsoft, liberando uso comercial",
+    "summary": "A Meta disponibilizou o Llama 2, modelo de linguagem em três tamanhos (7B, 13B e 70B parâmetros), liberado gratuitamente para uso em pesquisa e comercial, em parceria com a Microsoft para distribuição via Azure. O modelo foi treinado com o dobro do volume de dados da primeira versão do Llama.",
+    "relevance": "Foi um marco para a IA open source, dando a equipes de dados e engenharia de ML uma alternativa viável a modelos proprietários para treinar e customizar aplicações próprias.",
+    "publishedAt": "2023-07-18",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Inteligência Artificial",
+      "Open Source"
+    ],
+    "tags": [
+      "Meta",
+      "Llama 2",
+      "Open Source",
+      "Microsoft Azure"
+    ],
+    "source": "Meta AI (blog oficial)",
+    "sourceUrl": "https://ai.meta.com/blog/llama-2/"
+  }
+}

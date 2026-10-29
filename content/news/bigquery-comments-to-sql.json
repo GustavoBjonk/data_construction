@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 860,
+  "data": {
+    "id": "bigquery-comments-to-sql",
+    "slug": "bigquery-comments-to-sql",
+    "title": "Google Cloud lança recurso que converte comentários em português/inglês em SQL no BigQuery",
+    "summary": "O Google Cloud lançou o recurso \"Comments to SQL\" no BigQuery Studio, que transforma instruções em linguagem natural escritas dentro de comentários SQL em consultas executáveis, usando IA para interpretar o contexto do código ao redor.",
+    "relevance": "Reduz a barreira de entrada para análise de dados via SQL, tema relevante para analistas iniciantes e times que buscam acelerar o desenvolvimento de queries com IA.",
+    "publishedAt": "2026-01-14",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Analytics",
+      "Business Intelligence"
+    ],
+    "tags": [
+      "BigQuery",
+      "Google Cloud",
+      "SQL",
+      "Gemini"
+    ],
+    "source": "Google Cloud (blog oficial)",
+    "sourceUrl": "https://cloud.google.com/blog/products/data-analytics/vibe-querying-with-comments-to-sql-in-bigquery",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ]
+    }
+  }
+}

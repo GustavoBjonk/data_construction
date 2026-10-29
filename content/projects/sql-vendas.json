@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 160,
+  "data": {
+    "id": "sql-vendas",
+    "title": "Banco de dados de vendas",
+    "description": "Modele um banco de dados de vendas com produtos, clientes e pedidos, e pratique consultas básicas.",
+    "area": "SQL",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "SQL",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "Modelagem relacional",
+      "Consultas SQL",
+      "Agregações"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Criar um esquema relacional simples de vendas e praticar consultas de seleção, filtro e agregação."
+  }
+}

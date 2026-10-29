@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1090,
+  "data": {
+    "id": "postgresql-19-rc1",
+    "slug": "postgresql-19-rc1",
+    "title": "PostgreSQL 19 entra em fase de release candidate, com lançamento previsto para novembro",
+    "summary": "O PostgreSQL Global Development Group publicou em 15 de outubro o primeiro release candidate do PostgreSQL 19, etapa final de testes antes da versão estável. A disponibilidade geral está planejada para 19 de novembro de 2026, salvo se algum problema exigir adiamento. Um segundo release candidate deve sair em 12 de novembro, porque a equipe incorporou um volume grande de correções antes do lançamento. Entre as áreas corrigidas desde o beta 4 estão REPACK (CONCURRENTLY), pg_plan_advice, otimizações do planejador de consultas, autovacuum paralelo e a ativação automática de replicação lógica. Uma mudança visível: COPY (consulta) TO com formato JSON passa a usar os nomes das colunas da consulta, incluindo aliases, como chaves. Atualizar a partir de versões anteriores exige pg_upgrade ou pg_dump e pg_restore.",
+    "relevance": "É a hora de testar aplicações e pipelines contra a nova versão antes do lançamento. Também vale lembrar que o PostgreSQL 14 chega ao fim do suporte em 12 de novembro de 2026, o que exige planejar migrações.",
+    "publishedAt": "2026-10-15",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "PostgreSQL",
+      "SQL",
+      "Open Source",
+      "Release Candidate"
+    ],
+    "source": "PostgreSQL.org (comunicado oficial)",
+    "sourceUrl": "https://www.postgresql.org/about/news/postgresql-19-rc-1-3409/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ]
+    }
+  }
+}

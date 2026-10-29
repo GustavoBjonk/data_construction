@@ -1,4 +1,5 @@
 import { Article } from "@/data/articles";
+import { EmptyState } from "@/components/ui/EmptyState";
 import { ArticleCard } from "./ArticleCard";
 
 interface ArticleGridProps {
@@ -6,16 +7,13 @@ interface ArticleGridProps {
   emptyMessage?: string;
 }
 
-export function ArticleGrid({
-  articles,
-  emptyMessage = "Nenhum artigo encontrado.",
-}: ArticleGridProps) {
+export function ArticleGrid({ articles, emptyMessage = "Nenhum artigo encontrado." }: ArticleGridProps) {
   if (articles.length === 0) {
-    return <p className="py-16 text-center text-sm text-slate-500">{emptyMessage}</p>;
+    return <EmptyState title={emptyMessage} description="Tente outro termo ou remova os filtros." />;
   }
 
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {articles.map((article) => (
         <ArticleCard key={article.id} article={article} />
       ))}

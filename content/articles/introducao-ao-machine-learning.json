@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 70,
+  "data": {
+    "id": "introducao-ao-machine-learning",
+    "title": "Introdução ao machine learning: o que é, como funciona e por onde começar",
+    "description": "Os conceitos essenciais de aprendizado de máquina, das variáveis e rótulos à separação entre treino e teste, com um primeiro modelo em scikit-learn e os cuidados para não se enganar com os resultados.",
+    "category": "Machine Learning",
+    "date": "2026-10-29",
+    "readingTime": 6,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "Machine learning, ou aprendizado de máquina, é a área que constrói programas capazes de melhorar seu desempenho em uma tarefa a partir de exemplos, em vez de seguir apenas regras escritas à mão. Um filtro de spam que aprende com mensagens já classificadas é um exemplo clássico. Este artigo apresenta os conceitos básicos e um primeiro modelo, sem exigir matemática avançada.",
+      "## Regras escritas versus padrões aprendidos",
+      "Na programação tradicional, a pessoa escreve as regras e o programa aplica essas regras aos dados. No aprendizado de máquina, o algoritmo recebe dados e respostas conhecidas e produz um modelo, que é a regra aprendida. Essa abordagem é útil quando as regras são difíceis de escrever, mudam com o tempo ou dependem de muitas variáveis ao mesmo tempo.",
+      "## Os três grandes tipos",
+      "No aprendizado supervisionado, cada exemplo tem um rótulo, a resposta certa, e o modelo aprende a prevê-lo. Prever se uma transação é fraude ou estimar o preço de um imóvel são problemas supervisionados. No aprendizado não supervisionado não há rótulo: o objetivo é encontrar estrutura nos dados, como grupos de clientes parecidos. No aprendizado por reforço, um agente aprende por tentativa e erro, recebendo recompensas pelas ações que toma, como em jogos e em controle de robôs.",
+      "## Vocabulário mínimo",
+      "Variáveis de entrada (features) são as colunas usadas para prever, como área, número de quartos e bairro. O alvo (target) é o que se quer prever, como o preço. O treino é a etapa em que o algoritmo ajusta seus parâmetros aos exemplos. A inferência é o uso do modelo treinado em dados novos.",
+      "## Treino e teste: a regra mais importante",
+      "Um modelo sempre parece bom nos dados em que foi treinado. Para saber se ele generaliza, é preciso avaliá-lo em dados que ele nunca viu. Por isso, antes de treinar, separa-se uma parte dos dados para teste. Usar o conjunto de teste para escolher o modelo, ainda que indiretamente, contamina a avaliação.",
+      "## Um primeiro modelo com scikit-learn",
+      "O exemplo abaixo usa o conjunto Iris, que já vem com o scikit-learn, para classificar flores em três espécies a partir de medidas de pétalas e sépalas.",
+      "```python\nfrom sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.metrics import accuracy_score\n\nX, y = load_iris(return_X_y=True)\nX_treino, X_teste, y_treino, y_teste = train_test_split(\n    X, y, test_size=0.25, random_state=42, stratify=y\n)\n\nmodelo = DecisionTreeClassifier(max_depth=3, random_state=42)\nmodelo.fit(X_treino, y_treino)\n\nprevisoes = modelo.predict(X_teste)\nprint(f\"Acurácia no teste: {accuracy_score(y_teste, previsoes):.2f}\")\n```",
+      "O parâmetro stratify=y mantém a proporção das espécies nos dois conjuntos, e random_state torna o resultado reproduzível. O padrão fit para treinar e predict para prever se repete em praticamente todos os modelos da biblioteca.",
+      "## Overfitting e underfitting",
+      "Um modelo simples demais não captura o padrão dos dados e erra tanto no treino quanto no teste: é o underfitting. Um modelo complexo demais decora detalhes e ruídos do treino e erra em dados novos: é o overfitting. No exemplo, limitar a profundidade da árvore (max_depth=3) é uma forma de controlar a complexidade.",
+      "## Validação cruzada",
+      "Uma única divisão entre treino e teste pode dar sorte ou azar. A validação cruzada divide os dados de treino em k partes, treina k vezes deixando uma parte de fora a cada rodada e resume o desempenho. Isso dá uma estimativa mais estável para comparar modelos e ajustar hiperparâmetros, mantendo o teste reservado para a avaliação final.",
+      "```python\nfrom sklearn.model_selection import cross_val_score\n\nnotas = cross_val_score(modelo, X_treino, y_treino, cv=5)\nprint(f\"Média: {notas.mean():.2f}  Desvio: {notas.std():.2f}\")\n```",
+      "## Cuidados além da técnica",
+      "Dados históricos carregam os vieses de quem os produziu, e um modelo treinado com eles pode reproduzir esses vieses. Também é comum ocorrer vazamento de dados, quando uma variável de entrada contém informação que só estaria disponível depois do evento que se quer prever. Antes de comemorar uma acurácia alta, vale perguntar se o modelo teria acesso àquelas informações no momento real da previsão.",
+      "## Aplicações reais",
+      "Machine learning é usado em detecção de fraude, recomendação de produtos, previsão de demanda, triagem de documentos, manutenção preditiva de equipamentos e apoio a diagnósticos. Em todos esses casos, o modelo é parte de um sistema maior, que precisa de dados confiáveis, monitoramento e revisão humana nas decisões sensíveis.",
+      "## Conclusão",
+      "Para começar, não é preciso dominar todos os algoritmos. O essencial é entender a separação entre treino e teste, escolher uma métrica adequada ao problema e desconfiar de resultados bons demais. Com isso, o scikit-learn e um dataset público já bastam para os primeiros projetos."
+    ],
+    "references": [
+      {
+        "citation": "SCIKIT-LEARN DEVELOPERS. Getting Started. Disponível em: https://scikit-learn.org/stable/getting_started.html. Acesso em: 29 out. 2026.",
+        "url": "https://scikit-learn.org/stable/getting_started.html"
+      },
+      {
+        "citation": "SCIKIT-LEARN DEVELOPERS. Cross-validation: evaluating estimator performance. Disponível em: https://scikit-learn.org/stable/modules/cross_validation.html. Acesso em: 29 out. 2026.",
+        "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+      },
+      {
+        "citation": "GOOGLE. Machine Learning Crash Course. Disponível em: https://developers.google.com/machine-learning/crash-course. Acesso em: 29 out. 2026.",
+        "url": "https://developers.google.com/machine-learning/crash-course"
+      },
+      {
+        "citation": "GÉRON, Aurélien. Mãos à Obra: Aprendizado de Máquina com Scikit-Learn, Keras & TensorFlow. 3. ed. Rio de Janeiro: Alta Books, 2025."
+      }
+    ],
+    "tags": [
+      "Machine Learning",
+      "scikit-learn",
+      "Aprendizado Supervisionado",
+      "Validação Cruzada",
+      "Overfitting"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 150,
+  "data": {
+    "id": "sql-biblioteca",
+    "title": "Banco de dados de biblioteca",
+    "description": "Modele e consulte um banco de dados relacional para o acervo e empréstimos de uma biblioteca.",
+    "area": "SQL",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "SQL",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "Modelagem relacional",
+      "Consultas SQL",
+      "Chaves primárias e estrangeiras"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Praticar modelagem relacional básica e consultas SQL para gerenciar livros, usuários e empréstimos."
+  }
+}

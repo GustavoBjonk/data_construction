@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 700,
+  "data": {
+    "id": "openai-lanca-gpt-5",
+    "slug": "openai-lanca-gpt-5",
+    "title": "OpenAI lança o GPT-5, unificando raciocínio e respostas rápidas em um único modelo",
+    "summary": "A OpenAI lançou o GPT-5 como modelo padrão para todos os usuários do ChatGPT, combinando a capacidade de raciocínio da série \"o\" com a velocidade da série GPT. A empresa destacou redução de alucinações (de cerca de 20% para 4,8% em alguns testes) e melhor desempenho em tarefas reais de codificação.",
+    "relevance": "Como modelo de uso geral mais adotado do mercado, o GPT-5 influencia diretamente ferramentas de geração de consultas, documentação e automação usadas por equipes de dados.",
+    "publishedAt": "2025-08-07",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "OpenAI",
+      "GPT-5",
+      "LLM",
+      "Agentes"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2025/08/07/openais-gpt-5-is-here/"
+  }
+}

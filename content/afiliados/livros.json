@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "books": {
+    "ciencia-de-dados-fundamentos-e-aplicacoes": {
+      "cover": "/images/books/ciencia-de-dados-fundamentos-e-aplicacoes.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8521638752?tag=pautaliberdade-20",
+      "active": true
+    },
+    "curso-intensivo-de-mysql": {
+      "cover": "/images/books/curso-intensivo-de-mysql.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8575228722?tag=pautaliberdade-20",
+      "active": false
+    },
+    "engenharia-de-ia": {
+      "cover": "/images/books/engenharia-de-ia.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8575229966?tag=pautaliberdade-20",
+      "active": true
+    },
+    "estatistica-e-ciencia-de-dados": {
+      "cover": "/images/books/estatistica-e-ciencia-de-dados.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/852163899X?tag=pautaliberdade-20",
+      "active": true
+    },
+    "estatistica-pratica-para-cientistas-de-dados": {
+      "cover": "/images/books/estatistica-pratica-para-cientistas-de-dados.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8550826510?tag=pautaliberdade-20",
+      "active": true
+    },
+    "fundamentos-de-engenharia-de-dados": {
+      "cover": "/images/books/fundamentos-de-engenharia-de-dados.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8575228765?tag=pautaliberdade-20",
+      "active": true
+    },
+    "inteligencia-artificial-aprendizado-de-maquina": {
+      "cover": "/images/books/inteligencia-artificial-aprendizado-de-maquina.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8521639201?tag=pautaliberdade-20",
+      "active": true
+    },
+    "introducao-a-linguagem-sql": {
+      "cover": "/images/books/introducao-a-linguagem-sql.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8575225014?tag=pautaliberdade-20",
+      "active": true
+    },
+    "maos-a-obra-aprendizado-de-maquina": {
+      "cover": "/images/books/maos-a-obra-aprendizado-de-maquina.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8550826456?tag=pautaliberdade-20",
+      "active": true
+    },
+    "pense-em-python": {
+      "cover": "/images/books/pense-em-python.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8575229273?tag=pautaliberdade-20",
+      "active": true
+    },
+    "projetando-aplicacoes-com-uso-intensivo-de-dados": {
+      "cover": "/images/books/projetando-aplicacoes-com-uso-intensivo-de-dados.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/6583913062?tag=pautaliberdade-20",
+      "active": true
+    },
+    "python-para-analise-de-dados": {
+      "cover": "/images/books/python-para-analise-de-dados.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8575228412?tag=pautaliberdade-20",
+      "active": true
+    },
+    "sql-guia-pratico": {
+      "cover": "/images/books/sql-guia-pratico.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8575228315?tag=pautaliberdade-20",
+      "active": false
+    },
+    "storytelling-com-dados": {
+      "cover": "/images/books/storytelling-com-dados.png",
+      "affiliateUrl": "https://www.amazon.com.br/dp/8550804681?tag=pautaliberdade-20",
+      "active": true
+    }
+  }
+}

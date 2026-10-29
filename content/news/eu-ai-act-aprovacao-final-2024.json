@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 420,
+  "data": {
+    "id": "eu-ai-act-aprovacao-final-2024",
+    "slug": "eu-ai-act-aprovacao-final-2024",
+    "title": "Conselho da União Europeia dá aprovação final ao AI Act",
+    "summary": "O Conselho da UE deu o aval final ao AI Act, primeira lei abrangente do mundo para regular inteligência artificial, com regras proporcionais ao risco que um sistema representa. O texto entrou em vigor em agosto de 2024, com obrigações escalonadas nos anos seguintes.",
+    "relevance": "Estabelece o primeiro arcabouço regulatório amplo para IA no mundo, com impacto direto em como empresas de dados e IA precisam documentar, avaliar riscos e governar seus modelos.",
+    "publishedAt": "2024-05-21",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Regulamentação",
+      "Data Governance"
+    ],
+    "tags": [
+      "EU AI Act",
+      "Regulação",
+      "União Europeia",
+      "Governança de IA"
+    ],
+    "source": "Conselho da União Europeia (comunicado oficial)",
+    "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-ai-act-council-gives-final-green-light-to-the-first-worldwide-rules-on-ai/"
+  }
+}

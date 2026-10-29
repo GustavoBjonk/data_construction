@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "ms-learn-get-started-powerbi",
+    "title": "Comece a criar com o Power BI",
+    "platform": "Microsoft Learn",
+    "area": "Business Intelligence",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Módulo oficial da Microsoft sobre os blocos de construção do Power BI e como criar relatórios interativos.",
+    "skills": [
+      "Power BI",
+      "Relatórios"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/modules/get-started-with-power-bi/"
+  }
+}

@@ -2,11 +2,14 @@
 
 import { useMemo, useState } from "react";
 import { Course } from "@/data/courses";
-import { CourseSearch } from "./CourseSearch";
-import { CourseFilters, CourseTypeFilter } from "./CourseFilters";
+import { FILTER_ALL, FilterChips } from "@/components/ui/FilterChips";
+import { ResultBar } from "@/components/ui/ResultBar";
+import { SearchInput } from "@/components/ui/SearchInput";
+import { normalizeText } from "@/lib/text";
 import { CourseGrid } from "./CourseGrid";
 
-const ALL_LABEL = "Todos";
+const COURSE_TYPES = ["Gratuitos", "Até R$100"] as const;
+const LOW_COST_LIMIT = 100;
 
 interface CourseExplorerProps {
   courses: Course[];
@@ -16,89 +19,52 @@ interface CourseExplorerProps {
 
 export function CourseExplorer({ courses, areas, levels }: CourseExplorerProps) {
   const [query, setQuery] = useState("");
-  const [area, setArea] = useState<string>(ALL_LABEL);
-  const [type, setType] = useState<CourseTypeFilter>("Todos");
-  const [level, setLevel] = useState<string>(ALL_LABEL);
+  const [area, setArea] = useState<string>(FILTER_ALL);
+  const [type, setType] = useState<string>(FILTER_ALL);
+  const [level, setLevel] = useState<string>(FILTER_ALL);
 
-  const hasActiveFilters =
-    query.trim() !== "" || area !== ALL_LABEL || type !== "Todos" || level !== ALL_LABEL;
+  const hasActiveFilters = query.trim() !== "" || area !== FILTER_ALL || type !== FILTER_ALL || level !== FILTER_ALL;
 
   function clearFilters() {
     setQuery("");
-    setArea(ALL_LABEL);
-    setType("Todos");
-    setLevel(ALL_LABEL);
+    setArea(FILTER_ALL);
+    setType(FILTER_ALL);
+    setLevel(FILTER_ALL);
   }
 
   const filtered = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-
+    const normalizedQuery = normalizeText(query.trim());
     return courses.filter((course) => {
-      if (area !== ALL_LABEL && course.area !== area) return false;
+      if (area !== FILTER_ALL && course.area !== area) return false;
       if (type === "Gratuitos" && course.type !== "free") return false;
-      if (type === "Até R$100" && !(course.type === "paid" && (course.price ?? Infinity) < 100)) {
-        return false;
-      }
-      if (level !== ALL_LABEL && course.level !== level) return false;
-
+      if (type === "Até R$100" && !(course.type === "paid" && (course.price ?? Infinity) < LOW_COST_LIMIT)) return false;
+      if (level !== FILTER_ALL && course.level !== level) return false;
       if (!normalizedQuery) return true;
-
-      const haystack = [
-        course.title,
-        course.platform,
-        course.area,
-        course.description,
-        ...course.skills,
-      ]
-        .join(" ")
-        .toLowerCase();
-
-      return haystack.includes(normalizedQuery);
+      return normalizeText(
+        [course.title, course.platform, course.area, course.description, ...course.skills].join(" "),
+      ).includes(normalizedQuery);
     });
   }, [courses, area, type, level, query]);
 
   return (
     <div>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="sm:max-w-xs sm:flex-1">
-          <CourseSearch value={query} onChange={setQuery} />
-        </div>
-        <p className="whitespace-nowrap text-sm text-slate-500">
-          {filtered.length} de {courses.length} cursos
-        </p>
+      <div className="max-w-[22rem]">
+        <SearchInput id="course-search" label="Buscar cursos" value={query} onChange={setQuery} />
       </div>
 
-      <div className="mt-5">
-        <CourseFilters
-          areas={areas}
-          levels={levels}
-          activeArea={area}
-          activeType={type}
-          activeLevel={level}
-          onAreaChange={setArea}
-          onTypeChange={setType}
-          onLevelChange={setLevel}
-        />
+      <div className="mt-6 flex flex-col gap-5">
+        <FilterChips label="Área" options={areas} active={area} onChange={setArea} />
+        <FilterChips label="Tipo" options={COURSE_TYPES} active={type} onChange={setType} />
+        <FilterChips label="Nível" options={levels} active={level} onChange={setLevel} />
       </div>
 
       <div className="mt-8">
-        <CourseGrid
-          courses={filtered}
-          emptyMessage="Nenhum curso encontrado para essa busca ou filtro."
-        />
+        <ResultBar shown={filtered.length} total={courses.length} noun="cursos" onClear={hasActiveFilters ? clearFilters : undefined} />
       </div>
 
-      {hasActiveFilters && filtered.length > 0 && (
-        <div className="mt-6">
-          <button
-            type="button"
-            onClick={clearFilters}
-            className="text-sm font-medium text-accent hover:text-accent-hover"
-          >
-            Limpar filtros
-          </button>
-        </div>
-      )}
+      <div className="mt-6">
+        <CourseGrid courses={filtered} emptyMessage="Nenhum curso encontrado para essa busca ou filtro." />
+      </div>
     </div>
   );
 }

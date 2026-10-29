@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 970,
+  "data": {
+    "id": "pandas-3-0-lancado",
+    "slug": "pandas-3-0-lancado",
+    "title": "pandas 3.0 é lançado com Copy-on-Write como padrão único e novo dtype de string",
+    "summary": "A biblioteca pandas lançou a versão 3.0, sua primeira grande atualização em anos, tornando o modo Copy-on-Write o único comportamento de cópia de dados (eliminando o antigo aviso SettingWithCopyWarning) e passando a inferir colunas de texto como um novo tipo dedicado \"str\" em vez de \"object\".",
+    "relevance": "É uma mudança estrutural na ferramenta mais usada por cientistas e analistas de dados em Python, exigindo atenção de quem mantém pipelines e notebooks que dependem do comportamento anterior de cópia de dados.",
+    "publishedAt": "2026-01-21",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Science",
+      "Open Source"
+    ],
+    "tags": [
+      "pandas",
+      "Python",
+      "Ciência de Dados",
+      "Breaking Changes"
+    ],
+    "source": "pandas (blog oficial do projeto)",
+    "sourceUrl": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
+    "related": {
+      "trackSlugs": [
+        "ciencia-de-dados"
+      ]
+    }
+  }
+}

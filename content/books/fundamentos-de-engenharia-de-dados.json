@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "fundamentos-de-engenharia-de-dados",
+    "title": "Fundamentos de Engenharia de Dados",
+    "authors": [
+      "Joe Reis",
+      "Matt Housley"
+    ],
+    "publisher": "Novatec",
+    "year": 2023,
+    "isbn13": "9788575228760",
+    "topic": "Dados",
+    "level": "Intermediário",
+    "language": "Português",
+    "description": "O ciclo de vida da engenharia de dados: ingestão, armazenamento, transformação e serviço.",
+    "why": "Visão de conjunto da área sem se prender a uma ferramenta — bom mapa antes de escolher a stack."
+  }
+}

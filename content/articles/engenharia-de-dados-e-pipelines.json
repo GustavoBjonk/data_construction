@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 90,
+  "data": {
+    "id": "engenharia-de-dados-e-pipelines",
+    "title": "Engenharia de dados e pipelines: como os dados chegam prontos para análise",
+    "description": "O que faz uma pessoa engenheira de dados, as etapas de um pipeline, a diferença entre ETL e ELT e as práticas que tornam um fluxo de dados confiável: idempotência, testes, orquestração e monitoramento.",
+    "category": "Engenharia de Dados",
+    "date": "2026-10-29",
+    "readingTime": 6,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "Todo dashboard e todo modelo dependem de dados que alguém coletou, organizou e entregou no lugar certo, no formato certo e no horário combinado. Esse trabalho é a engenharia de dados. Este artigo explica o ciclo de vida dos dados, o que é um pipeline e quais práticas separam um fluxo frágil de um fluxo confiável.",
+      "## O ciclo de vida dos dados",
+      "Uma forma útil de organizar a área é seguir o caminho dos dados: geração nos sistemas de origem (aplicativos, ERPs, sensores, APIs), ingestão, armazenamento, transformação e disponibilização para análise, aprendizado de máquina ou outros sistemas. Por baixo dessas etapas existem preocupações transversais, como segurança, gestão de dados, orquestração e qualidade.",
+      "## O que é um pipeline",
+      "Um pipeline é uma sequência automatizada de passos que leva dados de uma origem a um destino, aplicando transformações pelo caminho. Pode rodar em lote, por exemplo uma carga diária às 6h, ou em streaming, processando eventos continuamente à medida que chegam. Lote é mais simples de operar e atende à maior parte dos relatórios; streaming se justifica quando a decisão precisa acontecer em segundos, como em alertas de fraude.",
+      "## ETL e ELT",
+      "No ETL (extrair, transformar, carregar), os dados são transformados antes de chegar ao destino. No ELT (extrair, carregar, transformar), os dados brutos são carregados primeiro no data warehouse ou no lakehouse, e as transformações acontecem lá dentro, geralmente em SQL. O ELT se popularizou com bancos analíticos em nuvem, que separam armazenamento e processamento, e com ferramentas como o dbt, que organizam transformações SQL como código versionado e testável.",
+      "## Camadas de dados",
+      "Uma organização comum divide o armazenamento em camadas. A camada bruta guarda os dados como vieram da origem, o que permite reprocessar tudo se uma regra mudar. A camada tratada padroniza tipos, nomes e chaves e remove duplicatas. A camada de consumo traz tabelas modeladas para responder perguntas de negócio, como fatos e dimensões. Essas camadas recebem nomes diferentes conforme a empresa (bronze, prata e ouro é uma convenção frequente), mas a ideia é a mesma.",
+      "## Um passo idempotente",
+      "Idempotência significa que executar o mesmo passo duas vezes produz o mesmo resultado que executá-lo uma vez. Isso importa porque falhas acontecem e reprocessamentos são rotina. Uma carga que apenas insere linhas duplica dados quando roda de novo; uma carga que substitui a partição do dia pode ser repetida com segurança.",
+      "```python\nimport duckdb\n\ndef carregar_vendas(con: duckdb.DuckDBPyConnection, dia: str) -> None:\n    \"\"\"Recarrega as vendas de um dia. Rodar duas vezes não duplica linhas.\"\"\"\n    con.execute(\"BEGIN\")\n    con.execute(\"DELETE FROM vendas WHERE data_venda = ?\", [dia])\n    con.execute(\n        \"\"\"\n        INSERT INTO vendas\n        SELECT * FROM read_csv_auto(?)\n        WHERE data_venda = ?\n        \"\"\",\n        [f\"brutos/vendas_{dia}.csv\", dia],\n    )\n    con.execute(\"COMMIT\")\n```",
+      "O DELETE seguido de INSERT dentro de uma transação garante que quem consulta a tabela nunca veja o dia pela metade. O mesmo princípio vale para outros bancos e para formatos de tabela como Delta Lake e Apache Iceberg, que oferecem operações de sobrescrita por partição.",
+      "## Testes de dados",
+      "Código pode estar correto e os dados, errados: uma origem muda o formato de uma data, um campo obrigatório chega vazio, um cadastro passa a ter chaves duplicadas. Testes de dados verificam essas premissas a cada execução. No dbt, por exemplo, testes como unique e not_null são declarados ao lado do modelo e impedem que dados inconsistentes avancem para a camada de consumo.",
+      "```yaml\nmodels:\n  - name: dim_clientes\n    columns:\n      - name: id_cliente\n        tests:\n          - unique\n          - not_null\n```",
+      "## Orquestração e monitoramento",
+      "Um orquestrador, como o Apache Airflow, define a ordem das tarefas e suas dependências, agenda as execuções, refaz tentativas em caso de falha e registra o histórico. No Airflow, o fluxo é descrito como um DAG, um grafo dirigido sem ciclos. Monitorar não é só saber se a tarefa terminou: vale acompanhar o horário de chegada dos dados, o volume de linhas e a taxa de valores nulos, porque uma tabela pode ser atualizada no horário e ainda assim vir vazia.",
+      "## Aplicações reais",
+      "Pipelines alimentam relatórios financeiros diários, painéis de operação, sistemas de recomendação, modelos de previsão de demanda e integrações entre sistemas de diferentes áreas. Em empresas menores, um único script agendado pode ser suficiente; à medida que o número de fontes e de pessoas consumindo dados cresce, ferramentas de orquestração, versionamento e testes passam a compensar o custo.",
+      "## Conclusão",
+      "Um bom pipeline é previsível: pode ser executado de novo sem efeitos colaterais, avisa quando algo sai do esperado e deixa claro de onde veio cada número. Comece pequeno, com cargas idempotentes e alguns testes nas chaves principais, e adicione complexidade só quando um problema real exigir."
+    ],
+    "references": [
+      {
+        "citation": "REIS, Joe; HOUSLEY, Matt. Fundamentos de Engenharia de Dados. São Paulo: Novatec, 2023."
+      },
+      {
+        "citation": "APACHE SOFTWARE FOUNDATION. Dags. Apache Airflow Documentation. Disponível em: https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html. Acesso em: 29 out. 2026.",
+        "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
+      },
+      {
+        "citation": "DBT LABS. What is dbt? Disponível em: https://docs.getdbt.com/docs/introduction. Acesso em: 29 out. 2026.",
+        "url": "https://docs.getdbt.com/docs/introduction"
+      },
+      {
+        "citation": "DBT LABS. Add data tests to your DAG. Disponível em: https://docs.getdbt.com/docs/build/data-tests. Acesso em: 29 out. 2026.",
+        "url": "https://docs.getdbt.com/docs/build/data-tests"
+      },
+      {
+        "citation": "DUCKDB FOUNDATION. CSV Import. DuckDB Documentation. Disponível em: https://duckdb.org/docs/stable/data/csv/overview. Acesso em: 29 out. 2026.",
+        "url": "https://duckdb.org/docs/stable/data/csv/overview"
+      }
+    ],
+    "tags": [
+      "Engenharia de Dados",
+      "Pipelines",
+      "ETL",
+      "ELT",
+      "Airflow",
+      "dbt"
+    ]
+  }
+}

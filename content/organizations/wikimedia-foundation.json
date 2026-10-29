@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "wikimedia-foundation",
+    "name": "Wikimedia Foundation",
+    "description": "Organização sem fins lucrativos responsável pela Wikipédia e por outros projetos que mantêm o conhecimento livre e acessível para todos.",
+    "category": "Tecnologia",
+    "officialSiteUrl": "https://wikimediafoundation.org/",
+    "donationUrl": "https://donate.wikimedia.org/"
+  }
+}

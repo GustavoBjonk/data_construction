@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 360,
+  "data": {
+    "id": "mongodb-atlas-vector-search-ga",
+    "slug": "mongodb-atlas-vector-search-ga",
+    "title": "MongoDB Atlas Vector Search chega à disponibilidade geral",
+    "summary": "A MongoDB anunciou a disponibilidade geral do Atlas Vector Search, permitindo combinar busca vetorial com dados operacionais em uma única API, e do Atlas Search Nodes, que isola workloads de busca para até 60% mais velocidade em consultas.",
+    "relevance": "Mostra bancos de dados operacionais tradicionais incorporando capacidades vetoriais nativas, reduzindo a necessidade de manter um banco vetorial separado para aplicações de IA.",
+    "publishedAt": "2023-12-04",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Bancos de Dados",
+      "Machine Learning"
+    ],
+    "tags": [
+      "MongoDB",
+      "Vector Search",
+      "RAG",
+      "Busca Semântica"
+    ],
+    "source": "MongoDB (comunicado oficial)",
+    "sourceUrl": "https://www.mongodb.com/company/newsroom/press-releases/mongo-db-announces-general-availability-of-new-capabilities-to-power-next-generation-apps"
+  }
+}

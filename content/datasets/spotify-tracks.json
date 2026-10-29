@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 130,
+  "data": {
+    "id": "spotify-tracks",
+    "name": "Spotify Tracks",
+    "description": "Faixas do Spotify com atributos de áudio (dançabilidade, energia, tempo, valência) organizadas por gênero, boas para correlação e visualização.",
+    "category": "Data Analytics",
+    "difficulty": "Intermediário",
+    "size": "mais de 100 mil faixas, 125 gêneros",
+    "format": "CSV",
+    "topics": [
+      "Análise musical",
+      "Correlação",
+      "Visualização",
+      "Estatística"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "SQL"
+    ],
+    "idealFor": [
+      "Explorar correlação entre atributos musicais",
+      "Praticar visualização de dados"
+    ],
+    "source": "Kaggle",
+    "sourceUrl": "https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset"
+  }
+}

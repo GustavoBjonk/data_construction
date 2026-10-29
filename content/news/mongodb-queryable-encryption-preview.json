@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 200,
+  "data": {
+    "id": "mongodb-queryable-encryption-preview",
+    "slug": "mongodb-queryable-encryption-preview",
+    "title": "MongoDB lança a prévia da Queryable Encryption",
+    "summary": "No MongoDB World 2022, a MongoDB apresentou a prévia da Queryable Encryption, recurso que permite consultar dados totalmente criptografados no lado do cliente sem precisar descriptografá-los no servidor. Inicialmente o recurso suportava consultas de igualdade, com planos de expandir para intervalos e substrings.",
+    "relevance": "Abre caminho para aplicações consultarem dados sensíveis criptografados sem expor texto plano ao banco, relevante para times que lidam com dados regulados ou pessoais.",
+    "publishedAt": "2022-06-07",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Bancos de Dados",
+      "Data Privacy"
+    ],
+    "tags": [
+      "MongoDB",
+      "Queryable Encryption",
+      "Criptografia",
+      "NoSQL"
+    ],
+    "source": "MongoDB (blog oficial)",
+    "sourceUrl": "https://www.mongodb.com/company/blog/product-release-announcements/mongodb-releases-queryable-encryption-preview"
+  }
+}

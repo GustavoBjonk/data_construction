@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 490,
+  "data": {
+    "id": "openai-gpt-4o",
+    "slug": "openai-gpt-4o",
+    "title": "OpenAI apresenta o GPT-4o, modelo multimodal em tempo real",
+    "summary": "A OpenAI lançou o GPT-4o (\"omni\"), capaz de processar texto, áudio e imagem de forma nativa e responder por voz quase em tempo real, disponibilizado gradualmente via API e ChatGPT. Recursos de voz completos chegaram em julho de 2024.",
+    "relevance": "Reduz a barreira de latência e custo para aplicações de IA conversacional multimodal, algo relevante para produtos que combinam dados, voz e visão computacional.",
+    "publishedAt": "2024-05-13",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "OpenAI",
+      "GPT-4o",
+      "Multimodalidade",
+      "IA Generativa"
+    ],
+    "source": "OpenAI (blog oficial)",
+    "sourceUrl": "https://openai.com/index/hello-gpt-4o/"
+  }
+}

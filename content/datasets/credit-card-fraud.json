@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 80,
+  "data": {
+    "id": "credit-card-fraud",
+    "name": "Credit Card Fraud Detection",
+    "description": "Transações de cartão de crédito de titulares europeus em setembro de 2013, com uma parcela muito pequena marcada como fraude — clássico caso de classe desbalanceada.",
+    "category": "Machine Learning",
+    "difficulty": "Avançado",
+    "size": "284.807 transações",
+    "format": "CSV",
+    "topics": [
+      "Detecção de fraude",
+      "Classificação",
+      "Análise de dados",
+      "Classes desbalanceadas"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "idealFor": [
+      "Estudar dados desbalanceados",
+      "Praticar detecção de fraude"
+    ],
+    "source": "Kaggle (ULB Machine Learning Group)",
+    "sourceUrl": "https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud"
+  }
+}

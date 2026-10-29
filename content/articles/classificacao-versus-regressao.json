@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 80,
+  "data": {
+    "id": "classificacao-versus-regressao",
+    "title": "Classificação versus regressão: como identificar o problema e escolher a métrica certa",
+    "description": "A diferença entre prever categorias e prever números, com exemplos em scikit-learn, as métricas adequadas a cada caso e os erros mais comuns ao avaliar modelos.",
+    "category": "Machine Learning",
+    "date": "2026-10-29",
+    "readingTime": 6,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "No aprendizado supervisionado, quase todo problema cai em uma de duas famílias: classificação ou regressão. Identificar qual é o caso logo no início define os algoritmos possíveis, a forma de avaliar o modelo e até como apresentar o resultado para quem vai usá-lo.",
+      "## A pergunta que decide",
+      "Se o alvo é uma categoria, como \"aprovado ou reprovado\", \"spam ou não spam\" ou a espécie de uma planta, o problema é de classificação. Se o alvo é uma quantidade contínua, como preço, temperatura ou tempo de entrega, o problema é de regressão. O tipo da coluna nem sempre basta para decidir: notas de 1 a 5 são números, mas podem ser tratadas como categorias ordenadas, conforme o uso que se fará da previsão.",
+      "## Classificação na prática",
+      "Classificadores costumam devolver, além da classe, uma probabilidade. Isso permite escolher um limiar de decisão: em detecção de fraude, pode valer a pena alertar casos com probabilidade acima de 30%, e não apenas acima de 50%, aceitando mais falsos alarmes para perder menos fraudes.",
+      "```python\nfrom sklearn.datasets import load_breast_cancer\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.pipeline import make_pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.metrics import classification_report, confusion_matrix\n\nX, y = load_breast_cancer(return_X_y=True)\nX_tr, X_te, y_tr, y_te = train_test_split(X, y, stratify=y, random_state=0)\n\nclf = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000))\nclf.fit(X_tr, y_tr)\n\npred = clf.predict(X_te)\nprint(confusion_matrix(y_te, pred))\nprint(classification_report(y_te, pred))\n```",
+      "Apesar do nome, a regressão logística é um modelo de classificação: ela estima a probabilidade de cada classe.",
+      "## Métricas de classificação",
+      "A matriz de confusão mostra acertos e erros por classe e é o ponto de partida. A acurácia, proporção de acertos, engana quando as classes são desbalanceadas: com 1% de fraudes, um modelo que nunca aponta fraude acerta 99% e é inútil. A precisão responde \"dos casos que o modelo marcou como positivos, quantos eram de fato positivos?\". O recall responde \"dos positivos reais, quantos o modelo encontrou?\". O F1 combina as duas em uma média harmônica, e a área sob a curva ROC avalia o modelo em todos os limiares possíveis.",
+      "A escolha depende do custo de cada erro. Em triagem médica, deixar passar um caso real (falso negativo) costuma ser mais grave, e o recall ganha peso. Em um filtro de spam, marcar um e-mail legítimo como spam (falso positivo) incomoda mais, e a precisão ganha peso.",
+      "## Regressão na prática",
+      "Em regressão, o modelo devolve um número, e o erro é a distância entre o previsto e o real.",
+      "```python\nfrom sklearn.datasets import fetch_california_housing\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_absolute_error, root_mean_squared_error, r2_score\n\nX, y = fetch_california_housing(return_X_y=True)\nX_tr, X_te, y_tr, y_te = train_test_split(X, y, random_state=0)\n\nreg = RandomForestRegressor(n_estimators=200, random_state=0, n_jobs=-1)\nreg.fit(X_tr, y_tr)\n\npred = reg.predict(X_te)\nprint(\"MAE :\", mean_absolute_error(y_te, pred))\nprint(\"RMSE:\", root_mean_squared_error(y_te, pred))\nprint(\"R²  :\", r2_score(y_te, pred))\n```",
+      "Nesse conjunto, o alvo é o valor mediano das casas em centenas de milhares de dólares, então um MAE de 0,3 significa um erro médio de cerca de 30 mil dólares. A função root_mean_squared_error existe a partir do scikit-learn 1.4; em versões anteriores, usa-se mean_squared_error e calcula-se a raiz.",
+      "## Métricas de regressão",
+      "O MAE (erro absoluto médio) é fácil de explicar porque está na mesma unidade do alvo. O RMSE (raiz do erro quadrático médio) também está na unidade do alvo, mas penaliza mais os erros grandes. O R² indica quanto da variação do alvo o modelo explica em comparação com prever sempre a média: 1 é perfeito, 0 equivale à média, e valores negativos são piores que a média.",
+      "## Sempre compare com uma linha de base",
+      "Antes de comemorar uma métrica, compare-a com um modelo ingênuo: prever sempre a classe mais frequente, na classificação, ou sempre a média, na regressão. O scikit-learn oferece DummyClassifier e DummyRegressor para isso. Se o modelo não supera a linha de base com folga, há algo errado nos dados ou na formulação do problema.",
+      "## Aplicações reais",
+      "Classificação aparece em aprovação de crédito, detecção de fraude, triagem de chamados e análise de sentimento. Regressão aparece em previsão de vendas, estimativa de preços de imóveis, consumo de energia e prazo de entrega. Muitos produtos combinam as duas coisas: primeiro classificar se um cliente vai cancelar o serviço, depois estimar quanto receita está em risco.",
+      "## Conclusão",
+      "Defina o alvo com clareza, descubra se ele é uma categoria ou uma quantidade e escolha a métrica a partir do custo real de cada erro. Esse cuidado evita o problema mais comum em projetos iniciantes: um modelo com número bonito que não resolve a pergunta de negócio."
+    ],
+    "references": [
+      {
+        "citation": "SCIKIT-LEARN DEVELOPERS. Supervised learning. Disponível em: https://scikit-learn.org/stable/supervised_learning.html. Acesso em: 29 out. 2026.",
+        "url": "https://scikit-learn.org/stable/supervised_learning.html"
+      },
+      {
+        "citation": "SCIKIT-LEARN DEVELOPERS. Metrics and scoring: quantifying the quality of predictions. Disponível em: https://scikit-learn.org/stable/modules/model_evaluation.html. Acesso em: 29 out. 2026.",
+        "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+      },
+      {
+        "citation": "GOOGLE. Classification. Machine Learning Crash Course. Disponível em: https://developers.google.com/machine-learning/crash-course/classification. Acesso em: 29 out. 2026.",
+        "url": "https://developers.google.com/machine-learning/crash-course/classification"
+      },
+      {
+        "citation": "GOOGLE. Linear regression. Machine Learning Crash Course. Disponível em: https://developers.google.com/machine-learning/crash-course/linear-regression. Acesso em: 29 out. 2026.",
+        "url": "https://developers.google.com/machine-learning/crash-course/linear-regression"
+      }
+    ],
+    "tags": [
+      "Machine Learning",
+      "Classificação",
+      "Regressão",
+      "Métricas",
+      "scikit-learn"
+    ]
+  }
+}

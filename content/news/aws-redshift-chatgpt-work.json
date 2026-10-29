@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1250,
+  "data": {
+    "id": "aws-redshift-chatgpt-work",
+    "slug": "aws-redshift-chatgpt-work",
+    "title": "AWS lança plugin que leva dados do Amazon Redshift ao agente de dados do ChatGPT Work",
+    "summary": "A AWS apresentou em 10 de setembro o AWS Data Analytics plugin para o agente de dados do ChatGPT Work. O plugin permite fazer perguntas em linguagem natural sobre dados do Amazon Redshift e de data lakes, traduzir as perguntas em SQL do Redshift, executar as consultas e transformar os resultados em dashboards compartilháveis. O público-alvo vai além de analistas: inclui áreas como vendas, operações e finanças. Segundo a AWS, cada pessoa só vê os dados que tem permissão para acessar, e o plugin funciona sobre os modelos de dados, definições de métricas e práticas de governança já existentes. Ele atende clusters provisionados e Redshift Serverless e se conecta a serviços como AWS Glue Data Catalog, Amazon S3 Tables e Amazon Athena. O plugin foi construído com skills do Agent Toolkit for AWS.",
+    "relevance": "Perguntas em linguagem natural só dão respostas confiáveis quando há métricas bem definidas e permissões corretas por trás. O trabalho de modelagem e governança feito por engenheiros e analistas é o que torna essas ferramentas úteis.",
+    "publishedAt": "2026-09-10",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Analytics",
+      "Cloud",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "AWS",
+      "Amazon Redshift",
+      "ChatGPT",
+      "Self-Service Analytics",
+      "Governança"
+    ],
+    "source": "AWS (blog oficial de Big Data)",
+    "sourceUrl": "https://aws.amazon.com/blogs/big-data/every-team-is-a-data-team-bring-amazon-redshift-analytics-to-chatgpt-work/",
+    "related": {
+      "trackSlugs": [
+        "analise-de-dados",
+        "sql"
+      ]
+    }
+  }
+}

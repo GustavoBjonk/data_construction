@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 100,
+  "data": {
+    "id": "power-bi-visualizacao-de-dados",
+    "title": "Power BI e visualização de dados: medidas DAX e gráficos que comunicam",
+    "description": "Como escolher o gráfico certo para cada pergunta, escrever as primeiras medidas DAX e organizar um relatório no Power BI que seja lido em poucos segundos.",
+    "category": "Power BI",
+    "date": "2026-10-29",
+    "readingTime": 5,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "Um relatório de BI cumpre seu papel quando a pessoa que o abre entende a mensagem principal em poucos segundos e consegue aprofundar a análise quando precisa. O Power BI oferece dezenas de visuais e uma linguagem de fórmulas poderosa, o DAX, mas o resultado depende mais das escolhas de quem constrói do que da ferramenta. Este artigo trata de medidas, escolha de gráficos e organização da página. A modelagem em esquema estrela, base de tudo isso, tem um artigo próprio no DataConstruction.",
+      "## Comece pela pergunta",
+      "Antes de abrir o Power BI, escreva as perguntas que o relatório precisa responder e quem vai lê-lo. \"Estamos acima ou abaixo da meta de vendas deste mês?\" pede um número e uma comparação. \"Quais regiões puxaram a queda?\" pede uma comparação entre categorias. \"A queda é recente ou vem de meses?\" pede uma série temporal. Cada pergunta sugere um tipo de visual.",
+      "## Medidas, não colunas calculadas",
+      "Valores que mudam conforme os filtros da página, como totais, médias e percentuais, devem ser medidas. Uma medida é calculada no momento da consulta, respeitando o contexto de filtro: o mesmo [Receita] mostra o total geral em um cartão e o total de cada região em um gráfico de barras. Colunas calculadas são avaliadas linha a linha no carregamento e ocupam memória; servem para atributos fixos, como uma faixa etária.",
+      "```DAX\nReceita = SUM ( Vendas[Valor] )\n\nPedidos = DISTINCTCOUNT ( Vendas[IdPedido] )\n\nTicket Médio = DIVIDE ( [Receita], [Pedidos] )\n\nReceita Mês Anterior =\nCALCULATE ( [Receita], DATEADD ( Calendario[Data], -1, MONTH ) )\n\nVariação vs Mês Anterior =\nDIVIDE ( [Receita] - [Receita Mês Anterior], [Receita Mês Anterior] )\n```",
+      "DIVIDE trata a divisão por zero sem erro. As funções de inteligência de tempo, como DATEADD, exigem uma tabela de calendário contínua, marcada como tabela de datas e relacionada à tabela de fatos.",
+      "## Escolhendo o visual",
+      "Para comparar categorias, barras horizontais ordenadas do maior para o menor são quase sempre a melhor escolha: os rótulos ficam legíveis e a comparação de comprimentos é precisa. Para mostrar evolução no tempo, use linhas. Para um indicador isolado, use um cartão com o número e a comparação com a meta ou com o período anterior. Tabelas e matrizes são úteis para consulta de valores exatos, não para enxergar padrões. Gráficos de pizza e rosca funcionam apenas com pouquíssimas fatias e quando a ideia é mostrar a parte de um todo; acima disso, as barras comunicam melhor.",
+      "## Menos elementos, mais leitura",
+      "Cada elemento na tela disputa atenção. Remova linhas de grade desnecessárias, bordas, sombras e legendas redundantes; rotule diretamente as séries quando possível. Use a cor com intenção: um tom neutro para tudo e uma cor de destaque apenas para o que merece atenção, como a região abaixo da meta. Evite depender só da cor para transmitir informação, porque parte do público tem algum tipo de daltonismo; combine cor com rótulos ou posição.",
+      "## Organização da página",
+      "A leitura costuma seguir do canto superior esquerdo para baixo. Coloque ali os indicadores principais, logo abaixo a explicação (séries temporais e comparações) e, por último, os detalhes. Mantenha filtros em um lugar consistente em todas as páginas. Títulos que afirmam algo, como \"Receita caiu 8% em setembro, puxada pelo Sul\", orientam mais do que títulos genéricos, como \"Receita por mês\".",
+      "## Desempenho e confiança",
+      "Relatórios lentos perdem usuários. Modelos em esquema estrela, medidas simples e menos visuais por página ajudam no desempenho. Para gerar confiança, mostre a data da última atualização dos dados e documente as definições das medidas: o que conta como \"pedido\" e se a receita inclui ou não devoluções.",
+      "## Aplicações reais",
+      "Essas práticas valem para painéis de vendas, acompanhamento de metas de atendimento, indicadores financeiros mensais, monitoramento de estoques e relatórios para a diretoria. Em todos os casos, um relatório com poucas medidas bem definidas e visuais adequados costuma gerar mais decisões do que um painel com dezenas de gráficos.",
+      "## Conclusão",
+      "Defina as perguntas, crie medidas reutilizáveis e escolha o visual que responde a cada pergunta com o menor esforço de leitura. Depois, mostre o relatório a alguém que não participou da construção e observe se essa pessoa entende a mensagem principal sem ajuda."
+    ],
+    "references": [
+      {
+        "citation": "MICROSOFT. Understand star schema and the importance for Power BI. Disponível em: https://learn.microsoft.com/en-us/power-bi/guidance/star-schema. Acesso em: 29 out. 2026.",
+        "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema"
+      },
+      {
+        "citation": "MICROSOFT. Data Analysis Expressions (DAX) Reference. Disponível em: https://learn.microsoft.com/en-us/dax/. Acesso em: 29 out. 2026.",
+        "url": "https://learn.microsoft.com/en-us/dax/"
+      },
+      {
+        "citation": "MICROSOFT. DIVIDE function (DAX). Disponível em: https://learn.microsoft.com/en-us/dax/divide-function-dax. Acesso em: 29 out. 2026.",
+        "url": "https://learn.microsoft.com/en-us/dax/divide-function-dax"
+      },
+      {
+        "citation": "MICROSOFT. Visualization types in Power BI. Disponível em: https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a. Acesso em: 29 out. 2026.",
+        "url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a"
+      },
+      {
+        "citation": "KNAFLIC, Cole Nussbaumer. Storytelling com Dados: um guia sobre visualização de dados para profissionais de negócios. Rio de Janeiro: Alta Books, 2019."
+      }
+    ],
+    "tags": [
+      "Power BI",
+      "DAX",
+      "Visualização de Dados",
+      "Dashboards",
+      "Storytelling"
+    ]
+  }
+}

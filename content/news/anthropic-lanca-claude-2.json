@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 290,
+  "data": {
+    "id": "anthropic-lanca-claude-2",
+    "slug": "anthropic-lanca-claude-2",
+    "title": "Anthropic lança o Claude 2, com janela de contexto de 100 mil tokens",
+    "summary": "A Anthropic lançou o Claude 2, disponível via API e por um novo site público em beta (claude.ai), com melhorias em raciocínio, código e matemática em relação à versão anterior. O modelo passou a suportar janelas de contexto de até 100 mil tokens, bem maiores que as oferecidas pela concorrência na época.",
+    "relevance": "Ampliou as opções de LLMs de nível empresarial disponíveis para produtos de dados e análise que dependiam, até então, quase exclusivamente da OpenAI.",
+    "publishedAt": "2023-07-11",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude 2",
+      "LLM",
+      "Contexto Longo"
+    ],
+    "source": "Anthropic (comunicado oficial)",
+    "sourceUrl": "https://www.anthropic.com/news/claude-2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 910,
+  "data": {
+    "id": "eu-ai-act-fiscalizacao-2026",
+    "slug": "eu-ai-act-fiscalizacao-2026",
+    "title": "União Europeia começa a fiscalizar o AI Act e exige transparência sobre conteúdo gerado por IA",
+    "summary": "A partir de 2 de agosto de 2026, o AI Office da UE e as autoridades nacionais passaram a ter poder efetivo de fiscalização sobre o AI Act, exigindo que sistemas de IA se identifiquem como automatizados, que deepfakes sejam sinalizados e que conteúdo gerado por IA tenha marcação detectável, sob multas de até 3% do faturamento global.",
+    "relevance": "Marca o início real da fiscalização da principal lei de IA do mundo, com impacto direto em qualquer produto que use modelos generativos e opere ou atenda usuários na Europa.",
+    "publishedAt": "2026-08-04",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Regulamentação",
+      "Data Privacy"
+    ],
+    "tags": [
+      "EU AI Act",
+      "Regulamentação de IA",
+      "Transparência",
+      "União Europeia"
+    ],
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/08/04/eu-ai-act-enforcement-ai-models/"
+  }
+}

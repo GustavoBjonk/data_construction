@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 300,
+  "data": {
+    "id": "ml-pipeline-completo",
+    "title": "Pipeline completo de Machine Learning",
+    "description": "Construa um pipeline de ponta a ponta, da ingestão dos dados ao modelo treinado e avaliado.",
+    "area": "Machine Learning",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "skills": [
+      "Pipeline de dados",
+      "Treinamento de modelo",
+      "Avaliação"
+    ],
+    "estimatedTime": "20+ horas",
+    "objective": "Estruturar um pipeline completo de Machine Learning, cobrindo ingestão, preparação, treino, avaliação e exportação do modelo."
+  }
+}

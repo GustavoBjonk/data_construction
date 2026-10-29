@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 60,
+  "data": {
+    "id": "sql-joins-e-funcoes-de-janela",
+    "title": "SQL na prática: JOINs, agregações e funções de janela para análises do dia a dia",
+    "description": "Como escolher entre INNER e LEFT JOIN, evitar linhas duplicadas e usar funções de janela como SUM OVER e LAG para totais acumulados e comparações entre períodos.",
+    "category": "SQL",
+    "date": "2026-10-29",
+    "readingTime": 6,
+    "author": "Redação DataConstruction",
+    "authorBio": "Texto preparado pela redação do DataConstruction com apoio de ferramentas de IA, com as fontes citadas ao final. Correções são bem-vindas.",
+    "content": [
+      "Consultas analíticas quase sempre combinam duas habilidades: juntar tabelas corretamente e calcular valores que dependem de outras linhas, como totais acumulados ou a variação em relação ao mês anterior. Este artigo trata das duas, com exemplos em SQL padrão que funcionam no PostgreSQL e, com pequenas variações, em outros bancos.",
+      "## O modelo de exemplo",
+      "Imagine duas tabelas: clientes (id_cliente, nome, cidade) e pedidos (id_pedido, id_cliente, data_pedido, valor). Cada cliente pode ter vários pedidos, e alguns clientes ainda não compraram nada.",
+      "## INNER JOIN e LEFT JOIN",
+      "O INNER JOIN devolve apenas as linhas que têm correspondência nas duas tabelas. O LEFT JOIN devolve todas as linhas da tabela da esquerda e preenche com NULL as colunas da direita quando não há correspondência. A escolha muda a resposta: \"faturamento por cliente\" com INNER JOIN esconde quem nunca comprou; com LEFT JOIN, esses clientes aparecem com total nulo.",
+      "```sql\nSELECT\n  c.nome,\n  COUNT(p.id_pedido)         AS pedidos,\n  COALESCE(SUM(p.valor), 0)  AS faturamento\nFROM clientes AS c\nLEFT JOIN pedidos AS p\n  ON p.id_cliente = c.id_cliente\nGROUP BY c.nome\nORDER BY faturamento DESC;\n```",
+      "Note o COUNT(p.id_pedido) em vez de COUNT(*): contando uma coluna da tabela da direita, clientes sem pedidos ficam com zero, e não com um.",
+      "## Um erro clássico: filtro no lugar errado",
+      "Colocar no WHERE uma condição sobre a tabela da direita transforma, na prática, o LEFT JOIN em INNER JOIN, porque as linhas com NULL são descartadas. Quando o filtro deve valer só para a junção, ele vai na cláusula ON.",
+      "```sql\n-- Mantém todos os clientes, contando só pedidos de 2026\nSELECT c.nome, COUNT(p.id_pedido) AS pedidos_2026\nFROM clientes AS c\nLEFT JOIN pedidos AS p\n  ON p.id_cliente = c.id_cliente\n AND p.data_pedido >= DATE '2026-01-01'\nGROUP BY c.nome;\n```",
+      "## Linhas multiplicadas",
+      "Se a tabela da direita tiver mais de uma linha por chave, cada linha da esquerda se repete. Somar valores depois de um JOIN desses infla os totais. Antes de juntar, vale conferir a cardinalidade com um GROUP BY na chave e HAVING COUNT(*) > 1, ou agregar a tabela da direita em uma subconsulta antes da junção.",
+      "## Funções de janela: calcular sem perder as linhas",
+      "O GROUP BY resume várias linhas em uma. As funções de janela fazem o cálculo sobre um conjunto de linhas relacionadas, mas mantêm cada linha no resultado. A cláusula OVER define essa janela: PARTITION BY separa os grupos e ORDER BY define a ordem dentro de cada grupo.",
+      "```sql\nWITH mensal AS (\n  SELECT\n    DATE_TRUNC('month', data_pedido) AS mes,\n    SUM(valor) AS receita\n  FROM pedidos\n  GROUP BY 1\n)\nSELECT\n  mes,\n  receita,\n  SUM(receita) OVER (ORDER BY mes)  AS receita_acumulada,\n  LAG(receita) OVER (ORDER BY mes)  AS receita_mes_anterior,\n  ROUND(\n    100.0 * (receita - LAG(receita) OVER (ORDER BY mes))\n      / NULLIF(LAG(receita) OVER (ORDER BY mes), 0),\n    1\n  ) AS variacao_pct\nFROM mensal\nORDER BY mes;\n```",
+      "SUM(...) OVER (ORDER BY mes) produz o total acumulado até cada mês. LAG(receita) traz o valor da linha anterior, o que permite calcular a variação percentual. O NULLIF evita divisão por zero, e o primeiro mês fica com variação nula porque não tem antecessor.",
+      "## Médias móveis e participação no total",
+      "Outras duas perguntas frequentes também cabem em uma janela. A média móvel de três meses suaviza oscilações; a participação de cada cidade no faturamento usa a soma da partição como denominador.",
+      "```sql\nSELECT\n  mes,\n  receita,\n  AVG(receita) OVER (\n    ORDER BY mes\n    ROWS BETWEEN 2 PRECEDING AND CURRENT ROW\n  ) AS media_movel_3m\nFROM mensal;\n\nSELECT\n  c.cidade,\n  SUM(p.valor) AS faturamento,\n  ROUND(100.0 * SUM(p.valor) / SUM(SUM(p.valor)) OVER (), 1) AS participacao_pct\nFROM pedidos AS p\nJOIN clientes AS c ON c.id_cliente = p.id_cliente\nGROUP BY c.cidade;\n```",
+      "No segundo exemplo, SUM(SUM(p.valor)) OVER () soma os totais já agrupados de todas as cidades. Funções de janela são avaliadas depois do GROUP BY, por isso podem usar agregações. Para rankings com ROW_NUMBER, RANK e DENSE_RANK, veja o artigo específico sobre essas funções no DataConstruction.",
+      "## Aplicações reais",
+      "Esses padrões aparecem em relatórios de receita recorrente, acompanhamento de metas, análise de retenção de clientes e detecção de quedas bruscas em indicadores operacionais. Em ferramentas de BI, as mesmas ideias aparecem como medidas de total acumulado e comparação com o período anterior.",
+      "## Conclusão",
+      "Antes de cada JOIN, pergunte quantas linhas existem por chave em cada lado e se as linhas sem correspondência devem aparecer. Antes de exportar dados para uma planilha só para calcular acumulados ou variações, lembre que uma função de janela resolve isso no próprio banco, com menos código e menos risco de erro."
+    ],
+    "references": [
+      {
+        "citation": "POSTGRESQL GLOBAL DEVELOPMENT GROUP. Joins Between Tables. PostgreSQL Documentation. Disponível em: https://www.postgresql.org/docs/current/tutorial-join.html. Acesso em: 29 out. 2026.",
+        "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+      },
+      {
+        "citation": "POSTGRESQL GLOBAL DEVELOPMENT GROUP. Window Functions (tutorial). PostgreSQL Documentation. Disponível em: https://www.postgresql.org/docs/current/tutorial-window.html. Acesso em: 29 out. 2026.",
+        "url": "https://www.postgresql.org/docs/current/tutorial-window.html"
+      },
+      {
+        "citation": "POSTGRESQL GLOBAL DEVELOPMENT GROUP. Window Functions (referência). PostgreSQL Documentation. Disponível em: https://www.postgresql.org/docs/current/functions-window.html. Acesso em: 29 out. 2026.",
+        "url": "https://www.postgresql.org/docs/current/functions-window.html"
+      },
+      {
+        "citation": "MICROSOFT. SELECT - OVER Clause (Transact-SQL). Disponível em: https://learn.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql. Acesso em: 29 out. 2026.",
+        "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql"
+      }
+    ],
+    "tags": [
+      "SQL",
+      "JOIN",
+      "Funções de Janela",
+      "LAG",
+      "PostgreSQL"
+    ]
+  }
+}

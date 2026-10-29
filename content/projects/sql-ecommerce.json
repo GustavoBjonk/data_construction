@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 180,
+  "data": {
+    "id": "sql-ecommerce",
+    "title": "Sistema de e-commerce",
+    "description": "Modele o banco de dados de um e-commerce com produtos, pedidos, clientes e pagamentos.",
+    "area": "SQL",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "SQL",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "Modelagem relacional",
+      "JOINs",
+      "Consultas SQL"
+    ],
+    "estimatedTime": "8–14 horas",
+    "objective": "Modelar um sistema de e-commerce e escrever consultas SQL mais complexas envolvendo múltiplas tabelas relacionadas."
+  }
+}

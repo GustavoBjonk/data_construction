@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 130,
+  "data": {
+    "id": "power-bi-ignite-2022",
+    "slug": "power-bi-ignite-2022",
+    "title": "Microsoft leva novidades de BI corporativo ao Power BI no Ignite 2022",
+    "summary": "No Microsoft Ignite 2022, a Microsoft anunciou, em prévia, que relatórios do Power BI poderão ser visualizados e editados diretamente no OneDrive e no SharePoint, sem instalar o Power BI Desktop. A empresa também informou que o Power BI passará a ser instalado automaticamente para usuários do Office, reduzindo a implantação manual pela equipe de TI.",
+    "relevance": "Facilita o autoatendimento analítico dentro do ecossistema Microsoft, reduzindo fricção para usuários de negócio que dependem de BI no dia a dia.",
+    "publishedAt": "2022-10-12",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2022,
+    "category": [
+      "Business Intelligence"
+    ],
+    "tags": [
+      "Power BI",
+      "Microsoft Ignite",
+      "Self-Service BI",
+      "OneDrive"
+    ],
+    "source": "Microsoft (Ignite 2022 Book of News)",
+    "sourceUrl": "https://news.microsoft.com/ignite-2022-book-of-news/",
+    "related": {
+      "trackSlugs": [
+        "business-intelligence"
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "analise-de-dados",
+    "slug": "analise-de-dados",
+    "title": "Análise de Dados",
+    "description": "Do zero ao primeiro portfólio: transforme dados brutos em indicadores e relatórios que ajudam pessoas a tomar decisões.",
+    "level": "Iniciante",
+    "estimatedDuration": "3–6 meses",
+    "steps": [
+      {
+        "id": "analise-de-dados-fundamentos",
+        "order": 1,
+        "title": "Fundamentos",
+        "description": "Antes de qualquer ferramenta, entenda os conceitos que sustentam toda análise: tipos de dados e estatística descritiva básica.",
+        "topics": [
+          "Tipos de dados",
+          "Média, mediana e moda",
+          "Porcentagem",
+          "Estatística descritiva",
+          "Pensamento analítico"
+        ],
+        "technologies": [],
+        "courseIds": [
+          "khan-academy-estatistica"
+        ]
+      },
+      {
+        "id": "analise-de-dados-excel",
+        "order": 2,
+        "title": "Excel",
+        "description": "A ferramenta mais acessível para organizar, calcular e visualizar dados antes de partir para programação.",
+        "topics": [
+          "Planilhas",
+          "Fórmulas",
+          "Tabelas dinâmicas"
+        ],
+        "technologies": [
+          "Excel"
+        ],
+        "courseIds": [
+          "excel-na-pratica"
+        ]
+      },
+      {
+        "id": "analise-de-dados-sql",
+        "order": 3,
+        "title": "SQL",
+        "description": "Aprenda a consultar, filtrar e agregar dados diretamente em um banco relacional.",
+        "topics": [
+          "Consultas",
+          "Filtros",
+          "Agregações"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-transact-sql"
+        ]
+      },
+      {
+        "id": "analise-de-dados-python",
+        "order": 4,
+        "title": "Python",
+        "description": "A linguagem que permite automatizar análises e trabalhar com volumes maiores de dados.",
+        "topics": [
+          "Sintaxe básica",
+          "Estruturas de dados",
+          "Funções"
+        ],
+        "technologies": [
+          "Python"
+        ],
+        "courseIds": [
+          "freecodecamp-data-analysis-python"
+        ]
+      },
+      {
+        "id": "analise-de-dados-pandas-eda",
+        "order": 5,
+        "title": "Pandas + EDA",
+        "description": "Limpe, organize e explore dados tabulares para encontrar padrões antes de qualquer conclusão.",
+        "topics": [
+          "Limpeza de dados",
+          "Análise exploratória",
+          "Agrupamento"
+        ],
+        "technologies": [
+          "Python",
+          "Pandas"
+        ],
+        "courseIds": [
+          "kaggle-pandas"
+        ]
+      },
+      {
+        "id": "analise-de-dados-visualizacao",
+        "order": 6,
+        "title": "Visualização",
+        "description": "Transforme números em gráficos que comunicam uma ideia com clareza.",
+        "topics": [
+          "Gráficos",
+          "Storytelling com dados"
+        ],
+        "technologies": [
+          "Matplotlib"
+        ],
+        "courseIds": [
+          "kaggle-data-viz"
+        ]
+      },
+      {
+        "id": "analise-de-dados-power-bi",
+        "order": 7,
+        "title": "Power BI",
+        "description": "Consolide tudo em dashboards e indicadores que outras pessoas conseguem acompanhar sozinhas.",
+        "topics": [
+          "Dashboards",
+          "Indicadores"
+        ],
+        "technologies": [
+          "Power BI"
+        ],
+        "courseIds": [
+          "powerbi-intro-bradesco"
+        ]
+      },
+      {
+        "id": "analise-de-dados-projetos",
+        "order": 8,
+        "title": "Projetos",
+        "description": "Coloque tudo em prática construindo um portfólio com projetos reais de análise de dados.",
+        "topics": [
+          "Portfólio",
+          "Prática"
+        ],
+        "technologies": [],
+        "courseIds": []
+      }
+    ],
+    "projectArea": "Análise de Dados"
+  }
+}

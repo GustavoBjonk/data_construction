@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 500,
+  "data": {
+    "id": "nvidia-blackwell-2024",
+    "slug": "nvidia-blackwell-2024",
+    "title": "Nvidia apresenta a arquitetura de GPUs Blackwell",
+    "summary": "Durante o GTC 2024, a Nvidia revelou a arquitetura Blackwell e os chips B100, B200 e o superchip GB200, prometendo até 4x mais desempenho que a geração Hopper para cargas de treinamento e inferência de IA.",
+    "relevance": "Define o próximo patamar de hardware para treinar e servir modelos de IA em escala, impactando diretamente custo e capacidade de infraestrutura de dados/IA das empresas.",
+    "publishedAt": "2024-03-18",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Infraestrutura",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Nvidia",
+      "GPU",
+      "Blackwell",
+      "Infraestrutura de IA"
+    ],
+    "source": "Nvidia (newsroom oficial)",
+    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+  }
+}

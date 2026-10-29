@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
-import { RoadmapGrid } from "@/components/tracks/RoadmapGrid";
 import { CourseExplorer } from "@/components/tracks/CourseExplorer";
-import { roadmaps } from "@/data/roadmaps";
-import { courses, COURSE_AREAS } from "@/data/courses";
+import { RoadmapGrid } from "@/components/tracks/RoadmapGrid";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Button } from "@/components/ui/Button";
+import { COURSE_AREAS } from "@/data/courses";
+import { getCatalog } from "@/lib/content";
+
+const DESCRIPTION =
+  "Escolha uma área de Dados, siga o roadmap e encontre cursos gratuitos ou de baixo custo para avançar em cada etapa.";
 
 export const metadata: Metadata = {
-  title: "Trilhas de Aprendizado",
-  description:
-    "Escolha uma área de Dados, siga o roadmap e encontre cursos gratuitos ou de baixo custo para avançar em cada etapa.",
+  title: "Trilhas de aprendizado",
+  description: DESCRIPTION,
+  alternates: { canonical: "/trilhas" },
+  openGraph: { title: "Trilhas de aprendizado", description: DESCRIPTION, url: "/trilhas" },
 };
 
 const COURSE_LEVELS = ["Iniciante", "Intermediário", "Avançado"];
@@ -23,94 +30,109 @@ const AREA_COMPARISON: { area: string; focus: string }[] = [
   { area: "Data Visualization", focus: "Comunicação visual de informações" },
 ];
 
-export default function TrilhasPage() {
-  return (
-    <section className="py-16 sm:py-20">
-      <Container>
-        <div className="max-w-2xl">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">
-            Aprenda Dados com um caminho claro.
-          </h1>
-          <p className="mt-3 text-base leading-relaxed text-slate-500">
-            Escolha uma área, siga o roadmap e encontre cursos gratuitos ou de baixo custo
-            para avançar em cada etapa.
-          </p>
-        </div>
+export const revalidate = 300;
 
-        <div className="mt-14">
-          <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-            Escolha sua área
-          </h2>
+export default async function TrilhasPage() {
+  const { roadmaps, courses, books } = await getCatalog();
+
+  return (
+    <>
+      <PageHeader
+        eyebrow={`${roadmaps.length} trilhas · ${courses.length} cursos`}
+        title={
+          <>
+            Um caminho
+            <br />
+            claro<span className="text-accent">.</span>
+          </>
+        }
+        lead="Escolha uma área, siga o roadmap e encontre cursos gratuitos ou de baixo custo para avançar em cada etapa."
+        breadcrumbs={[{ label: "Trilhas", href: "/trilhas" }]}
+      />
+
+      <Container className="space-y-16 py-12 sm:space-y-20 sm:py-16">
+        <section aria-labelledby="escolha-area">
+          <SectionHeader id="escolha-area" title="Escolha sua área" />
           <div className="mt-6">
             <RoadmapGrid roadmaps={roadmaps} />
           </div>
-        </div>
+        </section>
 
-        <div className="mt-16 border-t border-slate-200 pt-14">
-          <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-            Ainda não sabe qual área seguir?
-          </h2>
-          <p className="mt-2 text-sm text-slate-500">
-            Uma comparação objetiva do foco principal de cada área. Nenhuma delas é
-            &quot;melhor&quot; — o objetivo é ajudar você a entender as diferenças.
-          </p>
-          <div className="mt-6 overflow-hidden rounded-lg border border-slate-200">
-            <table className="w-full table-fixed border-collapse text-left text-sm">
+        <section aria-labelledby="comparativo" className="grid gap-8 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <SectionHeader
+              id="comparativo"
+              title="Ainda não sabe qual área seguir?"
+              description="Uma comparação objetiva do foco de cada área. Nenhuma é “melhor” — o objetivo é entender as diferenças."
+            />
+          </div>
+          <div className="overflow-x-auto lg:col-span-8">
+            <table className="w-full border-collapse text-left text-sm">
               <thead>
-                <tr className="border-b border-slate-200 bg-slate-100">
-                  <th scope="col" className="w-2/5 px-4 py-3 font-medium text-slate-900">
+                <tr className="border-b border-line-strong">
+                  <th scope="col" className="eyebrow py-3 pr-4 font-normal">
                     Área
                   </th>
-                  <th scope="col" className="px-4 py-3 font-medium text-slate-900">
+                  <th scope="col" className="eyebrow py-3 font-normal">
                     Principal foco
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {AREA_COMPARISON.map((row) => (
-                  <tr key={row.area} className="border-b border-slate-200 last:border-b-0">
-                    <th
-                      scope="row"
-                      className="px-4 py-3 align-top font-medium text-slate-900"
-                    >
+                  <tr key={row.area} className="border-b border-line">
+                    <th scope="row" className="py-4 pr-4 align-top font-medium text-fg">
                       {row.area}
                     </th>
-                    <td className="px-4 py-3 align-top text-slate-500">{row.focus}</td>
+                    <td className="py-4 align-top text-muted">{row.focus}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
 
-        <div className="mt-16 border-t border-slate-200 pt-14">
-          <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-            Todos os cursos
-          </h2>
-          <p className="mt-2 text-sm text-slate-500">
-            Busque e filtre cursos gratuitos e de baixo custo recomendados nas trilhas.
-          </p>
-          <div className="mt-6">
+        <section aria-labelledby="cursos">
+          <SectionHeader
+            id="cursos"
+            title="Todos os cursos"
+            description="Cursos gratuitos e de baixo custo recomendados nas trilhas."
+          />
+          <div className="mt-8">
             <CourseExplorer courses={courses} areas={COURSE_AREAS} levels={COURSE_LEVELS} />
           </div>
-        </div>
+        </section>
 
-        <div className="mt-16 border-t border-slate-200 pt-14">
-          <h2 className="text-xl font-semibold tracking-tight text-slate-900">
-            Como selecionamos os cursos?
+        <section aria-labelledby="livros-trilhas" className="grid gap-6 border border-line bg-surface p-6 sm:p-8 lg:grid-cols-12 lg:items-center">
+          <div className="lg:col-span-8">
+            <h2 id="livros-trilhas" className="eyebrow text-fg">
+              Prefere estudar por livros?
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+              Uma seleção de {books.length} livros de Dados, IA, Python e SQL — vários com versão gratuita oficial.
+            </p>
+          </div>
+          <div className="lg:col-span-4 lg:text-right">
+            <Button href="/livros" variant="secondary" withArrow>
+              Ver livros recomendados
+            </Button>
+          </div>
+        </section>
+
+        <section aria-labelledby="selecao" className="max-w-prose border-t border-line pt-10">
+          <h2 id="selecao" className="eyebrow text-fg">
+            Como selecionamos os cursos
           </h2>
-          <p className="mt-3 max-w-prose text-sm leading-relaxed text-slate-500">
-            O Dataconstruction prioriza cursos gratuitos e opções de baixo custo para facilitar o
-            acesso ao aprendizado. Preços e disponibilidade podem mudar de acordo com a
-            plataforma, região, promoções e condições comerciais.
+          <p className="mt-4 text-sm leading-relaxed text-muted">
+            O DataConstruction prioriza cursos gratuitos e opções de baixo custo para facilitar o acesso ao aprendizado.
+            Preços e disponibilidade podem mudar de acordo com a plataforma, região, promoções e condições comerciais.
           </p>
-          <p className="mt-3 max-w-prose text-sm leading-relaxed text-slate-500">
-            Os cursos são oferecidos por plataformas externas. O Dataconstruction não é responsável
-            pelo conteúdo, preço, disponibilidade ou alterações realizadas por essas
-            plataformas.
+          <p className="mt-3 text-sm leading-relaxed text-muted">
+            Os cursos são oferecidos por plataformas externas. O DataConstruction não é responsável pelo conteúdo, preço,
+            disponibilidade ou alterações realizadas por essas plataformas.
           </p>
-        </div>
+        </section>
       </Container>
-    </section>
+    </>
   );
 }

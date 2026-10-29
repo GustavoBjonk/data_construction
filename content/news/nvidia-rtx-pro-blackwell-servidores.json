@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 670,
+  "data": {
+    "id": "nvidia-rtx-pro-blackwell-servidores",
+    "slug": "nvidia-rtx-pro-blackwell-servidores",
+    "title": "Nvidia leva GPUs Blackwell para servidores empresariais mainstream com o RTX PRO 6000 Server Edition",
+    "summary": "A Nvidia anunciou que servidores 2U de fabricantes como Dell, HPE, Cisco e Lenovo passarão a oferecer a GPU RTX PRO 6000 Blackwell Server Edition, prometendo até 45x mais performance e 18x mais eficiência energética frente a sistemas apenas com CPU.",
+    "relevance": "A disponibilidade de GPUs de ponta em infraestrutura empresarial \"mainstream\" reduz barreiras para treinar e servir modelos de ML em ambientes corporativos comuns.",
+    "publishedAt": "2025-08-11",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Infraestrutura",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Nvidia",
+      "GPU",
+      "Blackwell",
+      "Data Center"
+    ],
+    "source": "NVIDIA Newsroom (comunicado oficial)",
+    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-rtx-pro-servers-with-blackwell-coming-to-worlds-most-popular-enterprise-systems"
+  }
+}

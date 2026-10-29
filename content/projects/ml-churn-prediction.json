@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 260,
+  "data": {
+    "id": "ml-churn-prediction",
+    "title": "Churn prediction",
+    "description": "Construa um modelo preditivo para identificar clientes com alto risco de cancelamento.",
+    "area": "Machine Learning",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "skills": [
+      "Classificação",
+      "Feature importance",
+      "Avaliação de modelo"
+    ],
+    "estimatedTime": "10–16 horas",
+    "objective": "Treinar um modelo de classificação para prever churn e interpretar as variáveis mais relevantes para o cancelamento."
+  }
+}

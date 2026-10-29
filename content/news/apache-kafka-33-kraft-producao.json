@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 150,
+  "data": {
+    "id": "apache-kafka-33-kraft-producao",
+    "slug": "apache-kafka-33-kraft-producao",
+    "title": "Apache Kafka 3.3 marca o modo KRaft como pronto para produção",
+    "summary": "A versão 3.3 do Apache Kafka implementou o KIP-833, declarando o modo KRaft (que dispensa o Apache Zookeeper para gerenciamento de metadados) como pronto para produção em novos clusters. A mudança também trouxe atualizações no Kafka Streams e no Kafka Connect.",
+    "relevance": "Simplifica a operação de clusters Kafka ao remover a dependência do Zookeeper, um dos pontos de maior complexidade operacional em arquiteturas de streaming de dados.",
+    "publishedAt": "2022-10-03",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Data Engineering",
+      "Open Source"
+    ],
+    "tags": [
+      "Apache Kafka",
+      "KRaft",
+      "Streaming",
+      "Zookeeper"
+    ],
+    "source": "Apache Kafka (blog oficial)",
+    "sourceUrl": "https://blogsarchive.apache.org/kafka/entry/what-rsquo-s-new-in"
+  }
+}

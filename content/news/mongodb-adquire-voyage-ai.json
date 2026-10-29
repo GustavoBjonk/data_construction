@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 630,
+  "data": {
+    "id": "mongodb-adquire-voyage-ai",
+    "slug": "mongodb-adquire-voyage-ai",
+    "title": "MongoDB adquire a Voyage AI para reforçar busca vetorial e reduzir alucinações de IA",
+    "summary": "A MongoDB anunciou a aquisição da Voyage AI, startup especializada em modelos de embedding e reranking usados por empresas como Anthropic e LangChain. A integração busca oferecer recuperação de informação mais precisa dentro do banco operacional.",
+    "relevance": "Reforça a convergência entre bancos de dados operacionais e infraestrutura de busca vetorial/RAG, peça-chave para aplicações de IA generativa confiáveis.",
+    "publishedAt": "2025-02-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Bancos de Dados",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "MongoDB",
+      "Embeddings",
+      "RAG",
+      "Aquisição"
+    ],
+    "source": "PR Newswire / MongoDB",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/mongodb-announces-acquisition-of-voyage-ai-to-enable-organizations-to-build-trustworthy-ai-applications-302382979.html",
+    "related": {
+      "trackSlugs": [
+        "machine-learning"
+      ]
+    }
+  }
+}

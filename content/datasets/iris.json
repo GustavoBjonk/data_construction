@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 20,
+  "data": {
+    "id": "iris",
+    "name": "Iris",
+    "description": "Medidas de sépalas e pétalas de três espécies de flor Iris, um dos datasets mais usados para introduzir classificação e visualização de dados.",
+    "category": "Machine Learning",
+    "difficulty": "Iniciante",
+    "size": "150 registros",
+    "format": "CSV",
+    "topics": [
+      "Classificação",
+      "Visualização",
+      "Estatística",
+      "Introdução a ML"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "idealFor": [
+      "Introdução prática a Machine Learning",
+      "Aprender visualização de dados"
+    ],
+    "source": "UCI Machine Learning Repository",
+    "sourceUrl": "https://archive.ics.uci.edu/dataset/53/iris"
+  }
+}

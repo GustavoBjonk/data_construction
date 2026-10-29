@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 100,
+  "data": {
+    "id": "etl-automatizado",
+    "title": "Pipeline ETL automatizado",
+    "description": "Automatize um fluxo de Extract, Transform e Load entre uma fonte de dados e um data warehouse.",
+    "area": "Engenharia de Dados",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "skills": [
+      "Extract",
+      "Transform",
+      "Load",
+      "Automação",
+      "Docker"
+    ],
+    "estimatedTime": "12–20 horas",
+    "objective": "Construir um pipeline ETL automatizado, cobrindo extração, transformação e carga de dados em um ambiente containerizado."
+  }
+}

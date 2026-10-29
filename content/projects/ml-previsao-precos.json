@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 230,
+  "data": {
+    "id": "ml-previsao-precos",
+    "title": "Previsão de preços",
+    "description": "Treine um modelo de regressão para prever preços a partir de características de um produto ou imóvel.",
+    "area": "Machine Learning",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Python",
+      "Scikit-learn"
+    ],
+    "skills": [
+      "Regressão",
+      "Preparação de dados",
+      "Avaliação de modelo"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Praticar regressão supervisionada, da preparação dos dados à avaliação do modelo treinado."
+  }
+}

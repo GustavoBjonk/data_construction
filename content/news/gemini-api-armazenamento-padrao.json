@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1010,
+  "data": {
+    "id": "gemini-api-armazenamento-padrao",
+    "slug": "gemini-api-armazenamento-padrao",
+    "title": "Gemini API passa a armazenar requisições por padrão em novos projetos pagos",
+    "summary": "As notas de versão da API Gemini registram uma mudança de configuração em 26 de outubro: novos projetos do plano pago que usam a Generate Content API passam a armazenar as requisições por padrão, alinhando o comportamento ao da Interactions API. Projetos existentes mantêm a configuração atual. Quem não quiser o armazenamento pode desativá-lo em cada chamada com o parâmetro store=false ou desligar o registro da Generate Content API no painel de configurações de Logs and Datasets. No dia seguinte, o Google colocou em beta o Gemini API CLI, cliente de linha de comando sem dependências voltado a agentes de programação, scripts e pipelines de integração contínua. Em outubro, a API também passou a encaminhar automaticamente chamadas de modelos Flash descontinuados para versões mais novas.",
+    "relevance": "Mudanças de padrão em retenção de dados afetam conformidade com a LGPD e com contratos. Quem envia dados pessoais ou sigilosos a APIs de IA deve revisar as configurações de cada novo projeto, em vez de presumir que nada é guardado.",
+    "publishedAt": "2026-10-26",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Privacy",
+      "Inteligência Artificial",
+      "Cloud"
+    ],
+    "tags": [
+      "Google",
+      "Gemini API",
+      "Retenção de Dados",
+      "LGPD",
+      "Privacidade"
+    ],
+    "source": "Google AI for Developers (notas de versão oficiais)",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog"
+  }
+}

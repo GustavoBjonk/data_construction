@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 390,
+  "data": {
+    "id": "eu-ai-act-acordo-politico-2023",
+    "slug": "eu-ai-act-acordo-politico-2023",
+    "title": "União Europeia fecha acordo político sobre o AI Act",
+    "summary": "Após negociações que se estenderam por quase três dias, o Conselho e o Parlamento Europeu chegaram a um acordo político provisório sobre o AI Act, primeira lei abrangente do mundo para regular inteligência artificial por níveis de risco. O texto prevê obrigações de transparência para sistemas de propósito geral e multas de até 7% do faturamento global para infrações graves.",
+    "relevance": "Estabeleceu o marco regulatório que hoje molda como empresas de dados e IA precisam documentar, avaliar riscos e reportar o uso de modelos de IA na Europa.",
+    "publishedAt": "2023-12-09",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Regulamentação",
+      "Data Governance"
+    ],
+    "tags": [
+      "EU AI Act",
+      "Regulação de IA",
+      "União Europeia",
+      "Governança"
+    ],
+    "source": "Conselho da União Europeia (comunicado oficial)",
+    "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2023/12/09/artificial-intelligence-act-council-and-parliament-strike-a-deal-on-the-first-worldwide-rules-for-ai/"
+  }
+}

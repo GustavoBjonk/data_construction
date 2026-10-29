@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 900,
+  "data": {
+    "id": "anpd-multa-tiktok-2026",
+    "slug": "anpd-multa-tiktok-2026",
+    "title": "ANPD multa TikTok em R$ 153,7 milhões por uso indevido de dados de crianças e adolescentes",
+    "summary": "A Autoridade Nacional de Proteção de Dados (ANPD) aplicou multa de R$ 153,7 milhões à ByteDance, controladora do TikTok, por tratar dados pessoais de menores sem base legal adequada, tanto no feed de usuários logados quanto deslogados, além de exigir a exclusão dos dados coletados irregularmente.",
+    "relevance": "É uma das maiores sanções já aplicadas pela ANPD, um marco prático de como a fiscalização da LGPD está se intensificando para quem lida com dados de usuários no Brasil.",
+    "publishedAt": "2026-08-25",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Privacy",
+      "Regulamentação"
+    ],
+    "tags": [
+      "LGPD",
+      "ANPD",
+      "TikTok",
+      "Proteção de Menores"
+    ],
+    "source": "ANPD (comunicado oficial)",
+    "sourceUrl": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-multa-tiktok-em-r-153-7-milhoes-por-falhas-na-protecao-de-dados-de-criancas-e-adolescentes",
+    "featured": true
+  }
+}

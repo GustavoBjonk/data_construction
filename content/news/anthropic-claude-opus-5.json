@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 800,
+  "data": {
+    "id": "anthropic-claude-opus-5",
+    "slug": "anthropic-claude-opus-5",
+    "title": "Anthropic lança o Claude Opus 5, com desempenho próximo do topo por metade do preço",
+    "summary": "A Anthropic lançou o Claude Opus 5, um modelo posicionado para entregar desempenho próximo ao de seu modelo mais avançado em diversas tarefas, mas a um custo bem menor. É o quarto lançamento da família Claude 5 em menos de dois meses.",
+    "relevance": "Mostra a aceleração do ritmo de lançamentos de LLMs em 2026, com foco crescente em custo-benefício além de capacidade bruta — algo direto para quem avalia qual modelo usar em produção.",
+    "publishedAt": "2026-07-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "LLM",
+      "Modelos de Linguagem"
+    ],
+    "source": "Axios",
+    "sourceUrl": "https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5"
+  }
+}

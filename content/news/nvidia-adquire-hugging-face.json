@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1260,
+  "data": {
+    "id": "nvidia-adquire-hugging-face",
+    "slug": "nvidia-adquire-hugging-face",
+    "title": "NVIDIA anuncia acordo para comprar a Hugging Face por cerca de US$ 12,9 bilhões",
+    "summary": "A NVIDIA anunciou em 3 de setembro um acordo para adquirir a Hugging Face, principal plataforma de compartilhamento de modelos e datasets de IA, por 12,93 bilhões de dólares. No anúncio, assinado pelo CEO Jensen Huang, a empresa afirma que a Hugging Face continuará aberta a todo o ecossistema, que o uso de computação da NVIDIA não será exigido para construir ou publicar na plataforma e que o suporte a modelos de todos os desenvolvedores, a múltiplas nuvens e a diferentes aceleradores será mantido. Segundo os números citados, a plataforma tem mais de 18 milhões de usuários, mais de 3 milhões de modelos, 500 mil datasets e 1 milhão de aplicações.",
+    "relevance": "Estudantes e profissionais usam a Hugging Face diariamente para baixar modelos e datasets. Vale acompanhar se os compromissos de neutralidade se mantêm após a aprovação, já que a plataforma funciona hoje como infraestrutura pública da comunidade de IA.",
+    "publishedAt": "2026-09-03",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Mercado",
+      "Inteligência Artificial",
+      "Open Source"
+    ],
+    "tags": [
+      "NVIDIA",
+      "Hugging Face",
+      "Aquisição",
+      "Modelos Abertos",
+      "Datasets"
+    ],
+    "source": "NVIDIA (blog oficial)",
+    "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+  }
+}

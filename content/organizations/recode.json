@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "recode",
+    "name": "Recode",
+    "description": "ONG que promove inclusão digital e formação em tecnologia para jovens em situação de vulnerabilidade social.",
+    "category": "Inclusão digital",
+    "officialSiteUrl": "https://recode.org.br/",
+    "donationUrl": "https://recode.org.br/seja-um-apoiador/"
+  }
+}

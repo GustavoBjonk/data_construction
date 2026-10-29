@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 250,
+  "data": {
+    "id": "microsoft-anuncia-fabric",
+    "slug": "microsoft-anuncia-fabric",
+    "title": "Microsoft anuncia o Microsoft Fabric, plataforma unificada de dados e analytics",
+    "summary": "Durante o Microsoft Build 2023, a Microsoft apresentou o Fabric, unificando Power BI, Data Factory, Synapse e um data lake compartilhado (OneLake) em uma única plataforma SaaS de análise de dados. Satya Nadella chamou o lançamento de o maior lançamento de produto de dados da empresa desde o SQL Server.",
+    "relevance": "Reorganiza o mercado de data warehouse/lakehouse corporativo ao consolidar engenharia de dados, integração e BI em uma superfície única, afetando diretamente quem trabalha com stacks Microsoft/Azure.",
+    "publishedAt": "2023-05-23",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Data Engineering",
+      "Cloud"
+    ],
+    "tags": [
+      "Microsoft Fabric",
+      "Power BI",
+      "Data Lake",
+      "Synapse"
+    ],
+    "source": "Microsoft Azure (blog oficial)",
+    "sourceUrl": "https://azure.microsoft.com/en-us/blog/introducing-microsoft-fabric-data-analytics-for-the-era-of-ai/",
+    "featured": true
+  }
+}

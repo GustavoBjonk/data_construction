@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 60,
+  "data": {
+    "id": "aws-reinvent-2022-zero-etl",
+    "slug": "aws-reinvent-2022-zero-etl",
+    "title": "AWS anuncia integração Zero-ETL entre Aurora e Redshift no re:Invent 2022",
+    "summary": "A AWS detalhou os principais anúncios de analytics do re:Invent 2022, incluindo a integração Zero-ETL entre Aurora e Redshift, ingestão em streaming via Kinesis e Kafka, Multi-AZ para o Redshift e o novo Amazon DataZone para catalogação e governança de dados.",
+    "relevance": "Reduz a complexidade de pipelines de ETL tradicionais e mostra a tendência de integração nativa entre bancos operacionais e data warehouses na nuvem.",
+    "publishedAt": "2022-12-19",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Cloud",
+      "Data Engineering"
+    ],
+    "tags": [
+      "AWS",
+      "Redshift",
+      "re:Invent",
+      "Zero-ETL"
+    ],
+    "source": "AWS (blog oficial)",
+    "sourceUrl": "https://aws.amazon.com/blogs/big-data/top-analytics-announcements-of-aws-reinvent-2022/"
+  }
+}

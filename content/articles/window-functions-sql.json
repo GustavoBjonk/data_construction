@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "window-functions-sql",
+    "title": "Window functions: a diferença entre RANK, DENSE_RANK e ROW_NUMBER",
+    "description": "Exemplos comentados para escolher a função de janela certa em relatórios de ranking e deduplicação de registros.",
+    "category": "SQL",
+    "date": "2026-09-14",
+    "readingTime": 7,
+    "author": "Gustavo Ananias",
+    "authorBio": "Estudante de Análise e Desenvolvimento de Sistemas na Universidade Presbiteriana Mackenzie e futuro analista/engenheiro de dados.",
+    "content": [
+      "As três funções de janela mais confundidas em SQL fazem quase a mesma coisa — atribuir uma posição a cada linha dentro de um grupo — mas se comportam de forma diferente quando existem empates. Escolher a errada gera relatórios sutilmente incorretos que passam despercebidos até alguém somar os números.",
+      "## A diferença na prática",
+      "ROW_NUMBER() sempre atribui um número único e sequencial, mesmo quando os valores usados no ORDER BY são idênticos — em caso de empate, a ordem entre eles é arbitrária (a menos que você desempate explicitamente no ORDER BY). RANK() dá a mesma posição para valores empatados, mas pula números depois do empate: dois primeiros lugares empatados fazem o próximo ser o terceiro, não o segundo. DENSE_RANK() também empata, mas não deixa buracos na sequência: depois de dois primeiros lugares, o próximo é o segundo.",
+      "```sql\nSELECT\n  vendedor,\n  valor_vendido,\n  ROW_NUMBER() OVER (ORDER BY valor_vendido DESC) AS linha,\n  RANK()       OVER (ORDER BY valor_vendido DESC) AS posicao,\n  DENSE_RANK() OVER (ORDER BY valor_vendido DESC) AS posicao_densa\nFROM vendas;\n```",
+      "## Quando usar cada uma",
+      "ROW_NUMBER() é a escolha certa para deduplicação: numerar registros duplicados dentro de um PARTITION BY (por exemplo, o mesmo cliente cadastrado duas vezes) e manter só a linha de número 1. Como a numeração nunca empata, você tem garantia de manter exatamente uma linha por grupo.",
+      "RANK() serve para rankings onde pular posições é semanticamente correto — uma prova com dois primeiros colocados empatados não tem um \"segundo lugar\" isolado, o próximo competidor já é o terceiro. É o comportamento mais próximo de como rankings esportivos costumam ser divulgados.",
+      "DENSE_RANK() é útil quando o número da posição vai virar um filtro, como \"traga os 3 produtos mais vendidos por categoria\": usar RANK() ali pode devolver mais ou menos que 3 produtos se houver empates, enquanto DENSE_RANK() garante que você está pegando as 3 primeiras posições distintas de valor.",
+      "## Um erro comum",
+      "Usar ROW_NUMBER() para paginação sem incluir uma coluna de desempate único (como um id) no ORDER BY é uma fonte clássica de bugs: se duas linhas têm o mesmo valor na coluna de ordenação, o banco pode devolvê-las em ordens diferentes entre uma página e outra da mesma consulta, fazendo registros sumirem ou se repetirem na paginação."
+    ],
+    "references": [
+      {
+        "citation": "MICROSOFT. Ranking Functions (Transact-SQL). Disponível em: https://learn.microsoft.com/en-us/sql/t-sql/functions/ranking-functions-transact-sql. Acesso em: 16 set. 2026.",
+        "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ranking-functions-transact-sql"
+      },
+      {
+        "citation": "POSTGRESQL GLOBAL DEVELOPMENT GROUP. Window Functions. Disponível em: https://www.postgresql.org/docs/current/tutorial-window.html. Acesso em: 16 set. 2026.",
+        "url": "https://www.postgresql.org/docs/current/tutorial-window.html"
+      }
+    ]
+  }
+}

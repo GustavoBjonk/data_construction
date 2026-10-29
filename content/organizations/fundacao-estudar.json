@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 50,
+  "data": {
+    "id": "fundacao-estudar",
+    "name": "Fundação Estudar",
+    "description": "Fundação que apoia o desenvolvimento pessoal e profissional de jovens brasileiros por meio de bolsas de estudo e formação de lideranças.",
+    "category": "Apoio estudantil",
+    "officialSiteUrl": "https://www.estudar.org.br/",
+    "donationUrl": "https://pagamento.estudar.org.br/"
+  }
+}

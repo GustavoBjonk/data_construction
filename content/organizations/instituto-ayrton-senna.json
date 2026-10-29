@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "instituto-ayrton-senna",
+    "name": "Instituto Ayrton Senna",
+    "description": "Organização brasileira que desenvolve programas e pesquisas para melhorar a qualidade da educação pública no Brasil.",
+    "category": "Educação",
+    "officialSiteUrl": "https://institutoayrtonsenna.org.br/",
+    "donationUrl": "https://doacao.institutoayrtonsenna.org.br/"
+  }
+}

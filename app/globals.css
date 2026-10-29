@@ -2,16 +2,184 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------------------------------------------------------------------
+   Design tokens — DataConstruction
+   Canais RGB para permitir opacidade via Tailwind (ex.: bg-accent/10).
+   ------------------------------------------------------------------ */
+:root {
+  color-scheme: dark;
+
+  --color-bg: 9 13 15; /* #090D0F */
+  --color-surface: 20 27 30; /* #141B1E */
+  --color-elevated: 29 39 42; /* #1D272A */
+  --color-fg: 241 240 235; /* #F1F0EB */
+  --color-muted: 155 168 167; /* #9BA8A7 — 8,6:1 sobre bg */
+  --color-subtle: 124 138 137; /* #7C8A89 — 5,4:1 sobre bg */
+  --color-line: 41 50 53; /* #293235 */
+  --color-line-strong: 60 72 75; /* #3C484B */
+  --color-accent: 115 214 199; /* #73D6C7 */
+  --color-accent-hover: 150 228 216; /* #96E4D8 */
+  --color-accent-ink: 6 38 34; /* texto sobre accent */
+  --color-copper: 217 168 117; /* #D9A875 */
+
+  --header-height: 4rem;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 1rem);
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
-    @apply bg-slate-50 text-slate-900 antialiased;
+    @apply bg-bg text-fg antialiased;
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
   }
 
   ::selection {
-    @apply bg-accent/15;
+    @apply bg-accent/25 text-fg;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-accent;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  /* Rótulo técnico em mono, usado em categorias, metadados e índices. */
+  .eyebrow {
+    @apply font-mono text-eyebrow uppercase text-muted;
+  }
+
+  .hairline {
+    @apply border-line;
+  }
+
+  /* Fundo de pontos discreto, inspirado em grades de dados. */
+  .bg-dot-grid {
+    background-image: radial-gradient(rgb(var(--color-line-strong) / 0.55) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Cards interativos: deslocamento discreto + realce de borda. */
+  .card-interactive {
+    @apply relative border border-line bg-surface transition-[border-color,transform,background-color] duration-300 ease-out-expo;
+  }
+  .card-interactive:hover {
+    @apply -translate-y-0.5 border-line-strong bg-elevated/60;
+  }
+
+  /* Tipografia de leitura para artigos e notícias. */
+  .prose-editorial {
+    @apply text-[1.0625rem] leading-[1.75] text-fg/85;
+  }
+  .prose-editorial > * + * {
+    @apply mt-5;
+  }
+  .prose-editorial h2 {
+    @apply mt-14 scroll-mt-24 font-display text-2xl font-semibold tracking-tight text-fg;
+  }
+  .prose-editorial code:not(pre code) {
+    @apply rounded-sm bg-elevated px-1.5 py-0.5 font-mono text-[0.875em] text-accent;
+  }
+  .prose-editorial pre {
+    @apply mt-6 overflow-x-auto rounded-card border border-line bg-surface p-5 font-mono text-[0.8125rem] leading-relaxed text-fg/90;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Reveal on scroll (ver components/ui/Reveal.tsx)
+   ------------------------------------------------------------------ */
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 0.8s var(--ease-out-expo),
+    transform 0.8s var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+[data-reveal="visible"] {
+  opacity: 1;
+  transform: none;
+}
+/* Sem JavaScript o conteúdo nunca fica oculto. */
+.no-js [data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+/* ------------------------------------------------------------------
+   Sequência de abertura (somente no primeiro carregamento da sessão;
+   `intro-done` é aplicado em <html> por components/home/IntroGate.tsx)
+   ------------------------------------------------------------------ */
+@keyframes intro-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0.35em, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* Título do hero: só movimento, sempre opaco. Animar a opacidade do maior
+   texto da página atrasava o LCP até a animação ser removida. */
+@keyframes intro-slide {
+  from {
+    transform: translate3d(0, 0.18em, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes intro-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html:not(.intro-done) [data-intro] {
+  animation: intro-rise 0.9s var(--ease-out-expo) both;
+  animation-delay: var(--intro-delay, 0ms);
+}
+html:not(.intro-done) [data-intro="title"] {
+  animation-name: intro-slide;
+}
+html:not(.intro-done) [data-intro="fade"] {
+  animation-name: intro-fade;
+  animation-duration: 1.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
   }
 }

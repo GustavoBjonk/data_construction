@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 50,
+  "data": {
+    "id": "machine-learning",
+    "slug": "machine-learning",
+    "title": "Machine Learning",
+    "description": "Uma trilha para entender e construir modelos preditivos com uma base sólida de dados e estatística.",
+    "level": "Intermediário",
+    "estimatedDuration": "5–8 meses",
+    "steps": [
+      {
+        "id": "machine-learning-python",
+        "order": 1,
+        "title": "Python",
+        "description": "A linguagem padrão do ecossistema de Machine Learning.",
+        "topics": [
+          "Sintaxe básica",
+          "Estruturas de dados"
+        ],
+        "technologies": [
+          "Python"
+        ],
+        "courseIds": [
+          "freecodecamp-data-analysis-python"
+        ]
+      },
+      {
+        "id": "machine-learning-matematica-estatistica",
+        "order": 2,
+        "title": "Matemática/Estatística",
+        "description": "A base teórica necessária para entender como os modelos realmente funcionam.",
+        "topics": [
+          "Estatística",
+          "Probabilidade"
+        ],
+        "technologies": [],
+        "courseIds": [
+          "khan-academy-estatistica"
+        ]
+      },
+      {
+        "id": "machine-learning-numpy-pandas",
+        "order": 3,
+        "title": "NumPy + Pandas",
+        "description": "Prepare os dados que vão alimentar seus modelos.",
+        "topics": [
+          "Arrays",
+          "DataFrames"
+        ],
+        "technologies": [
+          "Python",
+          "Pandas",
+          "NumPy"
+        ],
+        "courseIds": [
+          "kaggle-pandas"
+        ]
+      },
+      {
+        "id": "machine-learning-eda",
+        "order": 4,
+        "title": "EDA",
+        "description": "Entenda os dados antes de treinar qualquer modelo em cima deles.",
+        "topics": [
+          "Análise exploratória",
+          "Visualização"
+        ],
+        "technologies": [
+          "Matplotlib"
+        ],
+        "courseIds": [
+          "kaggle-data-viz"
+        ]
+      },
+      {
+        "id": "machine-learning-machine-learning",
+        "order": 5,
+        "title": "Machine Learning",
+        "description": "Treine seus primeiros modelos de classificação e regressão.",
+        "topics": [
+          "Classificação",
+          "Regressão"
+        ],
+        "technologies": [
+          "Scikit-learn"
+        ],
+        "courseIds": [
+          "kaggle-intro-ml"
+        ]
+      },
+      {
+        "id": "machine-learning-metricas",
+        "order": 6,
+        "title": "Métricas",
+        "description": "Aprenda a medir se um modelo é realmente bom, e não apenas parece ser.",
+        "topics": [
+          "Validação cruzada",
+          "Métricas de avaliação"
+        ],
+        "technologies": [
+          "Scikit-learn"
+        ],
+        "courseIds": [
+          "kaggle-intermediate-ml"
+        ]
+      },
+      {
+        "id": "machine-learning-feature-engineering",
+        "order": 7,
+        "title": "Feature Engineering",
+        "description": "Crie e selecione variáveis que melhoram significativamente a performance dos modelos.",
+        "topics": [
+          "Criação de variáveis",
+          "Seleção de variáveis"
+        ],
+        "technologies": [
+          "Scikit-learn"
+        ],
+        "courseIds": [
+          "kaggle-feature-engineering"
+        ]
+      },
+      {
+        "id": "machine-learning-projetos",
+        "order": 8,
+        "title": "Projetos",
+        "description": "Construa projetos completos de ponta a ponta para consolidar a trilha.",
+        "topics": [
+          "Portfólio",
+          "Prática"
+        ],
+        "technologies": [],
+        "courseIds": []
+      }
+    ],
+    "projectArea": "Machine Learning"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "ctes-recursivas-sql",
+    "title": "CTEs recursivas: resolvendo hierarquias sem depender de loops na aplicação",
+    "description": "Como modelar árvores de categorias ou organogramas direto em SQL usando WITH RECURSIVE.",
+    "category": "SQL",
+    "date": "2026-07-12",
+    "readingTime": 8,
+    "author": "Gustavo Ananias",
+    "authorBio": "Estudante de Análise e Desenvolvimento de Sistemas na Universidade Presbiteriana Mackenzie e futuro analista/engenheiro de dados.",
+    "content": [
+      "Uma tabela de categorias de produtos onde cada linha aponta para o próprio pai (categoria_pai_id) é simples de armazenar, mas percorrê-la inteira — do produto até a categoria raiz, ou o caminho inverso, listando todas as subcategorias de uma categoria — é onde muita gente desiste do SQL puro e escreve um loop na aplicação, buscando um nível de cada vez.",
+      "## O que uma CTE recursiva realmente faz",
+      "Uma Common Table Expression recursiva (WITH RECURSIVE) tem duas partes: um termo âncora, que define o ponto de partida, e um termo recursivo, que referencia a própria CTE para buscar o próximo nível. O banco executa isso repetidamente, unindo os resultados de cada rodada, até que o termo recursivo não retorne mais nenhuma linha nova.",
+      "```sql\nWITH RECURSIVE arvore_categorias AS (\n  -- termo âncora: a categoria raiz que queremos expandir\n  SELECT id, nome, categoria_pai_id, 1 AS nivel\n  FROM categorias\n  WHERE id = 1\n\n  UNION ALL\n\n  -- termo recursivo: busca os filhos de cada nível já encontrado\n  SELECT c.id, c.nome, c.categoria_pai_id, ac.nivel + 1\n  FROM categorias c\n  JOIN arvore_categorias ac ON c.categoria_pai_id = ac.id\n)\nSELECT * FROM arvore_categorias ORDER BY nivel;\n```",
+      "## Por que isso é melhor que resolver na aplicação",
+      "Resolver hierarquias em loop na aplicação significa uma query por nível — se a árvore tem seis níveis de profundidade, são seis round-trips ao banco, cada um esperando o anterior terminar. A CTE recursiva resolve isso em uma única ida ao banco, deixando o motor de execução decidir a melhor forma de percorrer os dados, inclusive usando índices na coluna de chave estrangeira.",
+      "## O cuidado obrigatório: evitar recursão infinita",
+      "Se os dados tiverem um ciclo por engano (uma categoria que, por erro de cadastro, aponta para uma descendente sua como pai), uma CTE recursiva sem proteção entra em loop até o banco estourar memória ou um limite de profundidade. É boa prática incluir uma coluna de controle (como um array com o caminho percorrido) e uma condição que interrompe a recursão se um id já visitado aparecer de novo, ou pelo menos um limite de nível como salvaguarda.",
+      "## Onde isso aparece na prática",
+      "Além de árvores de categoria, CTEs recursivas resolvem organogramas (todo mundo que reporta, direta ou indiretamente, a um gerente), listas de materiais em sistemas de manufatura (todos os componentes de um produto, incluindo componentes de componentes) e grafos de dependência entre tarefas — qualquer estrutura onde uma linha se relaciona com outra linha da mesma tabela em profundidade variável."
+    ],
+    "references": [
+      {
+        "citation": "POSTGRESQL GLOBAL DEVELOPMENT GROUP. WITH Queries (Common Table Expressions). Disponível em: https://www.postgresql.org/docs/current/queries-with.html. Acesso em: 15 jul. 2026.",
+        "url": "https://www.postgresql.org/docs/current/queries-with.html"
+      }
+    ]
+  }
+}

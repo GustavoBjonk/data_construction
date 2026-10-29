@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 220,
+  "data": {
+    "id": "salesforce-einstein-gpt",
+    "slug": "salesforce-einstein-gpt",
+    "title": "Salesforce lança Einstein GPT, IA generativa integrada ao CRM",
+    "summary": "A Salesforce anunciou o Einstein GPT, combinando modelos próprios com tecnologia da OpenAI para gerar automaticamente e-mails, respostas de atendimento e código a partir de dados de clientes armazenados na plataforma. A empresa também criou um fundo de US$ 250 milhões para investir em startups de IA generativa.",
+    "relevance": "Mostra como fornecedores de CRM e analytics passaram a embutir IA generativa diretamente nos fluxos de trabalho de dados corporativos já em 2023.",
+    "publishedAt": "2023-03-07",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Inteligência Artificial",
+      "Business Intelligence"
+    ],
+    "tags": [
+      "Salesforce",
+      "Einstein GPT",
+      "CRM",
+      "OpenAI"
+    ],
+    "source": "Salesforce (comunicado oficial)",
+    "sourceUrl": "https://www.salesforce.com/news/press-releases/2023/03/07/einstein-generative-ai/"
+  }
+}

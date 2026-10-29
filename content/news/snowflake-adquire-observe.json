@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 820,
+  "data": {
+    "id": "snowflake-adquire-observe",
+    "slug": "snowflake-adquire-observe",
+    "title": "Snowflake anuncia aquisição da Observe para observabilidade com IA",
+    "summary": "A Snowflake anunciou acordo definitivo para adquirir a Observe, plataforma de observabilidade com IA que correlaciona logs, métricas e traces usando um \"SRE de IA\". A operação mira o mercado de gestão de operações de TI, avaliado em mais de US$ 50 bilhões.",
+    "relevance": "Sinaliza a expansão das plataformas de dados para observabilidade operacional, um movimento relevante para quem atua com engenharia de dados e infraestrutura de monitoramento.",
+    "publishedAt": "2026-01-08",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Data Platforms",
+      "Mercado"
+    ],
+    "tags": [
+      "Snowflake",
+      "Observabilidade",
+      "Aquisição",
+      "Apache Iceberg"
+    ],
+    "source": "Snowflake (comunicado oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-announces-intent-to-acquire-observe-to-deliver-ai-powered-observability-at-enterprise-scale/"
+  }
+}

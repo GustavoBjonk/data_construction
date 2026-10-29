@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1120,
+  "data": {
+    "id": "anthropic-defesas-destilacao",
+    "slug": "anthropic-defesas-destilacao",
+    "title": "Anthropic detalha defesas contra destilação não autorizada de modelos de IA",
+    "summary": "A Anthropic publicou em 12 de outubro um relatório sobre como tem combatido a destilação, prática de extrair em larga escala as respostas de um modelo para treinar outro sem autorização, muitas vezes por meio de redes de contas fraudulentas. Segundo a empresa, o principal alvo são os textos de raciocínio do Claude. As defesas descritas incluem restringir o acesso a esse raciocínio, um classificador em duas etapas com taxa de falso positivo abaixo de 0,1%, limites de uso mais rígidos e banimento de dezenas de milhares de contas. A Anthropic afirma que as medidas reduziram em 90% a 99% os dados obtidos por esses grupos e cita casos envolvendo modelos de outros laboratórios. A empresa reconhece custos: perda de receita, ajustes exigidos de desenvolvedores legítimos e bloqueios ocasionais de pedidos benignos.",
+    "relevance": "O tema afeta diretamente quem integra modelos via API: políticas antiabuso podem mudar limites, acesso ao raciocínio e regras de uso. O caso também ilustra um problema clássico de dados, a proteção contra extração em massa.",
+    "publishedAt": "2026-10-12",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial",
+      "Data Governance"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Destilação",
+      "Segurança de IA",
+      "Antiabuso"
+    ],
+    "source": "Anthropic (comunicado oficial)",
+    "sourceUrl": "https://www.anthropic.com/news/distillation-defenses"
+  }
+}

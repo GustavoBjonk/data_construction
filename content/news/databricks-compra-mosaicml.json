@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 270,
+  "data": {
+    "id": "databricks-compra-mosaicml",
+    "slug": "databricks-compra-mosaicml",
+    "title": "Databricks compra a MosaicML por US$ 1,3 bilhão para acelerar IA generativa própria",
+    "summary": "A Databricks anunciou a aquisição da MosaicML, criadora dos modelos abertos MPT, por aproximadamente US$ 1,3 bilhão. A combinação visa permitir que empresas treinem e personalizem seus próprios modelos de linguagem usando dados internos, sem depender exclusivamente de fornecedores fechados.",
+    "relevance": "Uma das maiores aquisições do ano no setor de dados/IA, consolidando a estratégia de \"lakehouse para IA\" da Databricks e pressionando concorrentes como Snowflake.",
+    "publishedAt": "2023-06-26",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Inteligência Artificial",
+      "Mercado"
+    ],
+    "tags": [
+      "Databricks",
+      "MosaicML",
+      "LLM",
+      "Aquisição"
+    ],
+    "source": "Databricks (comunicado oficial)",
+    "sourceUrl": "https://www.databricks.com/company/newsroom/press-releases/databricks-signs-definitive-agreement-acquire-mosaicml-leading-generative-ai-platform"
+  }
+}

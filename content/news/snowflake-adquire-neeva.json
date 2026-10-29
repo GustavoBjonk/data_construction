@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 260,
+  "data": {
+    "id": "snowflake-adquire-neeva",
+    "slug": "snowflake-adquire-neeva",
+    "title": "Snowflake adquire a startup de busca Neeva por cerca de US$ 185 milhões",
+    "summary": "A Snowflake anunciou a aquisição da Neeva, startup de busca fundada por ex-executivos do Google, dias depois de a própria Neeva encerrar seu produto de busca ao consumidor. O objetivo é trazer busca conversacional baseada em IA generativa para dentro da Data Cloud.",
+    "relevance": "Exemplifica o movimento de fornecedores de data warehouse comprando tecnologia de IA para tornar a exploração de dados mais acessível a usuários não técnicos.",
+    "publishedAt": "2023-05-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Data Platforms",
+      "Mercado"
+    ],
+    "tags": [
+      "Snowflake",
+      "Neeva",
+      "Busca",
+      "IA Generativa"
+    ],
+    "source": "Snowflake (blog oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/blog/snowflake-acquires-neeva-to-accelerate-search-in-the-data-cloud-through-generative-ai/"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 20,
+  "data": {
+    "id": "pense-em-python",
+    "title": "Pense em Python",
+    "authors": [
+      "Allen B. Downey"
+    ],
+    "publisher": "Novatec",
+    "year": 2024,
+    "edition": "3ª edição",
+    "isbn13": "9788575229279",
+    "topic": "Python",
+    "level": "Iniciante",
+    "language": "Português",
+    "description": "Introdução à programação com Python: variáveis, funções, condicionais, iteração, recursão, listas, dicionários e classes, com exercícios em cada capítulo.",
+    "why": "Para quem está começando: ensina a pensar como programador, um conceito por vez, antes de partir para bibliotecas de dados."
+  }
+}

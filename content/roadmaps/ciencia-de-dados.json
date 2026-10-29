@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 20,
+  "data": {
+    "id": "ciencia-de-dados",
+    "slug": "ciencia-de-dados",
+    "title": "Ciência de Dados",
+    "description": "Uma trilha para quem quer ir além da análise descritiva e passar a construir modelos que fazem previsões.",
+    "level": "Intermediário",
+    "estimatedDuration": "4–7 meses",
+    "steps": [
+      {
+        "id": "ciencia-de-dados-python",
+        "order": 1,
+        "title": "Python",
+        "description": "A base de praticamente todo o trabalho em Ciência de Dados.",
+        "topics": [
+          "Sintaxe básica",
+          "Estruturas de dados",
+          "Funções"
+        ],
+        "technologies": [
+          "Python"
+        ],
+        "courseIds": [
+          "freecodecamp-data-analysis-python"
+        ]
+      },
+      {
+        "id": "ciencia-de-dados-estatistica",
+        "order": 2,
+        "title": "Estatística",
+        "description": "Entenda os conceitos estatísticos que sustentam qualquer modelo.",
+        "topics": [
+          "Distribuições",
+          "Probabilidade",
+          "Correlação"
+        ],
+        "technologies": [],
+        "courseIds": [
+          "khan-academy-estatistica"
+        ]
+      },
+      {
+        "id": "ciencia-de-dados-numpy-pandas",
+        "order": 3,
+        "title": "Pandas + NumPy",
+        "description": "Manipule e transforme dados numéricos e tabulares com eficiência.",
+        "topics": [
+          "Arrays",
+          "DataFrames",
+          "Transformação de dados"
+        ],
+        "technologies": [
+          "Python",
+          "Pandas",
+          "NumPy"
+        ],
+        "courseIds": [
+          "kaggle-pandas"
+        ]
+      },
+      {
+        "id": "ciencia-de-dados-eda",
+        "order": 4,
+        "title": "EDA",
+        "description": "Explore os dados visualmente antes de treinar qualquer modelo.",
+        "topics": [
+          "Análise exploratória",
+          "Visualização"
+        ],
+        "technologies": [
+          "Matplotlib"
+        ],
+        "courseIds": [
+          "kaggle-data-viz"
+        ]
+      },
+      {
+        "id": "ciencia-de-dados-machine-learning",
+        "order": 5,
+        "title": "Machine Learning",
+        "description": "Treine seus primeiros modelos preditivos com dados reais.",
+        "topics": [
+          "Classificação",
+          "Regressão"
+        ],
+        "technologies": [
+          "Scikit-learn"
+        ],
+        "courseIds": [
+          "kaggle-intro-ml"
+        ]
+      },
+      {
+        "id": "ciencia-de-dados-avaliacao-modelos",
+        "order": 6,
+        "title": "Avaliação de modelos",
+        "description": "Aprenda a validar modelos e evitar conclusões enganosas.",
+        "topics": [
+          "Validação cruzada",
+          "Métricas de avaliação"
+        ],
+        "technologies": [
+          "Scikit-learn"
+        ],
+        "courseIds": [
+          "kaggle-intermediate-ml"
+        ]
+      },
+      {
+        "id": "ciencia-de-dados-projetos",
+        "order": 7,
+        "title": "Projetos",
+        "description": "Aplique o que aprendeu em projetos completos, do dado bruto ao modelo avaliado.",
+        "topics": [
+          "Portfólio",
+          "Prática"
+        ],
+        "technologies": [],
+        "courseIds": []
+      }
+    ],
+    "projectArea": "Ciência de Dados"
+  }
+}

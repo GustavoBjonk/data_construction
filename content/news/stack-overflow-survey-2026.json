@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1160,
+  "data": {
+    "id": "stack-overflow-survey-2026",
+    "slug": "stack-overflow-survey-2026",
+    "title": "Pesquisa Stack Overflow 2026: SQL sobe para 2º lugar e uso diário de IA domina",
+    "summary": "O Stack Overflow divulgou em 6 de outubro os resultados da Developer Survey 2026, respondida por mais de 30 mil pessoas ao longo de sete semanas. Entre as linguagens, JavaScript segue na liderança, com 62%, e SQL passou HTML/CSS para ocupar o segundo lugar; SQL, HTML/CSS e Python aparecem empatados com 58%. Sobre inteligência artificial, 73% de quem usa assistentes ou agentes de programação faz isso todos os dias, e cerca de um terço desses usuários diários passa quatro horas ou mais por dia com ferramentas de IA. Agentes de programação (66%) e chatbots (63%) são os tipos mais usados. No geral, 62% veem a IA de forma pelo menos um pouco positiva. O blog apresenta destaques selecionados, e o conjunto completo de dados será liberado depois no GitHub.",
+    "relevance": "O avanço do SQL e a força do Python confirmam que os fundamentos de Dados continuam valorizados mesmo com a IA. Quando a base completa for publicada, ela será um ótimo dataset para praticar análise exploratória.",
+    "publishedAt": "2026-10-06",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Mercado",
+      "Data Analytics"
+    ],
+    "tags": [
+      "Stack Overflow",
+      "Pesquisa",
+      "SQL",
+      "Python",
+      "Carreira"
+    ],
+    "source": "Stack Overflow (blog oficial)",
+    "sourceUrl": "https://stackoverflow.blog/2026/10/06/the-results-of-the-2026-developer-survey-are-here/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ]
+    }
+  }
+}

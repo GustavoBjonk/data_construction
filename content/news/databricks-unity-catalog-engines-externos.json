@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1110,
+  "data": {
+    "id": "databricks-unity-catalog-engines-externos",
+    "slug": "databricks-unity-catalog-engines-externos",
+    "title": "Databricks abre tabelas gerenciadas do Unity Catalog para escrita por engines externos",
+    "summary": "As notas de versão de outubro da Databricks reúnem mudanças que tornam o Unity Catalog mais aberto a outras ferramentas. Em 1º de outubro, o controle de acesso baseado em atributos entre engines (cross-engine ABAC) chegou à disponibilidade geral: engines externos podem ler tabelas gerenciadas com políticas de acesso, filtros de linha e máscaras de coluna aplicados. Em 13 de outubro, clientes Apache Spark externos passaram a poder criar e escrever em tabelas Delta gerenciadas, desde que tenham catalog commits habilitados, e engines externos ganharam consulta a views pela API REST do Unity. Em 14 de outubro, transações em tabelas Delta e Iceberg gerenciadas também ficaram disponíveis para uso geral. O mês incluiu ainda o driver ADBC como padrão do conector do Power BI.",
+    "relevance": "Arquiteturas lakehouse prometem que vários engines usem os mesmos dados com as mesmas regras de segurança. Essas mudanças aproximam a promessa da prática e mostram por que governança no catálogo, e não em cada ferramenta, virou tema central.",
+    "publishedAt": "2026-10-13",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Engineering",
+      "Data Governance",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Databricks",
+      "Unity Catalog",
+      "Delta Lake",
+      "Apache Iceberg",
+      "Lakehouse"
+    ],
+    "source": "Databricks (notas de versão oficiais)",
+    "sourceUrl": "https://docs.databricks.com/aws/en/release-notes/product/2026/october",
+    "related": {
+      "trackSlugs": [
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}

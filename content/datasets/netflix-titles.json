@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 120,
+  "data": {
+    "id": "netflix-titles",
+    "name": "Netflix Movies and TV Shows",
+    "description": "Catálogo de filmes e séries do Netflix com gênero, elenco, país, ano de lançamento e classificação, útil para explorar um catálogo de streaming.",
+    "category": "Data Analytics",
+    "difficulty": "Iniciante",
+    "size": "cerca de 8.800 títulos (catálogo até 2021)",
+    "format": "CSV",
+    "topics": [
+      "EDA",
+      "Visualização",
+      "SQL",
+      "Análise de catálogo"
+    ],
+    "technologies": [
+      "SQL",
+      "Python",
+      "Pandas",
+      "Power BI"
+    ],
+    "idealFor": [
+      "Praticar EDA",
+      "Explorar catálogos com SQL"
+    ],
+    "source": "Kaggle",
+    "sourceUrl": "https://www.kaggle.com/datasets/shivamb/netflix-shows"
+  }
+}

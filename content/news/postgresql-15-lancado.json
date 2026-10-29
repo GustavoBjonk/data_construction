@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 70,
+  "data": {
+    "id": "postgresql-15-lancado",
+    "slug": "postgresql-15-lancado",
+    "title": "PostgreSQL 15 é lançado com o comando MERGE e melhorias de replicação lógica",
+    "summary": "O PostgreSQL 15 foi lançado trazendo o comando SQL MERGE, publicação seletiva de colunas e filtros de linha em replicação lógica, além de suporte à compressão Zstandard. Testes mostraram ganhos de desempenho em ordenação de até 400% dependendo do tipo de dado.",
+    "relevance": "O MERGE facilita operações de upsert diretamente em SQL, algo já comum em outros bancos, tornando o PostgreSQL ainda mais competitivo para cargas analíticas e transacionais.",
+    "publishedAt": "2022-10-13",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "PostgreSQL",
+      "SQL",
+      "MERGE",
+      "Banco de Dados Relacional"
+    ],
+    "source": "PostgreSQL Global Development Group (site oficial)",
+    "sourceUrl": "https://www.postgresql.org/about/news/postgresql-15-released-2526/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ],
+      "articleIds": [
+        "ctes-recursivas-sql"
+      ]
+    }
+  }
+}

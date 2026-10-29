@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 140,
+  "data": {
+    "id": "google-data-studio-vira-looker-studio",
+    "slug": "google-data-studio-vira-looker-studio",
+    "title": "Google renomeia o Data Studio para Looker Studio",
+    "summary": "Durante o Google Cloud Next 2022, o Google anunciou que o Data Studio passaria a se chamar Looker Studio, unificando a marca de seus produtos de BI sob o guarda-chuva do Looker, adquirido em 2020. A mudança buscou sinalizar uma trilha única entre a ferramenta gratuita e o Looker corporativo.",
+    "relevance": "Reorganiza o portfólio de BI do Google em um momento de forte disputa entre Power BI, Tableau e Looker pelo mercado de análise de negócios self-service.",
+    "publishedAt": "2022-10-11",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Business Intelligence"
+    ],
+    "tags": [
+      "Google",
+      "Looker Studio",
+      "Data Studio",
+      "Rebranding"
+    ],
+    "source": "Google Cloud (blog oficial)",
+    "sourceUrl": "https://cloud.google.com/blog/products/data-analytics/looker-studio-is-data-studio"
+  }
+}

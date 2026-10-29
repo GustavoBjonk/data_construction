@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1190,
+  "data": {
+    "id": "apache-iceberg-1-12",
+    "slug": "apache-iceberg-1-12",
+    "title": "Apache Iceberg 1.12 amplia recursos da especificação v3 e remove suporte ao Spark 3.4",
+    "summary": "O projeto Apache Iceberg publicou em 30 de setembro a versão 1.12.0 da biblioteca Java do formato de tabelas abertas usado em data lakes e lakehouses. A atualização retira o suporte ao Spark 3.4 e passa a suportar o Flink 2.2 e 2.3. Na especificação v3, chegam melhorias no tipo Variant para dados semiestruturados e o armazenamento de tipos geométricos e geográficos em Parquet e Avro. A API REST de catálogo ganhou endpoints para cancelar o registro de tabelas e para listar e carregar funções. No Spark, há reescrita de arquivos com agrupamento por curva de Hilbert; no Kafka Connect, falhas de commit deixam de ser ignoradas silenciosamente. A versão também traz trabalho preparatório da especificação v4, que ainda não deve ser usada em produção.",
+    "relevance": "O Iceberg virou peça central de arquiteturas lakehouse em AWS, Snowflake, Databricks e Google. Quem mantém pipelines precisa checar a compatibilidade de versões do Spark e do Flink antes de atualizar.",
+    "publishedAt": "2026-09-30",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Engineering",
+      "Big Data",
+      "Open Source"
+    ],
+    "tags": [
+      "Apache Iceberg",
+      "Lakehouse",
+      "Apache Spark",
+      "Apache Flink",
+      "Open Source"
+    ],
+    "source": "Apache Iceberg (notas de versão no GitHub)",
+    "sourceUrl": "https://github.com/apache/iceberg/releases/tag/apache-iceberg-1.12.0",
+    "related": {
+      "trackSlugs": [
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}

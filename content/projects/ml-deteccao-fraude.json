@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 250,
+  "data": {
+    "id": "ml-deteccao-fraude",
+    "title": "Detecção de fraude",
+    "description": "Treine um modelo para identificar transações fraudulentas em uma base com classes desbalanceadas.",
+    "area": "Machine Learning",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "skills": [
+      "Classes desbalanceadas",
+      "Classificação",
+      "Métricas de avaliação"
+    ],
+    "estimatedTime": "10–16 horas",
+    "objective": "Lidar com classes desbalanceadas, treinar um classificador de fraude e avaliar métricas além da acurácia."
+  }
+}

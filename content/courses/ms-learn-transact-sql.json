@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 70,
+  "data": {
+    "id": "ms-learn-transact-sql",
+    "title": "Introdução ao Transact-SQL",
+    "platform": "Microsoft Learn",
+    "area": "SQL",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Módulo oficial da Microsoft sobre bancos relacionais, a linguagem SQL e o comando SELECT.",
+    "skills": [
+      "SQL",
+      "SELECT",
+      "Bancos relacionais"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/modules/introduction-to-transact-sql/"
+  }
+}

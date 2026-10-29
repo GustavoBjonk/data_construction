@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "modelagem-estrela-power-bi",
+    "title": "Modelagem em estrela no Power BI: evitando métricas DAX gigantes",
+    "description": "Por que um modelo em estrela bem desenhado evita fórmulas DAX intermináveis e métricas que não batem entre si.",
+    "category": "Power BI",
+    "date": "2026-08-06",
+    "readingTime": 10,
+    "author": "Gustavo Ananias",
+    "authorBio": "Estudante de Análise e Desenvolvimento de Sistemas na Universidade Presbiteriana Mackenzie e futuro analista/engenheiro de dados.",
+    "content": [
+      "É comum abrir um relatório de Power BI e encontrar uma medida DAX com trinta linhas cheias de CALCULATE, FILTER e ALL aninhados. Na maioria das vezes, isso não é sinal de uma métrica complexa — é sinal de um modelo de dados mal desenhado, que a fórmula está tentando compensar na marra.",
+      "## O que é, de fato, um modelo em estrela",
+      "Um modelo em estrela separa os dados em tabelas fato (eventos que aconteceram: vendas, pedidos, acessos) e tabelas dimensão (o contexto desses eventos: produto, cliente, data, região). A tabela fato fica no centro, conectada por relacionamentos simples de um-para-muitos às dimensões ao redor — daí o formato de estrela.",
+      "A regra prática é: se uma coluna descreve algo (nome do produto, categoria, cidade do cliente), ela pertence a uma dimensão. Se uma coluna é um número que aconteceu em um momento (valor vendido, quantidade), ela pertence à fato. Misturar os dois em uma tabela única e larga é o que obriga o DAX a fazer, na fórmula, o trabalho que o modelo deveria fazer sozinho.",
+      "## Por que isso evita DAX gigante",
+      "Quando o modelo está correto, o motor do Power BI (o VertiPaq) já sabe filtrar a tabela fato automaticamente a partir de qualquer filtro aplicado nas dimensões — um slicer de \"Ano\" na tabela de datas filtra vendas sem que a medida precise saber disso. Isso é o chamado contexto de filtro se propagando pelos relacionamentos.",
+      "Quando o modelo é uma tabela larga só ou tem relacionamentos mal definidos, essa propagação automática não acontece, e cada medida precisa recriar manualmente a lógica de filtro com CALCULATE e FILTER — o mesmo trecho de código repetido, com pequenas variações, em dezenas de medidas diferentes.",
+      "## Um sintoma comum: métricas que não batem",
+      "Duas medidas que deveriam mostrar o mesmo total de vendas, mas retornam números diferentes dependendo do visual em que são usadas, quase sempre indicam relacionamentos duplos ou tabelas fato conectadas diretamente entre si (fato-a-fato) em vez de passarem por uma dimensão comum. O Power BI permite modelar assim, mas o contexto de filtro se propaga de forma inconsistente nesse desenho, e cada visual pode acabar aplicando o filtro em um caminho diferente do relacionamento.",
+      "## Um ponto de partida",
+      "Antes de escrever a próxima medida complicada, vale perguntar: essa lógica deveria estar em DAX, ou é sintoma de uma tabela dimensão faltando? Extrair uma coluna de categoria repetida para sua própria tabela de dimensão costuma eliminar de uma vez várias fórmulas que tentavam simular esse relacionamento na mão."
+    ],
+    "references": [
+      {
+        "citation": "MICROSOFT. DAX overview. Disponível em: https://learn.microsoft.com/en-us/dax/dax-overview. Acesso em: 10 ago. 2026.",
+        "url": "https://learn.microsoft.com/en-us/dax/dax-overview"
+      },
+      {
+        "citation": "MICROSOFT. Understand star schema and the importance for Power BI. Disponível em: https://learn.microsoft.com/en-us/power-bi/guidance/star-schema. Acesso em: 10 ago. 2026.",
+        "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema"
+      }
+    ]
+  }
+}

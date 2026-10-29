@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 400,
+  "data": {
+    "id": "databricks-adquire-tabular",
+    "slug": "databricks-adquire-tabular",
+    "title": "Databricks anuncia aquisição da Tabular, empresa dos criadores do Apache Iceberg",
+    "summary": "A Databricks anunciou acordo para adquirir a Tabular, startup fundada pelos criadores originais do Apache Iceberg, em um negócio avaliado em mais de US$ 1 bilhão. O objetivo declarado é aproximar os formatos abertos Delta Lake e Iceberg, hoje concorrentes no mercado de lakehouse.",
+    "relevance": "Sinaliza a consolidação do Apache Iceberg como padrão de fato para tabelas abertas em data lakes, tema central para quem trabalha com arquitetura de dados moderna.",
+    "publishedAt": "2024-06-04",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Data Engineering",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Databricks",
+      "Apache Iceberg",
+      "Delta Lake",
+      "Lakehouse",
+      "Aquisição"
+    ],
+    "source": "Databricks (newsroom oficial)",
+    "sourceUrl": "https://www.databricks.com/company/newsroom/press-releases/databricks-agrees-acquire-tabular-company-founded-original-creators",
+    "featured": true,
+    "related": {
+      "projectIds": [
+        "data-lake-warehouse"
+      ],
+      "trackSlugs": [
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}

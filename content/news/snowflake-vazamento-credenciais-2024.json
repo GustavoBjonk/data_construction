@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 580,
+  "data": {
+    "id": "snowflake-vazamento-credenciais-2024",
+    "slug": "snowflake-vazamento-credenciais-2024",
+    "title": "Vazamento via credenciais roubadas em contas Snowflake atinge AT&T, Ticketmaster e outras empresas",
+    "summary": "Uma campanha de roubo de credenciais (sem exploração de vulnerabilidade na plataforma) permitiu que invasores acessassem contas de clientes da Snowflake que não usavam autenticação multifator, expondo dados da AT&T, Ticketmaster, Santander e outras mais de 160 organizações.",
+    "relevance": "Reforça que a segurança de plataformas de dados na nuvem depende fortemente da configuração do cliente (MFA, rotação de credenciais), não só do provedor.",
+    "publishedAt": "2024-07-12",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Data Privacy",
+      "Bancos de Dados"
+    ],
+    "tags": [
+      "Snowflake",
+      "Vazamento de Dados",
+      "Segurança",
+      "AT&T",
+      "Credential Stuffing"
+    ],
+    "source": "CNBC",
+    "sourceUrl": "https://www.cnbc.com/2024/07/12/snowflake-shares-slip-after-att-says-hackers-accessed-data.html"
+  }
+}

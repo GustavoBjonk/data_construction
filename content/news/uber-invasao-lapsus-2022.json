@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 180,
+  "data": {
+    "id": "uber-invasao-lapsus-2022",
+    "slug": "uber-invasao-lapsus-2022",
+    "title": "Uber sofre invasão que compromete sistemas internos após ataque de engenharia social",
+    "summary": "Um hacker de 18 anos, ligado ao grupo Lapsus$, obteve acesso administrativo a sistemas internos da Uber, incluindo Slack, AWS, Google Workspace e VMware, após enganar um funcionário via engenharia social. A empresa precisou tirar sistemas internos do ar durante a investigação do incidente.",
+    "relevance": "Exemplo emblemático de como falhas de segurança em credenciais e identidade podem expor toda a infraestrutura de dados corporativa, mesmo sem uso de malware sofisticado.",
+    "publishedAt": "2022-09-16",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Data Privacy"
+    ],
+    "tags": [
+      "Uber",
+      "Vazamento de Dados",
+      "Segurança",
+      "Lapsus$"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2022/09/16/uber-internal-network-hack/"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 70,
+  "data": {
+    "id": "imdb-reviews",
+    "name": "IMDB Dataset",
+    "description": "Coleção de avaliações de filmes do IMDB rotuladas como positivas ou negativas, um dos benchmarks mais usados em classificação de texto.",
+    "category": "NLP",
+    "difficulty": "Intermediário",
+    "size": "50.000 avaliações rotuladas (+ 50 mil não rotuladas)",
+    "format": "Texto (.txt)",
+    "topics": [
+      "Processamento de linguagem natural",
+      "Análise de sentimentos",
+      "Classificação de texto"
+    ],
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Hugging Face"
+    ],
+    "idealFor": [
+      "Primeiro projeto de NLP",
+      "Praticar análise de sentimentos"
+    ],
+    "source": "Stanford AI (Andrew Maas et al.)",
+    "sourceUrl": "https://ai.stanford.edu/~amaas/data/sentiment/"
+  }
+}

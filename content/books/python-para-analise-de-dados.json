@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "python-para-analise-de-dados",
+    "title": "Python para Análise de Dados",
+    "authors": [
+      "Wes McKinney"
+    ],
+    "publisher": "Novatec",
+    "year": 2023,
+    "edition": "3ª edição",
+    "isbn13": "9788575228418",
+    "topic": "Python",
+    "level": "Iniciante",
+    "language": "Português",
+    "description": "Manipulação, limpeza e análise de dados com pandas, NumPy e Jupyter, escrito pelo criador do pandas.",
+    "why": "É a referência mais direta para quem usa pandas no dia a dia, com exemplos práticos do início ao fim."
+  }
+}

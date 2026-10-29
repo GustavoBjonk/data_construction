@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 270,
+  "data": {
+    "id": "ml-recomendacao-simples",
+    "title": "Sistema de recomendação simples",
+    "description": "Construa um sistema de recomendação básico usando similaridade entre itens ou usuários.",
+    "area": "Machine Learning",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "skills": [
+      "Similaridade",
+      "Filtragem colaborativa básica"
+    ],
+    "estimatedTime": "10–16 horas",
+    "objective": "Entender os fundamentos de sistemas de recomendação e implementar uma versão simples baseada em similaridade."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 80,
+  "data": {
+    "id": "previsao-demanda",
+    "title": "Sistema de previsão de demanda",
+    "description": "Modele séries temporais para prever a demanda futura de um produto ou serviço.",
+    "area": "Ciência de Dados",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "skills": [
+      "Séries temporais",
+      "Feature engineering",
+      "Modelagem",
+      "Visualização"
+    ],
+    "estimatedTime": "20+ horas",
+    "objective": "Trabalhar com séries temporais, aplicar feature engineering, modelar a demanda futura, avaliar os resultados e visualizar as previsões geradas."
+  }
+}

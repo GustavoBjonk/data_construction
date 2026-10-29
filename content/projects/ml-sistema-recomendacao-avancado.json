@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 280,
+  "data": {
+    "id": "ml-sistema-recomendacao-avancado",
+    "title": "Sistema de recomendação",
+    "description": "Evolua um sistema de recomendação mais robusto, combinando diferentes abordagens de recomendação.",
+    "area": "Machine Learning",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "skills": [
+      "Recomendação",
+      "Avaliação de recomendações"
+    ],
+    "estimatedTime": "20+ horas",
+    "objective": "Aprofundar técnicas de recomendação, comparando abordagens e avaliando a qualidade das recomendações geradas."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 810,
+  "data": {
+    "id": "openai-lanca-gpt-6-astra",
+    "slug": "openai-lanca-gpt-6-astra",
+    "title": "OpenAI lança o GPT-6 (codinome \"Astra\"), seu modelo mais avançado até agora",
+    "summary": "A OpenAI lançou o GPT-6, internamente chamado \"Astra\", destacado por forte desempenho em uso de computador/navegador, código e cibersegurança. O lançamento gerou controvérsia por usar \"recorrência opaca\", uma técnica que dificulta a auditoria do raciocínio do modelo (chain-of-thought).",
+    "relevance": "É o primeiro modelo da OpenAI classificado como \"crítico\" em capacidade cibernética sob seu framework de segurança, tema central para quem trabalha com governança e risco de IA.",
+    "publishedAt": "2026-09-03",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "OpenAI",
+      "GPT-6",
+      "Agentes de IA",
+      "Segurança de IA"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+    "featured": true
+  }
+}

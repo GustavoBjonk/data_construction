@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1150,
+  "data": {
+    "id": "anthropic-claude-haiku-5-5",
+    "slug": "anthropic-claude-haiku-5-5",
+    "title": "Anthropic lança Claude Haiku 5.5 e completa a família 5.5 com foco em custo baixo",
+    "summary": "A Anthropic lançou em 7 de outubro o Claude Haiku 5.5, modelo pequeno voltado a trabalhos de alto volume e sensíveis a custo, como resumos, classificação, consultas a bancos de dados e uso como subagente de modelos maiores. Com ele, a empresa completa a família 5.5, iniciada pelo Opus 5.5 em 22 de setembro e pelo Sonnet 5.5 em 28 de setembro. O preço anunciado é de 0,10 dólar por milhão de tokens de entrada e 0,50 dólar por milhão de saída em prompts de até 100 mil tokens; a Anthropic estima custo médio cerca de 75% menor que o do Haiku 4.5. É o primeiro modelo da linha Haiku com ajuste de esforço de raciocínio. O modelo está disponível na plataforma Claude e via AWS, Google Cloud e Microsoft Azure. Os resultados de benchmark divulgados são da própria empresa.",
+    "relevance": "Modelos pequenos e baratos tornam viável aplicar IA em milhões de registros, como classificar textos, extrair campos ou limpar dados. Para esse tipo de tarefa, custo e latência pesam mais que o desempenho máximo.",
+    "publishedAt": "2026-10-07",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Haiku",
+      "LLM",
+      "API"
+    ],
+    "source": "Anthropic (comunicado oficial)",
+    "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5"
+  }
+}

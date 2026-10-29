@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "snowflake-anuncia-unistore",
+    "slug": "snowflake-anuncia-unistore",
+    "title": "Snowflake anuncia o Unistore para unir dados transacionais e analíticos",
+    "summary": "No Snowflake Summit 2022, a empresa anunciou o Unistore, um novo workload baseado em \"hybrid tables\" que combina operações transacionais rápidas com o desempenho analítico do Data Cloud. Clientes como Adobe e Novartis já testavam o recurso em prévia privada.",
+    "relevance": "Sinaliza a tendência de plataformas de dados tentarem eliminar a separação clássica entre bancos transacionais (OLTP) e analíticos (OLAP).",
+    "publishedAt": "2022-06-14",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Bancos de Dados",
+      "Data Platforms"
+    ],
+    "tags": [
+      "Snowflake",
+      "Unistore",
+      "Hybrid Tables",
+      "HTAP"
+    ],
+    "source": "Snowflake (comunicado oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/news/press-releases/snowflake-launches-new-unistore-workload-to-drive-next-phase-of-innovation-with-transactional-and-analytical-data-together-in-the-data-cloud-2/"
+  }
+}

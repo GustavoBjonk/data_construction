@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1140,
+  "data": {
+    "id": "python-3-15-lancado",
+    "slug": "python-3-15-lancado",
+    "title": "Python 3.15 é lançado com imports preguiçosos, UTF-8 por padrão e frozendict",
+    "summary": "A Python Software Foundation lançou em 9 de outubro o Python 3.15.0. Entre as novidades mais visíveis estão os imports preguiçosos explícitos (PEP 810), que reduzem o tempo de inicialização de programas, e o UTF-8 como codificação padrão (PEP 686), o que elimina uma fonte antiga de erros com acentos em arquivos, especialmente no Windows. A linguagem ganha os tipos nativos frozendict (PEP 814) e sentinel (PEP 661), além de desempacotamento dentro de compreensões (PEP 798). O compilador JIT experimental ficou cerca de 7% a 8% mais rápido em média no Linux x86-64, e chega um pacote dedicado de profiling com o perfilador por amostragem Tachyon. Na tipagem, há novidades como TypedDict com itens extras tipados e TypeForm. Em 25 de outubro, saiu o 3.15.2, uma correção de segurança antecipada.",
+    "relevance": "Para quem trabalha com dados em português, o UTF-8 por padrão evita problemas recorrentes ao ler e gravar CSV e texto. Antes de migrar ambientes, vale conferir se bibliotecas como pandas e scikit-learn já publicaram pacotes para a nova versão.",
+    "publishedAt": "2026-10-09",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Science",
+      "Open Source"
+    ],
+    "tags": [
+      "Python",
+      "Python 3.15",
+      "Open Source",
+      "Linguagens"
+    ],
+    "source": "Python Software Foundation (blog oficial)",
+    "sourceUrl": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+    "related": {
+      "trackSlugs": [
+        "ciencia-de-dados",
+        "analise-de-dados"
+      ],
+      "articleIds": [
+        "type-hints-pandas-polars"
+      ]
+    }
+  }
+}

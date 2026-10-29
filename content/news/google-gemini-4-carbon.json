@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 980,
+  "data": {
+    "id": "google-gemini-4-carbon",
+    "slug": "google-gemini-4-carbon",
+    "title": "Google apresenta Gemini 4 Carbon, com liberação restrita a especialistas em cibersegurança",
+    "summary": "O Google anunciou em 28 de outubro o Gemini 4 Carbon, descrito como seu modelo mais forte, com foco em cibersegurança e tarefas longas de agentes, como programação de várias etapas. Segundo a empresa, o modelo lidera o Artificial Analysis Intelligence Index v5.0 e supera o Gemini 4 Argon em geração de código seguro em testes internos. A novidade está no modo de lançamento: no primeiro momento, apenas um grupo de defensores de cibersegurança tem acesso, depois parceiros confiáveis do programa Fairwind. O Google diz que ainda ajusta salvaguardas antes de abrir o modelo para desenvolvedores, empresas e consumidores, e que participa do processo voluntário de testes pré-lançamento do governo dos Estados Unidos. O preço introdutório anunciado é igual ao do Argon. Os números de desempenho divulgados são da própria empresa e ainda não têm verificação independente.",
+    "relevance": "Mostra uma tendência que afeta quem constrói produtos com IA: modelos mais capazes chegam primeiro a grupos restritos, e o acesso amplo pode demorar. Planejar projetos contando com o modelo de ponta disponível no dia do anúncio deixou de ser uma aposta segura.",
+    "publishedAt": "2026-10-28",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Google",
+      "Gemini",
+      "LLM",
+      "Cibersegurança",
+      "Segurança de IA"
+    ],
+    "source": "Google (blog oficial)",
+    "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+  }
+}

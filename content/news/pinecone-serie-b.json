@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 240,
+  "data": {
+    "id": "pinecone-serie-b",
+    "slug": "pinecone-serie-b",
+    "title": "Pinecone capta US$ 100 milhões em rodada Série B para seu banco de dados vetorial",
+    "summary": "A Pinecone anunciou uma rodada Série B de US$ 100 milhões, liderada pela Andreessen Horowitz, avaliando a empresa em US$ 750 milhões. A captação refletiu a demanda crescente por bancos de dados vetoriais para sustentar aplicações de IA generativa com clientes como Shopify e HubSpot.",
+    "relevance": "Marca a consolidação dos bancos vetoriais como categoria de infraestrutura essencial para RAG e busca semântica, um dos temas técnicos mais quentes de 2023 em engenharia de dados.",
+    "publishedAt": "2023-04-26",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Bancos de Dados",
+      "Mercado"
+    ],
+    "tags": [
+      "Pinecone",
+      "Vetores",
+      "Vector Database",
+      "Funding"
+    ],
+    "source": "Pinecone (blog oficial)",
+    "sourceUrl": "https://www.pinecone.io/blog/series-b/"
+  }
+}

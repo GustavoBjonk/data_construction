@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 930,
+  "data": {
+    "id": "redis-iris-agentes-ia",
+    "slug": "redis-iris-agentes-ia",
+    "title": "Redis lança o Iris, motor de contexto e memória para agentes de IA",
+    "summary": "A Redis lançou o Iris, uma plataforma que combina recuperação de contexto em tempo real, memória de curto e longo prazo para agentes e integração de dados, unindo ferramentas como Redis Search, Agent Memory e LangCache em uma única camada voltada a aplicações de IA agêntica.",
+    "relevance": "Mostra bancos de dados tradicionais se reposicionando como infraestrutura de memória para agentes de IA, tendência importante para arquitetos de dados que avaliam onde armazenar contexto de IA.",
+    "publishedAt": "2026-05-18",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Bancos de Dados",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Redis",
+      "Agentes de IA",
+      "Memória",
+      "Contexto"
+    ],
+    "source": "Redis (blog oficial)",
+    "sourceUrl": "https://redis.io/blog/context-is-all-you-need/"
+  }
+}

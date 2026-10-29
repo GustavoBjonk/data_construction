@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "california-housing",
+    "name": "California Housing",
+    "description": "Dados socioeconômicos e geográficos de distritos da Califórnia, usados para prever o valor médio dos imóveis em cada região.",
+    "category": "Machine Learning",
+    "difficulty": "Intermediário",
+    "size": "20.640 registros",
+    "format": "CSV",
+    "topics": [
+      "Regressão",
+      "Feature engineering",
+      "Análise exploratória"
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "idealFor": [
+      "Praticar regressão",
+      "Estudar feature engineering"
+    ],
+    "source": "scikit-learn",
+    "sourceUrl": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html"
+  }
+}

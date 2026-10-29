@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 200,
+  "data": {
+    "id": "sql-relatorio-financeiro",
+    "title": "Relatório financeiro utilizando JOINs e CTEs",
+    "description": "Construa relatórios financeiros combinando múltiplas tabelas com JOINs e CTEs.",
+    "area": "SQL",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "SQL",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "JOINs",
+      "CTEs",
+      "Relatórios financeiros"
+    ],
+    "estimatedTime": "8–14 horas",
+    "objective": "Praticar JOINs e CTEs para consolidar dados financeiros de diferentes tabelas em relatórios claros."
+  }
+}

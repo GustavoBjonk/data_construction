@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "analise-vendas-loja",
+    "title": "Análise de vendas de uma loja",
+    "description": "Organize os dados de vendas de uma loja para identificar produtos mais vendidos e tendências mensais.",
+    "area": "Análise de Dados",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Excel",
+      "Python",
+      "Pandas"
+    ],
+    "skills": [
+      "Limpeza de dados",
+      "Agrupamento",
+      "Indicadores",
+      "Análise mensal"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Praticar limpeza de dados, agrupamento e criação de indicadores para entender o desempenho de vendas de uma loja ao longo do tempo, incluindo a identificação dos produtos mais vendidos."
+  }
+}

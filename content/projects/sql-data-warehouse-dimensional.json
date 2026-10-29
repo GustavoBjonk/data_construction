@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 210,
+  "data": {
+    "id": "sql-data-warehouse-dimensional",
+    "title": "Data Warehouse dimensional (Star Schema)",
+    "description": "Modele um data warehouse dimensional usando Star Schema e escreva consultas analíticas otimizadas.",
+    "area": "SQL",
+    "difficulty": "Avançado",
+    "technologies": [
+      "SQL",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "Star Schema",
+      "Modelagem analítica",
+      "Otimização de queries"
+    ],
+    "estimatedTime": "20+ horas",
+    "objective": "Aplicar modelagem analítica com Star Schema, escrever consultas SQL complexas e praticar otimização de queries em um Data Warehouse dimensional."
+  }
+}

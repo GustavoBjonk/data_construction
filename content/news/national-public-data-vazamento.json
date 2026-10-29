@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 480,
+  "data": {
+    "id": "national-public-data-vazamento",
+    "slug": "national-public-data-vazamento",
+    "title": "National Public Data confirma vazamento com bilhões de registros pessoais",
+    "summary": "A corretora de dados National Public Data confirmou publicamente um vazamento massivo, reconhecendo incidentes em abril e no verão de 2024, associados a um invasor que teria acessado seus sistemas desde dezembro de 2023. Dados como nomes, números de seguro social e endereços foram expostos.",
+    "relevance": "Um dos maiores vazamentos de dados pessoais já registrados, ilustrando os riscos de empresas que acumulam grandes volumes de dados sensíveis sem governança adequada.",
+    "publishedAt": "2024-08-16",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Data Privacy",
+      "Data Governance"
+    ],
+    "tags": [
+      "Vazamento de Dados",
+      "National Public Data",
+      "Privacidade",
+      "Segurança"
+    ],
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/national-public-data-confirms-breach-exposing-social-security-numbers/"
+  }
+}

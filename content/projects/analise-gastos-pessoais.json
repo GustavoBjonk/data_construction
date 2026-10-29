@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 20,
+  "data": {
+    "id": "analise-gastos-pessoais",
+    "title": "Análise de gastos pessoais",
+    "description": "Categorize despesas pessoais e monte um dashboard simples para visualizar padrões de consumo.",
+    "area": "Análise de Dados",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Excel",
+      "Power BI"
+    ],
+    "skills": [
+      "Categorização",
+      "KPIs",
+      "Dashboard",
+      "Identificação de padrões"
+    ],
+    "estimatedTime": "3–6 horas",
+    "objective": "Categorizar despesas, criar KPIs financeiros pessoais, identificar padrões de consumo e montar um dashboard simples de acompanhamento."
+  }
+}

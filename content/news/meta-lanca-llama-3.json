@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 470,
+  "data": {
+    "id": "meta-lanca-llama-3",
+    "slug": "meta-lanca-llama-3",
+    "title": "Meta lança o Llama 3, seu modelo de linguagem aberto mais capaz até então",
+    "summary": "A Meta lançou o Llama 3 em versões de 8 bilhões e 70 bilhões de parâmetros, treinado com cerca de 15 trilhões de tokens, disponibilizando os modelos em provedores como AWS, Databricks, Google Cloud e Microsoft Azure.",
+    "relevance": "Reforça a corrida por modelos abertos competitivos com os proprietários, ampliando opções para times de dados que querem rodar LLMs com mais controle sobre custo e privacidade.",
+    "publishedAt": "2024-04-18",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Meta",
+      "Llama 3",
+      "LLM",
+      "Open Source"
+    ],
+    "source": "Meta AI (blog oficial)",
+    "sourceUrl": "https://ai.meta.com/blog/meta-llama-3/"
+  }
+}

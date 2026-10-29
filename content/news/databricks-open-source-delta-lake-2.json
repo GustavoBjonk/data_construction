@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 20,
+  "data": {
+    "id": "databricks-open-source-delta-lake-2",
+    "slug": "databricks-open-source-delta-lake-2",
+    "title": "Databricks abre o código completo do Delta Lake 2.0",
+    "summary": "A Databricks anunciou que todos os recursos do Delta Lake, incluindo funcionalidades antes restritas à sua plataforma paga, passaram a ser 100% open source sob a Linux Foundation. A empresa afirmou que o formato já era usado por milhares de organizações processando grandes volumes de dados diariamente.",
+    "relevance": "Reduz o lock-in em torno do formato de tabelas do lakehouse e acelera a adoção de arquiteturas abertas de dados por equipes de engenharia.",
+    "publishedAt": "2022-06-30",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Data Engineering",
+      "Open Source"
+    ],
+    "tags": [
+      "Databricks",
+      "Delta Lake",
+      "Lakehouse",
+      "Linux Foundation"
+    ],
+    "source": "Databricks (blog oficial)",
+    "sourceUrl": "https://www.databricks.com/blog/2022/06/30/open-sourcing-all-of-delta-lake.html"
+  }
+}

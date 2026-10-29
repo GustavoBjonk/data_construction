@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1200,
+  "data": {
+    "id": "google-gemini-4-argon",
+    "slug": "google-gemini-4-argon",
+    "title": "Google anuncia Gemini 4 Argon, com saída de até 1 milhão de tokens e foco em engenharia de software",
+    "summary": "O Google apresentou em 30 de setembro o Gemini 4 Argon, novo modelo de fronteira voltado a engenharia de software, trabalho corporativo em áreas como jurídico e finanças, e defesa cibernética. Um dos destaques é o limite de saída, que passou de 64 mil para 1 milhão de tokens. Segundo o Google, agentes baseados no Argon estão migrando bases de código C e C++ para Rust, em reescritas que ainda passam por auditoria e testes, e otimizações devem liberar mais de 300 TiB de memória nos data centers da empresa quando implantadas. O lançamento foi gradual: primeiro para defensores de cibersegurança, depois para clientes pagos. A versão estável chegou à API Gemini em 13 de outubro. O preço introdutório é de 2 dólares por milhão de tokens de entrada e 10 dólares por milhão de saída, valores que dobram após o período promocional.",
+    "relevance": "Saídas muito longas mudam o que é possível pedir a um modelo, como migrações de código ou relatórios extensos em uma só chamada. O preço promocional com prazo exige atenção ao calcular o custo de projetos.",
+    "publishedAt": "2026-09-30",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Google",
+      "Gemini",
+      "LLM",
+      "Engenharia de Software",
+      "API"
+    ],
+    "source": "Google (blog oficial)",
+    "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+  }
+}

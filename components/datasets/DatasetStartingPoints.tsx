@@ -1,11 +1,8 @@
-interface StartingPoint {
-  id: string;
-  name: string;
-}
+import { ArrowRightIcon } from "@/components/ui/Icons";
 
 interface StartingPath {
   question: string;
-  datasets: StartingPoint[];
+  datasets: { id: string; name: string }[];
 }
 
 const STARTING_PATHS: StartingPath[] = [
@@ -38,22 +35,27 @@ const STARTING_PATHS: StartingPath[] = [
 export function DatasetStartingPoints() {
   return (
     <section aria-labelledby="por-onde-comecar">
-      <h2 id="por-onde-comecar" className="text-xl font-semibold tracking-tight text-slate-900">
+      <h2 id="por-onde-comecar" className="eyebrow text-fg">
         Não sabe qual dataset escolher?
       </h2>
 
-      <div className="mt-5 grid grid-cols-1 gap-6 sm:grid-cols-3">
-        {STARTING_PATHS.map((path) => (
-          <div key={path.question} className="rounded-lg border border-slate-200 bg-white p-5">
-            <p className="text-sm font-medium text-slate-900">{path.question}</p>
-            <ul className="mt-3 space-y-2">
+      <div className="mt-6 grid grid-cols-1 border-y border-line sm:grid-cols-3">
+        {STARTING_PATHS.map((path, index) => (
+          <div
+            key={path.question}
+            className={`py-6 sm:px-6 sm:first:pl-0 ${index > 0 ? "border-t border-line sm:border-l sm:border-t-0" : ""}`}
+          >
+            <p className="font-mono text-[0.6875rem] text-subtle">{String(index + 1).padStart(2, "0")}</p>
+            <p className="mt-2 font-display text-lg font-medium leading-snug text-fg">{path.question}</p>
+            <ul className="mt-4 space-y-1">
               {path.datasets.map((dataset) => (
                 <li key={dataset.id}>
                   <a
                     href={`#dataset-${dataset.id}`}
-                    className="text-sm text-accent hover:text-accent-hover"
+                    className="group inline-flex min-h-[36px] items-center gap-2 text-sm text-muted transition-colors hover:text-accent"
                   >
-                    → {dataset.name}
+                    <ArrowRightIcon size={14} className="text-accent transition-transform group-hover:translate-x-0.5" />
+                    {dataset.name}
                   </a>
                 </li>
               ))}

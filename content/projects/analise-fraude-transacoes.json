@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "analise-fraude-transacoes",
+    "title": "Análise de fraude em transações",
+    "description": "Explore transações financeiras em busca de padrões suspeitos e construa métricas de monitoramento.",
+    "area": "Análise de Dados",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "SQL",
+      "Power BI"
+    ],
+    "skills": [
+      "Análise exploratória",
+      "Detecção de padrões",
+      "Métricas",
+      "Visualização"
+    ],
+    "estimatedTime": "10–16 horas",
+    "objective": "Explorar transações, identificar padrões suspeitos, criar métricas de monitoramento e visualizar o comportamento das operações."
+  }
+}

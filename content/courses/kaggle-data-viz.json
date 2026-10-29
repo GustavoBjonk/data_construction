@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 120,
+  "data": {
+    "id": "kaggle-data-viz",
+    "title": "Data Visualization",
+    "platform": "Kaggle Learn",
+    "area": "Data Visualization",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Curso curto e prático da Kaggle para criar gráficos claros com Matplotlib e Seaborn.",
+    "skills": [
+      "Matplotlib",
+      "Seaborn",
+      "Visualização"
+    ],
+    "url": "https://www.kaggle.com/learn/data-visualization"
+  }
+}

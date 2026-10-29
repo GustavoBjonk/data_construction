@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 60,
+  "data": {
+    "id": "sql",
+    "slug": "sql",
+    "title": "SQL / Analytics Engineering",
+    "description": "Aprenda a consultar, transformar e modelar dados diretamente no banco — a base de qualquer stack de dados.",
+    "level": "Iniciante",
+    "estimatedDuration": "2–4 meses",
+    "steps": [
+      {
+        "id": "sql-basico",
+        "order": 1,
+        "title": "SQL básico",
+        "description": "Os primeiros comandos para conversar com um banco de dados relacional.",
+        "topics": [
+          "Bancos relacionais",
+          "Tabelas"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-transact-sql"
+        ]
+      },
+      {
+        "id": "sql-select-where",
+        "order": 2,
+        "title": "SELECT / WHERE",
+        "description": "Aprenda a selecionar e filtrar exatamente os dados que você precisa.",
+        "topics": [
+          "SELECT",
+          "WHERE",
+          "Filtros"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-transact-sql"
+        ]
+      },
+      {
+        "id": "sql-joins",
+        "order": 3,
+        "title": "JOINs",
+        "description": "Combine dados de múltiplas tabelas relacionadas.",
+        "topics": [
+          "INNER JOIN",
+          "LEFT JOIN"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-advanced-tsql"
+        ]
+      },
+      {
+        "id": "sql-group-by",
+        "order": 4,
+        "title": "GROUP BY / Agregações",
+        "description": "Resuma grandes volumes de dados em métricas agregadas.",
+        "topics": [
+          "GROUP BY",
+          "Funções de agregação"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "kaggle-intro-sql"
+        ]
+      },
+      {
+        "id": "sql-ctes",
+        "order": 5,
+        "title": "CTEs",
+        "description": "Organize consultas complexas em blocos legíveis e reutilizáveis.",
+        "topics": [
+          "Common Table Expressions",
+          "Subconsultas"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-advanced-tsql"
+        ]
+      },
+      {
+        "id": "sql-window-functions",
+        "order": 6,
+        "title": "Window Functions",
+        "description": "Faça cálculos que consideram o contexto de outras linhas da mesma consulta.",
+        "topics": [
+          "Window Functions",
+          "Ranking"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-advanced-tsql"
+        ]
+      },
+      {
+        "id": "sql-modelagem",
+        "order": 7,
+        "title": "Modelagem",
+        "description": "Projete esquemas relacionais consistentes para sustentar boas consultas.",
+        "topics": [
+          "Modelagem relacional",
+          "Chaves"
+        ],
+        "technologies": [
+          "PostgreSQL"
+        ],
+        "courseIds": [
+          "freecodecamp-relational-database"
+        ]
+      },
+      {
+        "id": "sql-projetos",
+        "order": 8,
+        "title": "Projetos",
+        "description": "Pratique modelando e consultando bancos de dados reais.",
+        "topics": [
+          "Portfólio",
+          "Prática"
+        ],
+        "technologies": [],
+        "courseIds": []
+      }
+    ],
+    "projectArea": "SQL"
+  }
+}

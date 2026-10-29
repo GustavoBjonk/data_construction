@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 640,
+  "data": {
+    "id": "postgresql-18-lancado",
+    "slug": "postgresql-18-lancado",
+    "title": "PostgreSQL 18 é lançado com novo subsistema de I/O assíncrono e ganhos de até 3x em leitura",
+    "summary": "O PostgreSQL Global Development Group lançou a versão 18, trazendo um subsistema de I/O assíncrono com ganhos de até 3x na leitura de armazenamento, upgrades de versão major menos disruptivos, colunas geradas virtuais e a função uuidv7(). A versão inclui mais de 3.000 commits e suporte a autenticação OAuth.",
+    "relevance": "PostgreSQL segue como um dos bancos mais usados no mundo; melhorias de performance e upgrade impactam diretamente times de engenharia de dados e backend.",
+    "publishedAt": "2025-09-25",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "PostgreSQL",
+      "SQL",
+      "Performance",
+      "Open Source"
+    ],
+    "source": "PostgreSQL.org (comunicado oficial)",
+    "sourceUrl": "https://www.postgresql.org/about/news/postgresql-18-released-3142/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ],
+      "articleIds": [
+        "ctes-recursivas-sql"
+      ]
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 40,
+  "data": {
+    "id": "business-intelligence",
+    "slug": "business-intelligence",
+    "title": "Business Intelligence",
+    "description": "Aprenda a transformar dados dispersos em indicadores e dashboards que orientam decisões de negócio.",
+    "level": "Iniciante",
+    "estimatedDuration": "3–5 meses",
+    "steps": [
+      {
+        "id": "business-intelligence-fundamentos",
+        "order": 1,
+        "title": "Fundamentos de Dados",
+        "description": "Os conceitos estatísticos básicos por trás de qualquer indicador de negócio.",
+        "topics": [
+          "Estatística descritiva",
+          "Indicadores"
+        ],
+        "technologies": [],
+        "courseIds": [
+          "khan-academy-estatistica"
+        ]
+      },
+      {
+        "id": "business-intelligence-excel",
+        "order": 2,
+        "title": "Excel",
+        "description": "A porta de entrada para organizar e calcular dados de negócio.",
+        "topics": [
+          "Planilhas",
+          "Fórmulas",
+          "Tabelas dinâmicas"
+        ],
+        "technologies": [
+          "Excel"
+        ],
+        "courseIds": [
+          "excel-na-pratica"
+        ]
+      },
+      {
+        "id": "business-intelligence-sql",
+        "order": 3,
+        "title": "SQL",
+        "description": "Consulte diretamente as bases de dados que alimentam os relatórios de negócio.",
+        "topics": [
+          "Consultas",
+          "Agregações"
+        ],
+        "technologies": [
+          "SQL"
+        ],
+        "courseIds": [
+          "ms-learn-transact-sql"
+        ]
+      },
+      {
+        "id": "business-intelligence-power-query",
+        "order": 4,
+        "title": "Power Query",
+        "description": "Extraia, limpe e transforme dados de várias fontes antes de qualquer visualização.",
+        "topics": [
+          "Extração de dados",
+          "Transformação"
+        ],
+        "technologies": [
+          "Power Query"
+        ],
+        "courseIds": [
+          "ms-learn-prepare-data-powerbi"
+        ]
+      },
+      {
+        "id": "business-intelligence-power-bi",
+        "order": 5,
+        "title": "Power BI",
+        "description": "Construa relatórios e dashboards interativos a partir dos dados tratados.",
+        "topics": [
+          "Relatórios",
+          "Dashboards"
+        ],
+        "technologies": [
+          "Power BI"
+        ],
+        "courseIds": [
+          "powerbi-intro-bradesco",
+          "ms-learn-get-started-powerbi"
+        ]
+      },
+      {
+        "id": "business-intelligence-dax",
+        "order": 6,
+        "title": "DAX",
+        "description": "Crie métricas e cálculos personalizados dentro dos seus modelos do Power BI.",
+        "topics": [
+          "Medidas",
+          "Colunas calculadas"
+        ],
+        "technologies": [
+          "DAX"
+        ],
+        "courseIds": [
+          "ms-learn-dax-powerbi"
+        ]
+      },
+      {
+        "id": "business-intelligence-modelagem-dimensional",
+        "order": 7,
+        "title": "Modelagem Dimensional",
+        "description": "Organize os dados em um modelo que sustenta relatórios rápidos e confiáveis.",
+        "topics": [
+          "Star Schema",
+          "Relacionamentos"
+        ],
+        "technologies": [
+          "Power BI"
+        ],
+        "courseIds": [
+          "ms-learn-model-data-powerbi"
+        ]
+      },
+      {
+        "id": "business-intelligence-projetos",
+        "order": 8,
+        "title": "Projetos",
+        "description": "Construa dashboards completos para consolidar tudo o que foi aprendido.",
+        "topics": [
+          "Portfólio",
+          "Prática"
+        ],
+        "technologies": [],
+        "courseIds": []
+      }
+    ],
+    "projectArea": "Business Intelligence"
+  }
+}

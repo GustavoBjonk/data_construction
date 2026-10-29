@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 760,
+  "data": {
+    "id": "apache-iceberg-1-10",
+    "slug": "apache-iceberg-1-10",
+    "title": "Apache Iceberg 1.10 amadurece a especificação V3 e o REST Catalog para produção",
+    "summary": "A versão 1.10.0 do Apache Iceberg trouxe compatibilidade total com o Spark 4.0 e o Flink 2.0, além de fechar oficialmente a especificação V3 com deletion vectors para updates eficientes em nível de linha. O Google contribuiu com suporte nativo ao BigQuery Metastore Catalog.",
+    "relevance": "Iceberg é hoje o formato de tabela de referência para arquiteturas lakehouse abertas; esse release consolida sua maturidade para cargas de trabalho críticas.",
+    "publishedAt": "2025-09-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Data Engineering",
+      "Open Source"
+    ],
+    "tags": [
+      "Apache Iceberg",
+      "Lakehouse",
+      "Data Lake",
+      "REST Catalog"
+    ],
+    "source": "Google Open Source Blog",
+    "sourceUrl": "https://opensource.googleblog.com/2025/09/apache-iceberg-110-maturing-the-v3-spec-the-rest-api-and-google-contributions.html"
+  }
+}

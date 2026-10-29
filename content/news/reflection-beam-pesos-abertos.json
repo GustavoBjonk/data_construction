@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1170,
+  "data": {
+    "id": "reflection-beam-pesos-abertos",
+    "slug": "reflection-beam-pesos-abertos",
+    "title": "Reflection AI anuncia Beam, modelo de pesos abertos de 501 bilhões de parâmetros",
+    "summary": "A Reflection AI anunciou em 5 de outubro o Beam, seu primeiro modelo de pesos abertos. É um modelo de mistura de especialistas com 501 bilhões de parâmetros no total e 23 bilhões ativos, treinado com 23,8 trilhões de tokens e contexto efetivo de até 1 milhão de tokens. O foco é programação, raciocínio e tarefas de agentes, apenas com texto, e há um ajuste de esforço de raciocínio. A empresa afirma que o Beam iguala o GLM-5.2 em benchmarks de raciocínio usando de três a quatro vezes menos computação na inferência, alegação ainda sem verificação independente, e reconhece que o Kimi K3 segue à frente em capacidade. Segundo o anúncio, os pesos seriam publicados ainda em outubro no Hugging Face, sob a licença Apache 2.0.",
+    "relevance": "A licença Apache 2.0 permite uso comercial com poucas restrições, o que diferencia o Beam de outros modelos \"abertos\". Para equipes que avaliam modelos próprios, eficiência de inferência pesa diretamente no custo de servir o modelo.",
+    "publishedAt": "2026-10-05",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial",
+      "Open Source"
+    ],
+    "tags": [
+      "Reflection AI",
+      "Beam",
+      "LLM",
+      "Pesos Abertos",
+      "Apache 2.0"
+    ],
+    "source": "Reflection AI (blog oficial)",
+    "sourceUrl": "https://reflection.ai/blog/introducing-beam"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 940,
+  "data": {
+    "id": "duckdb-2-0-preview",
+    "slug": "duckdb-2-0-preview",
+    "title": "DuckDB revela prévia da versão 2.0, com arquitetura cliente-servidor e novo parser SQL",
+    "summary": "O projeto DuckDB divulgou uma prévia da versão 2.0 (codinome \"Cyanoptera\"), destacando um novo modo cliente-servidor via extensão \"quack\", suporte a triggers, tipo VARIANT para dados semiestruturados, I/O assíncrono e um novo parser SQL que substitui o herdado do PostgreSQL.",
+    "relevance": "O DuckDB se consolidou como ferramenta analítica local/embarcada de referência; a versão 2.0 amplia seu uso para cenários antes exclusivos de bancos cliente-servidor tradicionais.",
+    "publishedAt": "2026-08-17",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "DuckDB",
+      "Banco Analítico",
+      "Open Source",
+      "SQL"
+    ],
+    "source": "DuckDB (blog oficial)",
+    "sourceUrl": "https://duckdb.org/2026/08/17/duckdb-20-highlights"
+  }
+}

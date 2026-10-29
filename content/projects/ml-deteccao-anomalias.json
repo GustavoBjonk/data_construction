@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 290,
+  "data": {
+    "id": "ml-deteccao-anomalias",
+    "title": "Detecção de anomalias",
+    "description": "Identifique comportamentos fora do padrão em um conjunto de dados usando técnicas de detecção de anomalias.",
+    "area": "Machine Learning",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Python",
+      "Scikit-learn",
+      "Pandas"
+    ],
+    "skills": [
+      "Detecção de anomalias",
+      "Análise exploratória avançada"
+    ],
+    "estimatedTime": "16–24 horas",
+    "objective": "Aplicar técnicas de detecção de anomalias para identificar registros ou comportamentos fora do padrão esperado."
+  }
+}

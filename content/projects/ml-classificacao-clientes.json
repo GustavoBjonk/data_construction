@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 240,
+  "data": {
+    "id": "ml-classificacao-clientes",
+    "title": "Classificação de clientes",
+    "description": "Classifique clientes em grupos a partir de características demográficas e comportamentais.",
+    "area": "Machine Learning",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Python",
+      "Scikit-learn"
+    ],
+    "skills": [
+      "Classificação",
+      "Feature engineering básico"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Aplicar um modelo de classificação simples para agrupar clientes segundo seu perfil."
+  }
+}

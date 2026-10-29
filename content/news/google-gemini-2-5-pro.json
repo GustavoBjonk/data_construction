@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 680,
+  "data": {
+    "id": "google-gemini-2-5-pro",
+    "slug": "google-gemini-2-5-pro",
+    "title": "Google lança Gemini 2.5 Pro, seu modelo de \"raciocínio\" com janela de contexto de 1 milhão de tokens",
+    "summary": "O Google apresentou o Gemini 2.5 Pro Experimental, um modelo que \"pensa\" antes de responder, liderando o ranking LMArena por margem significativa e atingindo 63,8% no benchmark de codificação SWE-Bench Verified. O modelo chega com janela de contexto de 1 milhão de tokens.",
+    "relevance": "Modelos de raciocínio de longo contexto ampliam o que é possível em análise de grandes volumes de documentos e código, um caso de uso direto para times de dados.",
+    "publishedAt": "2025-03-25",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Gemini",
+      "Google DeepMind",
+      "LLM",
+      "Reasoning"
+    ],
+    "source": "Google (blog oficial)",
+    "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/"
+  }
+}

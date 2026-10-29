@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1000,
+  "data": {
+    "id": "anthropic-s1-ipo",
+    "slug": "anthropic-s1-ipo",
+    "title": "Anthropic protocola pedido de abertura de capital (IPO) na SEC",
+    "summary": "A Anthropic, desenvolvedora dos modelos Claude, informou em 26 de outubro que submeteu à SEC, órgão regulador do mercado de capitais dos Estados Unidos, o registro Form S-1 para uma proposta de oferta pública inicial de ações classe A. A empresa pretende listar os papéis na Nasdaq Global Select Market com o código \"ANT\". Segundo o comunicado, a quantidade de ações e a faixa de preço ainda não foram definidas, e o registro ainda não está em vigor, o que significa que as ações não podem ser vendidas nem compradas por enquanto. Goldman Sachs e Morgan Stanley aparecem como contatos para o prospecto preliminar. O pedido é um marco para o setor, porque coloca um dos principais laboratórios de IA sob as regras de transparência exigidas de empresas de capital aberto.",
+    "relevance": "Empresas de capital aberto publicam dados financeiros e riscos de forma regular. Se a oferta se concretizar, profissionais de Dados e IA terão uma fonte pública e auditada sobre receita, custos de computação e estratégia de um dos principais fornecedores de modelos de linguagem.",
+    "publishedAt": "2026-10-26",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Mercado",
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "IPO",
+      "Mercado de IA"
+    ],
+    "source": "Anthropic (comunicado oficial)",
+    "sourceUrl": "https://www.anthropic.com/news/s1-sec"
+  }
+}

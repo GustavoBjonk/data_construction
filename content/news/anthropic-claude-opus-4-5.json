@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 660,
+  "data": {
+    "id": "anthropic-claude-opus-4-5",
+    "slug": "anthropic-claude-opus-4-5",
+    "title": "Anthropic lança Claude Opus 4.5, seu modelo mais forte em codificação e uso de agentes",
+    "summary": "A Anthropic anunciou o Claude Opus 4.5, alcançando o estado da arte no benchmark SWE-bench Verified e reduzindo em até 76% o uso de tokens em relação a modelos anteriores mantendo desempenho. O lançamento trouxe também Claude Code no aplicativo desktop e compactação de contexto para conversas mais longas.",
+    "relevance": "Modelos de raciocínio e agentes como o Opus 4.5 estão sendo cada vez mais usados em automação de pipelines de dados, geração de código analítico e assistentes de engenharia.",
+    "publishedAt": "2025-11-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "AI Agents",
+      "Coding"
+    ],
+    "source": "Anthropic (blog oficial)",
+    "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5"
+  }
+}

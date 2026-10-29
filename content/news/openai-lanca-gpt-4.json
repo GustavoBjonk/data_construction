@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 210,
+  "data": {
+    "id": "openai-lanca-gpt-4",
+    "slug": "openai-lanca-gpt-4",
+    "title": "OpenAI lança o GPT-4, elevando o patamar dos modelos de linguagem multimodais",
+    "summary": "A OpenAI apresentou o GPT-4, seu modelo de linguagem capaz de processar texto e imagens, disponibilizado inicialmente via ChatGPT Plus e por lista de espera na API. O modelo passou a ser usado por empresas como Stripe, Duolingo e Morgan Stanley logo no lançamento.",
+    "relevance": "Marcou a virada do mercado de dados e software para a corrida de IA generativa, influenciando diretamente ferramentas de BI, análise e automação lançadas ao longo do ano.",
+    "publishedAt": "2023-03-14",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "OpenAI",
+      "GPT-4",
+      "LLM",
+      "Multimodal"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2023/03/14/openai-releases-gpt-4-ai-that-it-claims-is-state-of-the-art/"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1040,
+  "data": {
+    "id": "pandas-3-1-lancado",
+    "slug": "pandas-3-1-lancado",
+    "title": "pandas 3.1 chega com método select(), filtro por condição e leitura de CSV em paralelo",
+    "summary": "A biblioteca pandas publicou a versão 3.1.0 em 22 de outubro, a primeira versão de recursos depois do pandas 3.0. O destaque é o novo método DataFrame.select(), que escolhe colunas existentes e cria colunas calculadas na mesma chamada, inclusive usando expressões pd.col(). O método filter() ganhou o parâmetro cond, que filtra linhas a partir de uma máscara booleana, de uma função ou de uma expressão. Outra mudança prática está no read_csv(): o motor em C ficou mais rápido e passa a ler em paralelo arquivos locais não comprimidos a partir de 5 MB, com número de threads controlado pela opção mode.max_threads. A versão também permite unir categorias diferentes ao concatenar colunas categóricas, adiciona Index.replace() e suporte a formatação de Period em f-strings.",
+    "relevance": "O pandas é a ferramenta mais usada em análise de dados com Python. select() e o novo parâmetro de filtro de filter() deixam o código mais legível e próximo do estilo de outras bibliotecas, e a leitura paralela de CSV reduz tempo em tarefas do dia a dia sem mudar o código.",
+    "publishedAt": "2026-10-22",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Science",
+      "Open Source"
+    ],
+    "tags": [
+      "pandas",
+      "Python",
+      "Análise de Dados",
+      "Open Source"
+    ],
+    "source": "pandas (notas de versão oficiais)",
+    "sourceUrl": "https://pandas.pydata.org/docs/whatsnew/v3.1.0.html",
+    "related": {
+      "trackSlugs": [
+        "analise-de-dados",
+        "ciencia-de-dados"
+      ],
+      "articleIds": [
+        "type-hints-pandas-polars"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 100,
+  "data": {
+    "id": "nvidia-anuncia-hopper-h100",
+    "slug": "nvidia-anuncia-hopper-h100",
+    "title": "Nvidia anuncia a arquitetura Hopper e a GPU H100",
+    "summary": "Na GTC 2022, a Nvidia revelou a arquitetura Hopper e a GPU H100, com um novo \"Transformer Engine\" voltado à aceleração de modelos de linguagem e sistemas de recomendação. A empresa também apresentou o superchip Grace CPU, com disponibilidade da H100 prevista para o terceiro trimestre de 2022.",
+    "relevance": "A H100 se tornaria a GPU de referência para treinar grandes modelos de IA, sendo peça central da infraestrutura por trás do boom de IA generativa que se seguiria.",
+    "publishedAt": "2022-03-22",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Infraestrutura",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Nvidia",
+      "GPU",
+      "Hopper",
+      "H100"
+    ],
+    "source": "Nvidia (comunicado oficial)",
+    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-announces-hopper-architecture-the-next-generation-of-accelerated-computing"
+  }
+}

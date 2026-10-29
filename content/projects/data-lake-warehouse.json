@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 110,
+  "data": {
+    "id": "data-lake-warehouse",
+    "title": "Data Lake + Data Warehouse",
+    "description": "Desenhe uma arquitetura conceitual conectando fontes de dados, data lake, ETL/ELT e data warehouse até o consumo em BI.",
+    "area": "Engenharia de Dados",
+    "difficulty": "Avançado",
+    "technologies": [
+      "Python",
+      "SQL",
+      "Docker"
+    ],
+    "skills": [
+      "Arquitetura de dados",
+      "ETL/ELT",
+      "Modelagem de dados",
+      "Data Warehouse"
+    ],
+    "estimatedTime": "20+ horas",
+    "objective": "Explorar conceitualmente a arquitetura completa de um pipeline de dados moderno, da ingestão em um data lake ao consumo analítico em ferramentas de BI."
+  }
+}

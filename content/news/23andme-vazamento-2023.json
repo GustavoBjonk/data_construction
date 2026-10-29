@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 370,
+  "data": {
+    "id": "23andme-vazamento-2023",
+    "slug": "23andme-vazamento-2023",
+    "title": "23andMe confirma que hackers acessaram dados de 6,9 milhões de usuários",
+    "summary": "A empresa de testes genéticos 23andMe confirmou que invasores usaram credenciais reaproveitadas de outros vazamentos (credential stuffing) para acessar contas e, por meio do recurso DNA Relatives, obter dados de parentesco, ancestralidade e localização de cerca de 6,9 milhões de usuários.",
+    "relevance": "Caso emblemático de como falhas de autenticação em um pequeno grupo de contas podem expor dados sensíveis de milhões de pessoas conectadas, ponto crítico para quem projeta modelos de dados relacionais/sociais.",
+    "publishedAt": "2023-12-04",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2023,
+    "category": [
+      "Data Privacy"
+    ],
+    "tags": [
+      "23andMe",
+      "Vazamento de Dados",
+      "Credential Stuffing",
+      "Dados Genômicos"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2023/12/04/23andme-confirms-hackers-stole-ancestry-data-on-6-9-million-users/"
+  }
+}

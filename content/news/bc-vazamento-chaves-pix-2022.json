@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 120,
+  "data": {
+    "id": "bc-vazamento-chaves-pix-2022",
+    "slug": "bc-vazamento-chaves-pix-2022",
+    "title": "Banco Central comunica vazamento de dados de 160,1 mil chaves Pix",
+    "summary": "O Banco Central informou que dados cadastrais de cerca de 160,1 mil clientes da Acesso Soluções de Pagamento foram expostos entre 3 e 5 de dezembro de 2021, sem envolver senhas, saldos ou extratos. Foi o segundo incidente do tipo desde o lançamento do Pix em 2020.",
+    "relevance": "Reforça a importância de práticas de segurança e governança de dados em instituições que operam infraestrutura financeira crítica sob a LGPD.",
+    "publishedAt": "2022-01-21",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Data Privacy",
+      "Regulamentação"
+    ],
+    "tags": [
+      "Pix",
+      "Banco Central",
+      "Vazamento de Dados",
+      "LGPD"
+    ],
+    "source": "Agência Brasil",
+    "sourceUrl": "https://agenciabrasil.ebc.com.br/economia/noticia/2022-01/bc-comunica-vazamento-de-dados-de-1601-mil-chaves-pix"
+  }
+}

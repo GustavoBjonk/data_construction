@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 190,
+  "data": {
+    "id": "sql-analise-clientes",
+    "title": "Análise de clientes",
+    "description": "Escreva consultas SQL para segmentar e analisar o comportamento de clientes a partir de dados transacionais.",
+    "area": "SQL",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "SQL",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "JOINs",
+      "Agregações",
+      "Segmentação via SQL"
+    ],
+    "estimatedTime": "8–14 horas",
+    "objective": "Usar SQL para segmentar clientes, calcular métricas de comportamento e identificar padrões de consumo."
+  }
+}

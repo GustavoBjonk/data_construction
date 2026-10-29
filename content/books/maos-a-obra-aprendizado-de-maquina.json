@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 100,
+  "data": {
+    "id": "maos-a-obra-aprendizado-de-maquina",
+    "title": "Mãos à Obra: Aprendizado de Máquina com Scikit-Learn, Keras & TensorFlow",
+    "authors": [
+      "Aurélien Géron"
+    ],
+    "publisher": "Alta Books",
+    "year": 2025,
+    "edition": "3ª edição",
+    "isbn13": "9788550826455",
+    "topic": "IA",
+    "level": "Intermediário",
+    "language": "Português",
+    "description": "Machine learning e deep learning na prática, de modelos clássicos a redes neurais.",
+    "why": "Equilibra teoria e código; muito usado como guia de estudo completo."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 170,
+  "data": {
+    "id": "irlanda-multa-instagram-gdpr",
+    "slug": "irlanda-multa-instagram-gdpr",
+    "title": "Irlanda multa o Instagram em € 405 milhões por exposição de dados de menores",
+    "summary": "A autoridade irlandesa de proteção de dados (DPC) aplicou uma multa recorde de € 405 milhões ao Instagram por permitir que contas comerciais de adolescentes de 13 a 17 anos exibissem publicamente telefone e e-mail. A investigação, iniciada em 2020, resultou em uma das maiores penalidades já aplicadas sob o GDPR europeu.",
+    "relevance": "Mostra o custo real do descumprimento de regras de privacidade para plataformas que lidam com dados de menores, referência direta para quem trabalha com governança e privacidade de dados.",
+    "publishedAt": "2022-09-05",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Data Privacy",
+      "Regulamentação"
+    ],
+    "tags": [
+      "Meta",
+      "Instagram",
+      "GDPR",
+      "Irlanda DPC"
+    ],
+    "source": "TechCrunch",
+    "sourceUrl": "https://techcrunch.com/2022/09/05/instagram-gdpr-fine-childrens-privacy/"
+  }
+}

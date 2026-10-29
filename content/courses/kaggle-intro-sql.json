@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 90,
+  "data": {
+    "id": "kaggle-intro-sql",
+    "title": "Intro to SQL",
+    "platform": "Kaggle Learn",
+    "area": "SQL",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Curso curto e prático da Kaggle para aprender a consultar bancos de dados com SQL usando o BigQuery.",
+    "skills": [
+      "SQL",
+      "BigQuery",
+      "Consultas"
+    ],
+    "url": "https://www.kaggle.com/learn/intro-to-sql"
+  }
+}

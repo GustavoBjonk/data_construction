@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 90,
+  "data": {
+    "id": "estatistica-e-ciencia-de-dados",
+    "title": "Estatística e Ciência de Dados",
+    "authors": [
+      "Pedro Alberto Morettin",
+      "Julio da Motta Singer"
+    ],
+    "publisher": "LTC",
+    "year": 2025,
+    "edition": "2ª edição",
+    "isbn13": "9788521638995",
+    "topic": "Dados",
+    "level": "Avançado",
+    "language": "Português",
+    "description": "Análise exploratória e métodos de predição, classificação, redução de dimensionalidade e agrupamento, de árvores a redes neurais.",
+    "why": "Liga a estatística clássica aos métodos de aprendizado com o rigor de dois professores do IME-USP."
+  }
+}

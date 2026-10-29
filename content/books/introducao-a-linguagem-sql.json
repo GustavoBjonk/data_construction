@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "introducao-a-linguagem-sql",
+    "title": "Introdução à Linguagem SQL",
+    "authors": [
+      "Thomas Nield"
+    ],
+    "publisher": "Novatec",
+    "year": 2016,
+    "isbn13": "9788575225011",
+    "topic": "SQL",
+    "level": "Iniciante",
+    "language": "Português",
+    "description": "Primeiros passos em SQL com abordagem prática: SELECT, WHERE, GROUP BY, ORDER BY, junções e criação de tabelas.",
+    "why": "Curto e direto: em poucos capítulos a pessoa já escreve consultas úteis."
+  }
+}

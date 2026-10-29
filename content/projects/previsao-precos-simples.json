@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 60,
+  "data": {
+    "id": "previsao-precos-simples",
+    "title": "Previsão simples de preços",
+    "description": "Construa um modelo de regressão linear para prever preços a partir de variáveis básicas.",
+    "area": "Ciência de Dados",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "skills": [
+      "EDA",
+      "Correlação",
+      "Regressão linear",
+      "Avaliação de modelo"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Praticar análise exploratória, correlação, regressão linear e avaliação de um modelo simples de previsão de preços."
+  }
+}

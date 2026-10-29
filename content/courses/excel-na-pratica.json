@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 10,
+  "data": {
+    "id": "excel-na-pratica",
+    "title": "Excel na Prática",
+    "platform": "Fundação Bradesco — Escola Virtual",
+    "area": "Análise de Dados",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "duration": "16 horas",
+    "level": "Iniciante",
+    "description": "Curso gratuito e no seu ritmo para aprender Excel na prática, de fórmulas básicas a tabelas e gráficos.",
+    "skills": [
+      "Excel",
+      "Planilhas",
+      "Fórmulas"
+    ],
+    "url": "https://www.ev.org.br/cursos/excel-na-pratica"
+  }
+}

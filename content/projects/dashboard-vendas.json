@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 120,
+  "data": {
+    "id": "dashboard-vendas",
+    "title": "Dashboard de vendas",
+    "description": "Monte um dashboard de vendas com os principais indicadores comerciais de um negócio.",
+    "area": "Business Intelligence",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "Excel",
+      "Power BI"
+    ],
+    "skills": [
+      "KPIs",
+      "Dashboard",
+      "Storytelling com dados"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Construir um dashboard com faturamento, ticket médio, quantidade de vendas e margem para acompanhar o desempenho comercial."
+  }
+}

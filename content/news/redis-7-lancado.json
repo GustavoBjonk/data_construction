@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 80,
+  "data": {
+    "id": "redis-7-lancado",
+    "slug": "redis-7-lancado",
+    "title": "Redis 7.0 chega com Redis Functions e Sharded Pub/Sub",
+    "summary": "Após quase um ano de desenvolvimento e três release candidates, o Redis 7.0 tornou-se disponível de forma geral com quase 50 novos comandos, incluindo Redis Functions, ACLv2 e Sharded Pub/Sub. O lançamento focou em melhorias de desempenho em memória, rede e armazenamento.",
+    "relevance": "Redis é uma das camadas de cache e mensageria mais usadas em arquiteturas de dados modernas, e essas mudanças afetam diretamente como aplicações escalam operações em tempo real.",
+    "publishedAt": "2022-04-27",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "Redis",
+      "NoSQL",
+      "Cache",
+      "Redis Functions"
+    ],
+    "source": "Redis (blog oficial)",
+    "sourceUrl": "https://redis.io/blog/redis-7-generally-available/"
+  }
+}

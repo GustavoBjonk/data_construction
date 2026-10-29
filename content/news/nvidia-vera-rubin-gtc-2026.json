@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 950,
+  "data": {
+    "id": "nvidia-vera-rubin-gtc-2026",
+    "slug": "nvidia-vera-rubin-gtc-2026",
+    "title": "Nvidia detalha plataforma Vera Rubin e novo chip Groq 3 LPU no GTC 2026",
+    "summary": "No keynote do GTC 2026, Jensen Huang formalizou a plataforma Vera Rubin (CPU Vera + GPU Rubin) como supercomputador em rack voltado a IA agêntica, com ganho de eficiência energética 10x sobre a geração Grace Blackwell, além de revelar o novo chip Groq 3 LPU focado em inferência de baixa latência.",
+    "relevance": "Define o roadmap de hardware que sustentará cargas de trabalho de IA e processamento de grandes volumes de dados pelos próximos anos, informação-chave para quem planeja infraestrutura de dados/ML.",
+    "publishedAt": "2026-03-16",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2026,
+    "category": [
+      "Infraestrutura",
+      "Big Data"
+    ],
+    "tags": [
+      "Nvidia",
+      "GPU",
+      "Vera Rubin",
+      "Infraestrutura de IA"
+    ],
+    "source": "CNBC",
+    "sourceUrl": "https://www.cnbc.com/2026/03/16/nvidia-gtc-2026-ceo-jensen-huang-keynote-blackwell-vera-rubin.html"
+  }
+}

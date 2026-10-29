@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 720,
+  "data": {
+    "id": "eu-ai-act-obrigacoes-gpai-2025",
+    "slug": "eu-ai-act-obrigacoes-gpai-2025",
+    "title": "Últimas obrigações do EU AI Act sobre modelos de IA de uso geral entram em vigor",
+    "summary": "Em 2 de agosto de 2025, entrou em vigor uma nova fase do EU AI Act: o AI Office tornou-se operacional, autoridades nacionais de fiscalização foram designadas e provedores de modelos de IA de uso geral (GPAI) passaram a precisar manter documentação técnica e resumos de dados de treinamento.",
+    "relevance": "Times de dados e IA que atuam na Europa (ou vendem para lá) precisam adequar pipelines de treinamento e documentação de modelos a essas novas exigências regulatórias.",
+    "publishedAt": "2025-08-07",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2025,
+    "category": [
+      "Regulamentação",
+      "Data Governance"
+    ],
+    "tags": [
+      "EU AI Act",
+      "Compliance",
+      "GPAI",
+      "Europa"
+    ],
+    "source": "DLA Piper",
+    "sourceUrl": "https://www.dlapiper.com/en-us/insights/publications/2025/08/latest-wave-of-obligations-under-the-eu-ai-act-take-effect"
+  }
+}

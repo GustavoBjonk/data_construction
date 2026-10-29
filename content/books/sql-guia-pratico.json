@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "archived",
+  "sortOrder": 32,
+  "data": {
+    "id": "sql-guia-pratico",
+    "title": "SQL — Guia Prático",
+    "authors": [
+      "Alice Zhao"
+    ],
+    "publisher": "Novatec",
+    "year": 2023,
+    "edition": "4ª edição",
+    "isbn13": "9788575228319",
+    "topic": "SQL",
+    "level": "Intermediário",
+    "language": "Português",
+    "description": "Guia de consulta rápida da sintaxe SQL, com as diferenças entre MySQL, PostgreSQL, SQL Server, Oracle e SQLite, além de conexão com Python e R.",
+    "why": "Para quem já escreve consultas e quer uma referência curta para tirar dúvidas de sintaxe em bancos diferentes."
+  }
+}

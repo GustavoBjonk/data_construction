@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 430,
+  "data": {
+    "id": "aws-s3-tables-iceberg",
+    "slug": "aws-s3-tables-iceberg",
+    "title": "AWS lança o Amazon S3 Tables, com suporte nativo a Apache Iceberg",
+    "summary": "Durante o AWS re:Invent 2024, a AWS anunciou o Amazon S3 Tables, um novo tipo de bucket otimizado para armazenar tabelas Apache Iceberg com desempenho de consulta até 3x mais rápido. É o primeiro object storage de nuvem com suporte nativo ao formato Iceberg.",
+    "relevance": "Mostra a AWS respondendo à adoção maciça do Iceberg, facilitando lakehouses diretamente sobre o S3 sem camadas adicionais de gerenciamento.",
+    "publishedAt": "2024-12-03",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Cloud",
+      "Data Engineering"
+    ],
+    "tags": [
+      "AWS",
+      "Apache Iceberg",
+      "Amazon S3",
+      "re:Invent"
+    ],
+    "source": "AWS (blog oficial)",
+    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-s3-tables-apache-iceberg-tables-analytics-workloads"
+  }
+}

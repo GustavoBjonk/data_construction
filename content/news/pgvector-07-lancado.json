@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 590,
+  "data": {
+    "id": "pgvector-07-lancado",
+    "slug": "pgvector-07-lancado",
+    "title": "pgvector 0.7 traz novos tipos de vetor e mais desempenho para busca vetorial no Postgres",
+    "summary": "A extensão pgvector 0.7.0 adicionou os tipos halfvec e sparsevec, suporte a índices para vetores binários, novas funções de distância e paralelismo na construção de índices HNSW, melhorando desempenho de busca por similaridade.",
+    "relevance": "Mostra o PostgreSQL se consolidando como alternativa viável a bancos vetoriais dedicados para aplicações de busca semântica e RAG (retrieval-augmented generation).",
+    "publishedAt": "2024-04-30",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Bancos de Dados",
+      "Machine Learning"
+    ],
+    "tags": [
+      "pgvector",
+      "PostgreSQL",
+      "Vector Database",
+      "RAG"
+    ],
+    "source": "PostgreSQL Global Development Group (comunicado oficial)",
+    "sourceUrl": "https://www.postgresql.org/about/news/pgvector-070-released-2852",
+    "related": {
+      "trackSlugs": [
+        "machine-learning"
+      ]
+    }
+  }
+}

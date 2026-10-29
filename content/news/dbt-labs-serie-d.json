@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 90,
+  "data": {
+    "id": "dbt-labs-serie-d",
+    "slug": "dbt-labs-serie-d",
+    "title": "dbt Labs capta US$ 222 milhões em rodada Série D",
+    "summary": "A dbt Labs anunciou uma rodada Série D de US$ 222 milhões liderada pela Altimeter, avaliando a empresa em US$ 4,2 bilhões, com participação estratégica de Databricks e Snowflake. O investimento reforçou a posição do dbt como ferramenta central da chamada \"modern data stack\".",
+    "relevance": "Consolidou o papel do dbt e da disciplina de \"analytics engineering\" como peça-chave entre a ingestão de dados brutos e o consumo analítico final.",
+    "publishedAt": "2022-02-24",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2022,
+    "category": [
+      "Mercado",
+      "Data Engineering"
+    ],
+    "tags": [
+      "dbt Labs",
+      "Analytics Engineering",
+      "Funding",
+      "Modern Data Stack"
+    ],
+    "source": "dbt Labs (blog oficial)",
+    "sourceUrl": "https://www.getdbt.com/blog/dbt-labs-raises-222m-in-series-d-funding-at-4-2b-valuation-led-by-altimeter-with-participation-from-databricks-and-snowflake"
+  }
+}

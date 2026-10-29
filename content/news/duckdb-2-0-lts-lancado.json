@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1060,
+  "data": {
+    "id": "duckdb-2-0-lts-lancado",
+    "slug": "duckdb-2-0-lts-lancado",
+    "title": "DuckDB 2.0 é lançado como versão LTS, com modo cliente-servidor e tipo VARIANT",
+    "summary": "O DuckDB lançou em 21 de outubro a versão 2.0.0, codinome \"Cinnamon Teal\", com suporte de longo prazo até pelo menos outubro de 2027. A principal mudança é o protocolo Quack com o comando CONNECT, que permite usar o DuckDB em arquitetura cliente-servidor. A versão traz I/O assíncrono para leitura de Parquet, CSV e do formato nativo, o que acelera consultas em armazenamento de objetos; o tipo VARIANT para dados semiestruturados em formato colunar; e um novo parser SQL baseado em PEG, agora padrão, com mensagens de erro mais precisas. Também chegam triggers, CTEs que modificam dados, joins NEAREST e um modo para agentes de IA na linha de comando, com saída compacta e erros em JSON. O DuckDB 1.4 tem suporte até 17 de novembro de 2026, e o 1.5 foi estendido até março de 2027.",
+    "relevance": "O DuckDB virou ferramenta comum para análise local, testes de pipelines e ensino de SQL. O suporte LTS dá previsibilidade para adotar em produção, e o modo cliente-servidor abre usos antes restritos a bancos tradicionais.",
+    "publishedAt": "2026-10-21",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Bancos de Dados",
+      "Open Source",
+      "Data Engineering"
+    ],
+    "tags": [
+      "DuckDB",
+      "SQL",
+      "Banco Analítico",
+      "Open Source",
+      "LTS"
+    ],
+    "source": "DuckDB (blog oficial)",
+    "sourceUrl": "https://duckdb.org/2026/10/21/announcing-duckdb-200.html",
+    "related": {
+      "trackSlugs": [
+        "sql",
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}

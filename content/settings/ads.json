@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "maxManualPerPage": 2,
+  "maxManualPerPageWithAutoAds": 1,
+  "autoAdsExcludedPaths": [],
+  "placements": [
+    {
+      "id": "home-mid",
+      "name": "Home — entre notícias e datasets",
+      "page": "home",
+      "slot": null,
+      "active": true,
+      "format": "auto",
+      "priority": 1,
+      "devices": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    {
+      "id": "news-list",
+      "name": "Notícias — após os destaques",
+      "page": "news-list",
+      "slot": null,
+      "active": true,
+      "format": "auto",
+      "priority": 1,
+      "devices": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    {
+      "id": "news-detail",
+      "name": "Notícia — após o conteúdo",
+      "page": "news-detail",
+      "slot": null,
+      "active": true,
+      "format": "auto",
+      "priority": 1,
+      "devices": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    {
+      "id": "article-inline",
+      "name": "Artigo — entre seções de textos longos",
+      "page": "article",
+      "slot": null,
+      "active": true,
+      "format": "auto",
+      "priority": 1,
+      "devices": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    {
+      "id": "datasets-mid",
+      "name": "Datasets — entre os destaques e os pontos de partida",
+      "page": "datasets",
+      "slot": null,
+      "active": true,
+      "format": "auto",
+      "priority": 1,
+      "devices": [
+        "mobile",
+        "desktop"
+      ]
+    },
+    {
+      "id": "books-mid",
+      "name": "Livros — entre temas, separado das recomendações",
+      "page": "books",
+      "slot": null,
+      "active": true,
+      "format": "auto",
+      "priority": 1,
+      "devices": [
+        "mobile",
+        "desktop"
+      ]
+    }
+  ]
+}

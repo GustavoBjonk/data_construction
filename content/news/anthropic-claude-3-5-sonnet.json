@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 440,
+  "data": {
+    "id": "anthropic-claude-3-5-sonnet",
+    "slug": "anthropic-claude-3-5-sonnet",
+    "title": "Anthropic lança o Claude 3.5 Sonnet",
+    "summary": "A Anthropic lançou o Claude 3.5 Sonnet, modelo que superou o antigo topo de linha Claude 3 Opus em diversos benchmarks, disponibilizado gratuitamente no Claude.ai e no aplicativo iOS, com limites maiores para assinantes Pro e Team.",
+    "relevance": "Marca um salto de capacidade em modelos de linguagem usados para análise de dados, geração de código e automação, ampliando o uso prático de IA em fluxos de trabalho de dados.",
+    "publishedAt": "2024-06-21",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Inteligência Artificial",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "LLM",
+      "IA Generativa"
+    ],
+    "source": "Anthropic (blog oficial)",
+    "sourceUrl": "https://www.anthropic.com/news/claude-3-5-sonnet"
+  }
+}

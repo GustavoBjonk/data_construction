@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 520,
+  "data": {
+    "id": "redis-licenciamento-source-available",
+    "slug": "redis-licenciamento-source-available",
+    "title": "Redis abandona a licença open source BSD e adota licenciamento \"source-available\"",
+    "summary": "A partir da versão 7.4, o Redis passou a ser distribuído sob as licenças RSALv2 e SSPLv1, deixando de ser open source segundo a definição da OSI, principalmente para impedir que provedores de nuvem revendam o software como serviço sem contrato comercial. A mudança gerou uma fork da comunidade, o Valkey, sob a Linux Foundation.",
+    "relevance": "Reacende o debate sobre sustentabilidade financeira de projetos open source usados em infraestrutura de dados crítica, e força empresas a reavaliar fornecedores e forks.",
+    "publishedAt": "2024-03-20",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "Redis",
+      "Licenciamento",
+      "Open Source",
+      "Valkey"
+    ],
+    "source": "Redis (blog oficial)",
+    "sourceUrl": "https://redis.io/blog/redis-adopts-dual-source-available-licensing/"
+  }
+}

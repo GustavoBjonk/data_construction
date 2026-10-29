@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 540,
+  "data": {
+    "id": "gartner-mq-bi-2024",
+    "slug": "gartner-mq-bi-2024",
+    "title": "Microsoft e Tableau são nomeados líderes no Gartner Magic Quadrant de BI 2024",
+    "summary": "O relatório Gartner Magic Quadrant 2024 para plataformas de Analytics e BI, de 20 de junho, posicionou a Microsoft como líder pelo 17º ano consecutivo, segundo anúncio da própria empresa. A Salesforce informou que o Tableau também foi reconhecido como líder, pelo 12º ano seguido.",
+    "relevance": "É a principal referência de mercado que profissionais de BI usam para comparar ferramentas, e reflete a crescente exigência de recursos de IA generativa embutidos em produtos de analytics.",
+    "publishedAt": "2024-06-20",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2024,
+    "category": [
+      "Business Intelligence",
+      "Mercado"
+    ],
+    "tags": [
+      "Gartner",
+      "Power BI",
+      "Tableau",
+      "Business Intelligence"
+    ],
+    "source": "Microsoft (blog oficial Power BI, cópia arquivada)",
+    "sourceUrl": "https://web.archive.org/web/20250115052130/https://powerbi.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2024-gartner-magic-quadrant-for-analytics-and-bi-platforms/",
+    "related": {
+      "trackSlugs": [
+        "business-intelligence"
+      ]
+    }
+  }
+}

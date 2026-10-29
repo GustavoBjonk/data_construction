@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 170,
+  "data": {
+    "id": "sql-escola",
+    "title": "Banco de dados de escola",
+    "description": "Modele um banco de dados escolar com alunos, turmas e notas, e pratique consultas do dia a dia.",
+    "area": "SQL",
+    "difficulty": "Iniciante",
+    "technologies": [
+      "SQL",
+      "PostgreSQL"
+    ],
+    "skills": [
+      "Modelagem relacional",
+      "Consultas SQL",
+      "Relacionamentos"
+    ],
+    "estimatedTime": "4–8 horas",
+    "objective": "Praticar modelagem relacional e consultas SQL aplicadas ao contexto de alunos, turmas e avaliações."
+  }
+}

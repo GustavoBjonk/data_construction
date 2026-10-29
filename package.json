@@ -6,20 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "audit:links": "node --experimental-strip-types scripts/audit-links.mts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:seed:generate": "node --experimental-strip-types scripts/generate-seed.mts",
+    "audit:news": "node --experimental-strip-types scripts/audit-news.mts",
+    "news:review": "node --experimental-strip-types scripts/news-review.mts",
+    "articles:review": "node --experimental-strip-types scripts/articles-review.mts",
+    "review:report": "node --experimental-strip-types scripts/review-report.mts",
+    "db:types": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/generate-db-types.mts",
+    "db:check:remote": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/remote-security-check.mts",
+    "verify:books": "node --experimental-strip-types scripts/verify-books.mts"
   },
   "dependencies": {
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.118.0",
     "next": "16.3.5",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "4.6.7"
   },
   "devDependencies": {
-    "@types/node": "20.14.15",
+    "@electric-sql/pglite": "0.5.13",
+    "@types/node": "22.20.5",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "autoprefixer": "10.4.19",
     "postcss": "8.5.28",
     "tailwindcss": "3.4.7",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "vitest": "5.0.5"
   }
 }

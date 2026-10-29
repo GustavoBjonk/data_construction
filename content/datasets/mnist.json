@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 50,
+  "data": {
+    "id": "mnist",
+    "name": "MNIST",
+    "description": "Base histórica de dígitos manuscritos (0 a 9) em imagens 28x28 em escala de cinza, referência para os primeiros modelos de classificação de imagens.",
+    "category": "Computer Vision",
+    "difficulty": "Iniciante",
+    "size": "70.000 imagens (60 mil treino + 10 mil teste)",
+    "format": "IDX / imagens 28x28",
+    "topics": [
+      "Classificação de imagens",
+      "Redes neurais",
+      "Deep Learning"
+    ],
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "idealFor": [
+      "Primeiro projeto de Deep Learning",
+      "Introdução a redes neurais"
+    ],
+    "source": "Yann LeCun (NYU)",
+    "sourceUrl": "http://yann.lecun.com/exdb/mnist/"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 170,
+  "data": {
+    "id": "ms-learn-intro-git",
+    "title": "Introdução ao Git",
+    "platform": "Microsoft Learn",
+    "area": "Engenharia de Dados",
+    "type": "free",
+    "price": 0,
+    "currency": "BRL",
+    "level": "Iniciante",
+    "description": "Módulo oficial da Microsoft sobre controle de versão com Git.",
+    "skills": [
+      "Git",
+      "Controle de versão"
+    ],
+    "url": "https://learn.microsoft.com/pt-br/training/modules/intro-to-git/"
+  }
+}

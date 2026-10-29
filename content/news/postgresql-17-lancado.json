@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 460,
+  "data": {
+    "id": "postgresql-17-lancado",
+    "slug": "postgresql-17-lancado",
+    "title": "PostgreSQL 17 é lançado com melhorias de performance e memória",
+    "summary": "O PostgreSQL 17 foi lançado com um novo sistema de gerenciamento de memória para o VACUUM, reduzindo consumo de memória e melhorando o desempenho de manutenção do banco, além de outras melhorias de replicação e particionamento.",
+    "relevance": "O PostgreSQL segue como base para grande parte da infraestrutura de dados transacionais e analíticos do mercado, incluindo extensões de IA como pgvector.",
+    "publishedAt": "2024-09-26",
+    "lastCheckedAt": "2026-09-18",
+    "year": 2024,
+    "category": [
+      "Bancos de Dados",
+      "Open Source"
+    ],
+    "tags": [
+      "PostgreSQL",
+      "Banco de Dados",
+      "Open Source",
+      "Performance"
+    ],
+    "source": "PostgreSQL Global Development Group (comunicado oficial)",
+    "sourceUrl": "https://www.postgresql.org/about/news/postgresql-17-released-2936/",
+    "related": {
+      "trackSlugs": [
+        "sql"
+      ],
+      "articleIds": [
+        "ctes-recursivas-sql"
+      ]
+    }
+  }
+}

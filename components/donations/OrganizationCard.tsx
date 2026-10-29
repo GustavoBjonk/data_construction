@@ -1,5 +1,4 @@
 import { Organization } from "@/data/donations";
-import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 
 interface OrganizationCardProps {
@@ -8,28 +7,17 @@ interface OrganizationCardProps {
 
 export function OrganizationCard({ organization }: OrganizationCardProps) {
   return (
-    <article className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-6 transition-colors duration-150 hover:border-slate-300">
-      <Badge variant="accent">{organization.category}</Badge>
+    <article className="card-interactive flex h-full flex-col p-6">
+      <p className="eyebrow text-accent">{organization.category}</p>
+      <h3 className="mt-4 font-display text-xl font-medium leading-snug tracking-tight text-fg">{organization.name}</h3>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{organization.description}</p>
 
-      <h3 className="mt-4 text-lg font-semibold leading-snug text-slate-900">
-        {organization.name}
-      </h3>
-
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-500">
-        {organization.description}
-      </p>
-
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-        <Button
-          href={organization.officialSiteUrl}
-          external
-          variant="secondary"
-          className="w-full"
-        >
-          Site oficial
+      <div className="mt-6 flex flex-wrap gap-3 border-t border-line pt-5">
+        <Button href={organization.donationUrl} external withArrow size="sm">
+          Doar
         </Button>
-        <Button href={organization.donationUrl} external variant="primary" className="w-full">
-          Doar agora
+        <Button href={organization.officialSiteUrl} external variant="secondary" size="sm">
+          Site oficial
         </Button>
       </div>
     </article>

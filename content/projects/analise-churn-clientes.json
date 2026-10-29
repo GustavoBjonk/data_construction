@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "sortOrder": 30,
+  "data": {
+    "id": "analise-churn-clientes",
+    "title": "Análise de churn de clientes",
+    "description": "Identifique clientes que cancelaram um serviço e investigue os padrões por trás do churn.",
+    "area": "Análise de Dados",
+    "difficulty": "Intermediário",
+    "technologies": [
+      "Python",
+      "Pandas",
+      "SQL",
+      "Power BI"
+    ],
+    "skills": [
+      "Segmentação",
+      "Indicadores",
+      "Insights",
+      "SQL aplicado"
+    ],
+    "estimatedTime": "8–15 horas",
+    "objective": "Identificar clientes que cancelaram, encontrar padrões de comportamento, criar indicadores de churn e gerar insights acionáveis para retenção."
+  }
+}

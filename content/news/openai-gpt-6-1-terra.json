@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1020,
+  "data": {
+    "id": "openai-gpt-6-1-terra",
+    "slug": "openai-gpt-6-1-terra",
+    "title": "OpenAI lança GPT-6.1 Terra, modelo mais barato voltado a uso de computador e raciocínio visual",
+    "summary": "A OpenAI lançou em 26 de outubro o GPT-6.1 Terra, um modelo da família GPT-6 posicionado como opção rápida e de menor custo para tarefas de uso de computador e raciocínio visual, como preencher formulários, interpretar desenhos técnicos e automatizar trabalho repetitivo em desktop. Na API, identificado como gpt-6.1-terra, o preço divulgado é de 1 dólar por milhão de tokens de entrada e 5 dólares por milhão de saída, metade do cobrado pelo GPT-6.1 Sol, segundo a empresa. O modelo está disponível para assinantes Plus, Pro, Enterprise e Edu no ChatGPT Work e no Codex. A própria OpenAI recomenda o GPT-6.1 Sol ou o GPT-6 Astra para as tarefas de programação mais complexas. Os ganhos de velocidade e de taxa de erro citados vêm de avaliações internas da empresa.",
+    "relevance": "Modelos menores e mais baratos costumam ser os que entram em produção em automações de alto volume. Para quem cria pipelines com agentes, o custo por tarefa importa tanto quanto a nota em benchmarks.",
+    "publishedAt": "2026-10-26",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Inteligência Artificial"
+    ],
+    "tags": [
+      "OpenAI",
+      "GPT-6.1",
+      "LLM",
+      "Agentes de IA",
+      "API"
+    ],
+    "source": "OpenAI (anúncio oficial)",
+    "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/"
+  }
+}

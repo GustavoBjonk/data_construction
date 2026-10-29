@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 1130,
+  "data": {
+    "id": "bigquery-timesfm-3",
+    "slug": "bigquery-timesfm-3",
+    "title": "BigQuery recebe TimesFM 3.0, em prévia, para previsão multivariada de séries temporais em SQL",
+    "summary": "O Google Cloud anunciou em 12 de outubro a prévia do TimesFM 3.0 no BigQuery. Criado pelo Google Research, o modelo fundacional tem 330 milhões de parâmetros e faz previsões sem treinamento específico para cada base. A grande mudança em relação às versões 2.0 e 2.5 é o suporte multivariado: várias colunas-alvo, covariáveis conhecidas só no histórico e covariáveis conhecidas também no horizonte de previsão, como feriados ou fins de semana. Para quem já usa as funções AI.FORECAST ou AI.DETECT_ANOMALIES, basta indicar o novo modelo no parâmetro model. O exemplo oficial usa a base pública de viagens da Citi Bike, de Nova York. O Google afirma que o modelo lidera os rankings GIFT-Eval, FEV-Bench e TIME em previsão sem treinamento específico.",
+    "relevance": "Previsão de demanda, vendas e estoque é tarefa clássica de analistas. Fazer isso direto em SQL, sem treinar modelo, baixa a barreira de entrada; ainda assim, entender validação, intervalos de confiança e sazonalidade continua sendo trabalho de quem analisa.",
+    "publishedAt": "2026-10-12",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Machine Learning",
+      "Cloud",
+      "Data Analytics"
+    ],
+    "tags": [
+      "Google Cloud",
+      "BigQuery",
+      "TimesFM",
+      "Séries Temporais",
+      "Previsão"
+    ],
+    "source": "Google Cloud (blog oficial)",
+    "sourceUrl": "https://cloud.google.com/blog/products/data-analytics/bigquery-timesfm-3-0-with-multivariate-time-series-forecasting",
+    "related": {
+      "trackSlugs": [
+        "machine-learning",
+        "sql"
+      ]
+    }
+  }
+}

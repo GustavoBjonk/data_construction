@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "review",
+  "sortOrder": 990,
+  "data": {
+    "id": "snowflake-ai-data-cloud-oracle-oci",
+    "slug": "snowflake-ai-data-cloud-oracle-oci",
+    "title": "Snowflake será oferecida como serviço nativo na nuvem da Oracle (OCI)",
+    "summary": "Oracle e Snowflake anunciaram em 27 de outubro, durante o Oracle AI World, que a AI Data Cloud da Snowflake será oferecida como serviço nativo e próprio dentro da Oracle Cloud Infrastructure. Na prática, clientes poderão contratar, provisionar e usar a Snowflake diretamente pela Oracle, com uma única relação de cobrança e a possibilidade de usar créditos Oracle Universal Credits. As empresas citam integração com fontes como Oracle Fusion Cloud Applications, NetSuite, Autonomous AI Database, MySQL HeatWave e Oracle NoSQL Database. O argumento central é reduzir pipelines personalizados e custos de saída de dados entre nuvens, já que a movimentação fica dentro da OCI. A Snowflake já operava em AWS, Azure e Google Cloud; a OCI amplia as opções para empresas que concentram sistemas de gestão no ecossistema Oracle. Não foi divulgada data de disponibilidade, e a Oracle ressalva que o cronograma pode mudar.",
+    "relevance": "Para engenheiros de dados em empresas que usam ERP e bancos Oracle, a mudança pode simplificar arquiteturas e reduzir custos de transferência entre nuvens. Também reforça que plataformas de dados competem cada vez mais por estar perto de onde os dados já estão.",
+    "publishedAt": "2026-10-27",
+    "collectedAt": "2026-10-29",
+    "lastCheckedAt": "2026-10-29",
+    "year": 2026,
+    "category": [
+      "Data Platforms",
+      "Cloud",
+      "Mercado"
+    ],
+    "tags": [
+      "Snowflake",
+      "Oracle",
+      "OCI",
+      "Data Cloud",
+      "Multicloud"
+    ],
+    "source": "Snowflake (comunicado oficial)",
+    "sourceUrl": "https://www.snowflake.com/en/news/press-releases/oracle-expands-native-ai-and-data-services-on-oci-with-snowflake/",
+    "related": {
+      "trackSlugs": [
+        "engenharia-de-dados"
+      ]
+    }
+  }
+}
