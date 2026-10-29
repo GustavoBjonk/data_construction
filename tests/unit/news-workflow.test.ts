@@ -1,4 +1,4 @@
-import { mkdir, mkdtemp, readFile, rm } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
@@ -21,14 +21,20 @@ const stored = await readCollection("news");
 const { news: published } = await loadPublishedContent();
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const inReview = stored.find((item) => item.status === "review")!;
-const { path: _path, ...reviewEnvelope } = inReview;
+// Amostra do fluxo: uma notícia coletada, devolvida ao estado "em revisão"
+// (sem aprovação), para os testes não dependerem de haver fila no acervo real.
+const sample = stored.find((item) => item.data.collectedAt !== undefined)!;
+const { path: samplePath, ...sampleEnvelope } = sample;
+const { verification: _verification, verifiedAt: _verifiedAt, ...pendingData } = sampleEnvelope.data;
+const reviewEnvelope: NewsEnvelope = { ...sampleEnvelope, status: "review", data: pendingData };
 
 describe("acervo de notícias e fluxo editorial", () => {
-  it("preserva o acervo: 127 notícias, 97 publicadas e 30 em revisão", () => {
+  it("preserva o acervo: 127 notícias publicadas; as 30 coletadas em 2026-10-29 têm aprovação editorial", () => {
     expect(stored).toHaveLength(127);
-    expect(published).toHaveLength(97);
-    expect(stored.filter((item) => item.status === "review")).toHaveLength(30);
+    expect(published).toHaveLength(127);
+    const collected = stored.filter((item) => item.data.collectedAt !== undefined);
+    expect(collected).toHaveLength(30);
+    for (const { data } of collected) expect(data.verification, data.id).toBe("verified");
   });
 
   it("artigos em revisão não chegam ao site", async () => {
@@ -43,11 +49,21 @@ describe("acervo de notícias e fluxo editorial", () => {
     expect(findNewsWorkflowIssues(stored)).toEqual([]);
   });
 
-  it("notícias fora de published não chegam ao site (páginas, busca, sitemap e feed leem loadPublishedContent)", () => {
+  it("notícias fora de published não chegam ao site (páginas, busca, sitemap e feed leem loadPublishedContent)", async () => {
     const publicIds = new Set(published.map((item) => item.id));
-    const hidden = stored.filter((item) => item.status !== "published");
-    expect(hidden.length).toBeGreaterThan(0);
-    for (const item of hidden) expect(publicIds.has(item.data.id)).toBe(false);
+    for (const item of stored.filter((entry) => entry.status !== "published")) expect(publicIds.has(item.data.id)).toBe(false);
+
+    // Acervo copiado com uma notícia devolvida à revisão: ela some do conteúdo público.
+    const root = await mkdtemp(path.join(tmpdir(), "dc-public-"));
+    try {
+      await cp(path.join(process.cwd(), "content"), path.join(root, "content"), { recursive: true });
+      await writeContentItem("news", reviewEnvelope, root);
+      const { news } = await loadPublishedContent(root);
+      expect(news).toHaveLength(published.length - 1);
+      expect(news.some((item) => item.id === reviewEnvelope.data.id)).toBe(false);
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
   });
 
   it("itens em revisão também passam pela auditoria de integridade", () => {
@@ -83,7 +99,7 @@ describe("transições", () => {
     expect(approved.data.verification).toBe("verified");
     expect(approved.data.verifiedAt).toBe(TODAY);
     expect(approved.data.collectedAt).toBe(reviewEnvelope.data.collectedAt);
-    expect(findNewsWorkflowIssues([{ ...approved, path: inReview.path }])).toEqual([]);
+    expect(findNewsWorkflowIssues([{ ...approved, path: samplePath }])).toEqual([]);
   });
 
   it("recusa aprovar fora da revisão, com data inválida ou anterior à publicação", () => {
@@ -148,7 +164,7 @@ describe("gravação", () => {
 
   it("grava a aprovação no formato canônico e o item passa a ser público", async () => {
     const file = await writeContentItem("news", approveNews(reviewEnvelope, TODAY), root);
-    expect(file).toBe(inReview.path);
+    expect(file).toBe(samplePath);
     const raw = await readFile(path.join(root, file), "utf8");
     const [reread] = await readCollection("news", root);
     expect(reread?.status).toBe("published");

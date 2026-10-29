@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "review",
+  "status": "published",
   "sortOrder": 1130,
   "data": {
     "id": "bigquery-timesfm-3",
@@ -11,7 +11,9 @@
     "publishedAt": "2026-10-12",
     "collectedAt": "2026-10-29",
     "lastCheckedAt": "2026-10-29",
+    "verifiedAt": "2026-10-29",
     "year": 2026,
+    "verification": "verified",
     "category": [
       "Machine Learning",
       "Cloud",

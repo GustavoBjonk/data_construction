@@ -153,3 +153,13 @@ Nada foi commitado, enviado ou publicado.
 2. Identificação do controlador dos dados (nome ou razão social; CNPJ se houver).
 3. Encarregado (DPO) ou indicação de quem atende os titulares, e prazo de resposta.
 4. Revisão jurídica dos três textos, incluindo o aviso de afiliados (Amazon, CONAR/CDC).
+
+## Aprovação das notícias (2026-10-29)
+
+Por decisão editorial do responsável pelo site, as 30 notícias coletadas em
+2026-10-29 foram aprovadas com `npm run news:review -- approve <id> 2026-10-29`
+(uma a uma, pelo fluxo oficial): `status: "published"`, `verification:
+"verified"`, `verifiedAt: 2026-10-29`. O acervo tem 127 notícias publicadas:
+30 com revisão editorial registrada e 97 legadas ainda pendentes
+(`npm run news:review -- legacy`). `supabase/seed.sql` foi regenerado
+(arquivo local). Entram no site no próximo deploy.
